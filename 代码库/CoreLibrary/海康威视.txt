@@ -1,0 +1,15 @@
+﻿
+private int user = 0;
+private int playHandle1 = 0
+//预览
+bool tag = HikSDK.NET_DVR_Init();
+HikSDK.LPNET_DVR_DEVICEINFO_V301 dev = new HikSDK.LPNET_DVR_DEVICEINFO_V301();
+user = HikSDK.NET_DVR_Login_V30(ConnectionManger.strvideo1, 8000, "admin", "123456789.", out dev);
+HikSDK.NET_DVR_CLIENTINFO cl1 = new HikSDK.NET_DVR_CLIENTINFO();
+cl1.hPlayWnd = picvideo1.Handle ;
+cl1.lChannel = 1;
+cl1.lLinkMode = 0;
+playHandle1 = HikSDK.NET_DVR_RealPlay(user, ref cl1);
+
+//抓取
+CHCNetSDK.NET_DVR_CapturePicture(playHandle1, "BMP_test1.bmp");
