@@ -1,0 +1,123 @@
+
+window.onerror=function(sMsg,sUrl,sLine){
+ 
+	return true;
+}
+
+var cur=null;
+function OverMM(s){
+	
+	if(cur!=null) $(cur).fadeOut(200);;
+	 var p=$(s).parent().parent();
+	var obj=$(p).find(".mm_cover");
+	$(obj).fadeIn(200);
+	
+	cur=obj;
+
+	
+}
+function OutMM(s){
+	
+	
+	$(s).fadeOut(200);
+}
+
+//////////////////////////////////////scroll
+function getList(page){
+
+	  if(page==1) return;
+	    var timestamp = (new Date()).valueOf();
+	  
+	    var url=$("#more").attr("url");
+		url+="?t="+timestamp+"&page="+page;
+	   // showNote(url);
+	   
+	    var h1='<ul class="ul_mm"><ul>';
+	    $("#list").append(h1);
+	    
+	    var cs=$("#list").children();
+	    var n=cs.length;
+	    var obj=cs[n-1];
+	   $(obj).load(url,function(){
+	    var n2=$(obj).children().length;
+	    
+	    if(n2>=20){$("#more").show();$("#more").attr("page",n+1);}
+	    else $("#more").hide();
+	    getChatting();
+	    });
+}
+function More(){
+
+	var d=$("#more").css("display");
+	if(d=="none") return;
+	var page=$("#more").attr("page");
+	getList(page);
+
+	}
+function getTopWindow()
+{
+	var scrollTop=0;
+	  if(document.documentElement&&document.documentElement.scrollTop)
+	  {
+	  scrollTop=document.documentElement.scrollTop;
+	  }
+	  else if(document.body)
+	  {
+	  scrollTop=document.body.scrollTop;
+	  }
+	  
+	 
+	  return scrollTop;
+ 
+  }
+
+var timerList=null;
+function Scroll(){
+
+ clearTimeout(timerList);
+	var top2=parseInt($(window).height())+parseInt(getTopWindow());
+	
+	 var top=parseInt($("#more").offset().top);
+	 if(top2>=top) 
+		 timerList=setTimeout('More()',300);
+
+}
+
+
+	
+	$(window).scroll(function() {
+		//showNote("");
+ 		Scroll();
+	});
+
+	Scroll();
+////////////////////////////////////////////state	
+	
+	function setChatting(id){
+
+		$("#"+id).html('聊天中...');
+		$("#"+id).attr('className','state_chatting');
+		$("#"+id).removeAttr("href");
+		
+		}
+
+		var list="";
+		
+ function getChatting(){
+	 
+	 try{
+		var timestamp = (new Date()).valueOf();
+		var url='/calls/list.jsp?t='+timestamp;
+	 $.get(url,function(res){
+			var obj = new Array();
+				obj=res.split(",");
+				for(var i=0;i<obj.length;i++){
+				setChatting(obj[i]);
+				}
+				
+			});
+	 }
+	 catch(e){}
+ }
+ getChatting();
+		

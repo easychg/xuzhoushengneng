@@ -1,0 +1,144 @@
+
+document.writeln('<div id="popCover" class="popCover"  style=""></div>');
+
+////pop
+document.writeln('<div id="pop" class="pop">');
+
+//////head
+
+document.writeln('<div class="popHead" >');
+document.writeln('<div id="popTitle" class="popTitle">登录</div>');
+document.writeln('<div style="float:right;margin-top:12px;margin-right:12px;"><a onclick="closePop()" href="javascript:void(0)" class="popClose"></a></div>');
+document.writeln('</div>');
+
+//////head
+
+document.writeln('<img id="popLoading" style="display:none;position:absolute;left:50%;top:30px;margin-left:-12px" src="http://www.tiaoni.com/images/page/loading2.gif" />');
+
+
+
+
+///body
+document.writeln('<div id="popContent" style="width:100%;float:left;height:auto"></div>');
+////body
+document.writeln('</div>');
+////pop
+
+
+function Request(strName)
+{
+    var strHref = window.document.location.href;
+    //strHref=strHref.replace("#","&page=");
+     strHref=strHref.replace("#","&id=");
+    var intPos = strHref.indexOf("?");
+    var strRight = strHref.substr(intPos + 1);
+ 
+    var arrTmp = strRight.split("&");
+    for(var i = 0; i < arrTmp.length; i++)
+    {
+        var arrTemp = arrTmp[i].split("=");
+ 
+        if(arrTemp[0].toUpperCase() == strName.toUpperCase()) return arrTemp[1];
+    }
+    return "";
+}
+
+
+
+function getTopWindow()
+{
+	var scrollTop=0;
+	  if(document.documentElement&&document.documentElement.scrollTop)
+	  {
+	  scrollTop=document.documentElement.scrollTop;
+	  }
+	  else if(document.body)
+	  {
+	  scrollTop=document.body.scrollTop;
+	  }
+	  
+	
+	 
+	  return scrollTop;
+ 
+  }
+
+
+function showPopLoading(){
+	$("#popLoading").show();  
+}
+function hidePopLoading(){
+	$("#popLoading").hide();  
+}
+function closePop(){
+	
+	var d=$("#giftWindow").css("display");
+	
+	
+	if(d!="block")
+	$("#popCover").hide();
+	$("#pop").hide();
+	$("#popContent").html("");
+	}
+
+	function setPopTitle(t){
+	$("#popTitle").html(t);
+	}
+	function setPopNote(text){
+		$("#popContent").html("");
+		var str='<div class="popText">'+text+'</div>';
+		$("#popContent").html(str);
+	}
+	function setPopText(text){
+		$("#popContent").html("");
+		var str='<div class="popText">'+text+'</div>';
+		str+='<div class="popText">';
+		str+='<input onclick="closePop()" type="button" class="btnLiao" value="确定" />';
+	
+		str+='</div>';
+		$("#popContent").html(str);
+}
+	function showPopConfirm(text,btn1,btn2){
+		
+		$("#popContent").html("");
+		var str='<div id="popConfirmBody" class="popText">'+text+'</div>';
+		str+='<div class="popText">';
+		str+='<input id="btnPopOK" type="button" class="btnLiao" value="确定" />';
+		str+='<input id="btnPopCancel" onclick="closePop()" style="margin-left:20px" type="button" class="btnLiao2" value="取消" />';
+		str+='</div>';
+		$("#popContent").html(str);
+		
+		if(btn1!=""&&btn1!=null)
+		$("#btnPopOK").attr("value",btn1);
+		
+		if(btn2!=""&&btn2!=null)
+			$("#btnPopCancel").attr("value",btn2);
+		if(btn2=="null") $("#btnPopCancel").hide();
+	
+	}
+	var windowMode="0";
+	function showPop(title,width,height,top,mode){
+	
+		$(".popClose").show();
+		hidePopLoading();
+if(mode==null) windowMode="0";
+else windowMode="1";
+
+		$("#popContent").html("");
+	var top2=parseInt(getTopWindow());
+	top=parseInt(top);
+	$("#pop").css("top",(top)+"px");
+	//$("#pop").css("height",height+"px");
+	$("#pop").css("width",width+"px");
+	$("#pop").css("margin-left",width/2*-1+"px");
+	$("#popTitle").html(title);
+	$("#popCover").show();
+	$("#pop").show();
+	var h=parseInt($(document).height());
+
+	
+	$("#popCover").css("height",h+"px");
+	
+	}
+	
+	

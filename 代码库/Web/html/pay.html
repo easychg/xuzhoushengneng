@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>支付页面</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+
+<body>
+	<!-- <header class="header header-login">
+		<a class="btn-back" href="#">back</a>
+		<span class="title">支付</span>
+	</header> -->
+
+	<section class="init pay">
+		<a class="mod-more mod-order clearfix">
+			<div class="fl info">
+				<div class="name">订单号:20171445211552332</div>
+				<div class="date">下单时间：2017.12.14  12:45:41</div>
+			</div>
+			<i class="icon-right">共3件</i>
+		</a>
+
+		<div class="mod-pay">
+			<label class="label-single">
+				<i class="icon-pay"><img src="images/icon-surplus.png" /></i>
+				<span class="fr radio-outer">
+	        		<input type="radio" name="payType" checked hidden>
+	        		<i class="border-circle"></i>
+        		</span>
+        		<span class="name">账户余额</span>
+    		</label>
+			<label class="label-single">
+				<i class="icon-pay"><img src="images/icon-wechat.png" /></i>
+				<span class="fr radio-outer">
+	        		<input type="radio" name="payType" hidden>
+	        		<i class="border-circle"></i>
+        		</span>
+        		<span class="name">
+        			微信支付 <br/><em>8亿微信用户的首选</em>
+				</span>
+    		</label>
+		</div>
+	</section>
+
+	<footer class="fixed-footer clearfix">
+		<a class="fr btn-submit text-center">提交订单</a>
+		<div class="fl subtotal">应付总额：<span class="red">¥<em class="price">145.22</em></span></div>
+	</footer>
+
+	<div id="JScrollToTop" class="scroll-top"></div>
+
+	<script src="js/jquery.1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>

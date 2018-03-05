@@ -1,0 +1,25 @@
+.popCover{display:none;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); 
+opacity:0.5;background-color:#000; width: 100%; 
+height: 100%; position:fixed; left: 0px; top: 0px; z-index: 12;;position: fixed;
+_position: absolute;}
+
+.pop{display:none;width:680px;float:left;;position: fixed;
+_position: absolute;background:#ffffff;z-index:9999;
+top:30px;left:50%;margin-left:-340px;;box-shadow: 0px 0px 12px #565656;
+}
+.popHead{width:100%;height:45px;background:#F7F7F7;
+}
+.popTitle{
+float:left;text-indent:20px;line-height:45px;font-size:15px;font-weight:bold;color:#333;
+}
+
+.popText{
+	margin-left:auto;margin-right:auto;font-size:18px;font-weight:bold;
+	margin-top:20px;width:90%;
+	height:30px;line-height:30px;text-align:center;margin-bottom:30px;
+}
+
+A.popClose{width:17px;height:16px;background:url(/images/p/close.png)  no-repeat 0px 0px;
+float:left}
+
+ 

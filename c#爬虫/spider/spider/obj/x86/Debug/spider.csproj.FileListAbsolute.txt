@@ -1,0 +1,8 @@
+C:\net\spider\spider\bin\Debug\spider.exe
+C:\net\spider\spider\bin\Debug\spider.pdb
+C:\net\spider\spider\obj\x86\Debug\spider.Form1.resources
+C:\net\spider\spider\obj\x86\Debug\spider.Properties.Resources.resources
+C:\net\spider\spider\obj\x86\Debug\spider.csproj.GenerateResource.Cache
+C:\net\spider\spider\obj\x86\Debug\spider.exe
+C:\net\spider\spider\obj\x86\Debug\spider.pdb
+C:\net\spider\spider\obj\x86\Debug\spider.csprojResolveAssemblyReference.cache

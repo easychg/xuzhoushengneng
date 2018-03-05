@@ -1,0 +1,9 @@
+C:\我的文件\车牌识别\testkapian\kapian\kapian\bin\Debug\kapian.exe
+C:\我的文件\车牌识别\testkapian\kapian\kapian\bin\Debug\kapian.pdb
+C:\我的文件\车牌识别\testkapian\kapian\kapian\obj\x86\Debug\kapian.csprojResolveAssemblyReference.cache
+C:\我的文件\车牌识别\testkapian\kapian\kapian\obj\x86\Debug\kapian.Form1.resources
+C:\我的文件\车牌识别\testkapian\kapian\kapian\obj\x86\Debug\kapian.Properties.Resources.resources
+C:\我的文件\车牌识别\testkapian\kapian\kapian\obj\x86\Debug\kapian.csproj.GenerateResource.Cache
+C:\我的文件\车牌识别\testkapian\kapian\kapian\obj\x86\Debug\kapian.exe
+C:\我的文件\车牌识别\testkapian\kapian\kapian\obj\x86\Debug\kapian.pdb
+C:\我的文件\车牌识别\testkapian\kapian\kapian\obj\x86\Debug\kapian.ReadWrite.resources

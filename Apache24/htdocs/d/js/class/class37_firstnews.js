@@ -1,0 +1,1 @@
+document.write("<li><a href=\"/news/sports/2012-12-10/71.html\" title=\"奥运圣火成功登顶珠峰\">奥运圣火成功登顶珠峰</a></li>");

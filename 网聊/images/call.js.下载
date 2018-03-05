@@ -1,0 +1,451 @@
+
+
+document.writeln('<div id="callCover" class="callCover"></div>');
+
+document.writeln('<div id="callWindow" class="callWindow">');
+document.writeln('</div>');
+
+/*window.onerror=function(sMsg,sUrl,sLine){
+	// alert(sMsg+sUrl+sLine);
+	showNote(sMsg+sUrl+sLine);
+		return true;
+	}
+*/
+
+function Call(uid){
+	
+	
+	if(readCookie("uid")==null){
+		login();
+		action="call";
+		return;
+	}
+	if(readCookie("uid")==uid){
+		showNote("不能跟自己通话","200","info2");
+		return;
+	}
+	var timestamp = (new Date()).valueOf();
+	var url="/call/do/call.pre.jsp?t="+timestamp+"&uid="+readCookie("uid")+"&uid2="+uid;
+	 showNote("加载中...",200,"loading");
+	$.getJSON(url,function(json){
+
+		if(json.res=="black"){
+			showNote("对不起，对方已经把你拉黑",200,"info2");
+		}
+		else
+	    {
+			showCall(uid);
+	    }
+	 
+		
+	});
+	
+}
+function setPhone(){
+	
+	var timestamp = (new Date()).valueOf();
+	 $("#phone_div").load("/ivr/page/phone.jsp?t="+timestamp);
+
+	}
+function showCall(uid){
+	
+	
+
+	$("#callCover").show();
+	$("#callWindow").show();
+
+   $("#callWindow").css("top","50px");
+   var h=parseInt($(document).height());
+   $("#callCover").css("height",h+"px");
+   
+  
+   var timestamp = (new Date()).valueOf();
+   var url="/ivr/do/call.jsp?t="+timestamp+"&uid="+uid;
+   $("#callWindow").load(url,function(){
+	   $("#note").hide();
+	   
+	  // setPhone();
+   });
+}
+
+function closeCall(){
+	
+	var state=$("#call_state").val();
+	if(state=="chatting"||state=="ringing")
+	if(!confirm("当前正在通话，离开此页面将会中断通话。\n\n\n确定要离开此页面吗？")) return;
+	$("#callCover").hide();
+	$("#callWindow").hide();
+	}
+
+
+function showDetail(){
+	var d=$("#price_detail").css("display");
+	if(d=="block"){
+		$("#price_detail").hide();
+	}
+	else
+		{
+		$("#price_detail").show();
+		
+	
+		}
+}
+
+function getTopWindow()
+{
+	var scrollTop=0;
+	  if(document.documentElement&&document.documentElement.scrollTop)
+	  {
+	  scrollTop=document.documentElement.scrollTop;
+	  }
+	  else if(document.body)
+	  {
+	  scrollTop=document.body.scrollTop;
+	  }
+	  
+	
+	 
+	  return scrollTop;
+ 
+  }
+
+
+
+
+
+	
+
+
+var from="";//我的电话
+var minute=0;
+var way="own";
+function ChangeDevice(s){
+	
+	$("#pc").attr("class","call_menu_off");
+	$("#own").attr("class","call_menu_off");
+	$("#qmy").attr("class","call_menu_off");
+	
+	var d=$(s).attr("value");
+	
+	if(d=="pc"){
+		
+		$("#device").val("pc");
+		$("#pc").attr("class","call_menu_on");
+		$("#price_cost").html("0.0");
+		$("#ul_pc").show();
+		$("#ul_mb").hide();
+		$("#call_res").html("请确保您的电脑有麦克风和耳机/音响");
+	}
+	if(d=="ytx"){
+		
+		$("#device").val("mb");
+		$("#call_res").html('系统将接通<font style="color:#DB3652">您</font>和<font style="color:#DB3652">对方</font>的手机');
+		$("#ytx").attr("class","call_menu_on");
+		
+		$("#ul_mb").show();
+		$("#ul_pc").hide();
+		way="ytx";
+	}
+	
+     if(d=="own"){
+		
+		$("#device").val("mb");
+		$("#call_res").html('系统将接通<font style="color:#DB3652">您</font>和<font style="color:#DB3652">对方</font>的手机');
+		$("#own").attr("class","call_menu_on");
+		
+		$("#ul_mb").show();
+		$("#ul_pc").hide();
+		way="own";
+	}
+   if(d=="qmy"){
+		
+	   $("#device").val("mb");
+		$("#call_res").html('系统将接通<font style="color:#DB3652">您</font>和<font style="color:#DB3652">对方</font>的手机');
+		$("#qmy").attr("class","call_menu_on");
+	
+		$("#ul_mb").show();
+		$("#ul_pc").hide();
+		way="qmy";
+	}
+	var price_cost=$("#price_cost").html();
+	//alert(price_cost);
+	var price_angel=$("#price_angel").html();
+	var price=Number(price_angel)+Number(price_cost);
+	price=price.toFixed(1);
+	$("#price").html(price);
+	
+}
+
+function PhoneClose(){
+	
+	closePop();
+}
+
+/*call*/
+
+function getCallState(uid){
+	
+	var c=$("#dial").attr("className");
+	
+	if(c=="dial_off")
+		{
+		
+		//Cloopen.bye();
+		//return;
+		}
+
+	$("#call_res").html('<img style="margin-top:10px" src="/images/chat/progress.gif" />');
+		 var timestamp = (new Date()).valueOf(); 
+		  //CallCheck(uid);
+			var url="/calls/uid.jsp?t="+timestamp+"&uid="+uid;
+	
+			
+			$.getJSON(url,function(json){
+			
+				
+				var state=json.state;
+				 
+			
+				
+				if(state=="chatting")
+					{
+				$("#call_res").html("<b>呼叫失败</b> 对方正在聊天中");
+			        }
+			        else
+			        {
+			        //$("#call_res").html("s");
+			       // $("#call_res").html("对方正在聊天");
+			       CallCheck(uid);
+			        }
+				
+					
+				
+					
+				
+			});
+		
+	}
+var voip="";
+var pass="";
+	function CallCheck(uid){
+
+	var timestamp = (new Date()).valueOf();
+	var device=$("#device").val();
+		var url="/ivr/do/check.jsp?t="+timestamp;
+		url+="&uid="+readCookie("uid");
+		url+="&uid2="+uid;
+		url+="&device="+device;
+		url+="&way="+way;
+		
+		
+	
+		$("#res").html('<img src="/images/p/calling.gif" style="width:20px;height:24px;" />&nbsp;正在呼叫...');
+
+		$.getJSON(url,function(json){
+			$("#note").hide();
+			
+			
+			//alert(res);
+			voip=json.voip;
+			pass=json.pass;
+			
+			var res=json.res;
+			if(res.indexOf("error")!=-1){
+			
+			$("#call_res").html("<b>呼叫失败</b>"+res);
+			}
+			
+			if(res=="tiao"){
+			$("#call_res").html("<b>呼叫失败</b> 原因:您的条件不符合对方");
+		
+			}
+			if(res=="sum"){
+				$("#call_res").html("您的余额不足，<a href='/home/pay2.jsp' target='_blank' class='a_blue_14'><b>点此充值</b></a>或者<a href='/t.jsp' target='_blank' class='a_blue_14'><b>推广赚聊币</b></a>");	
+			}
+			
+			if(res=="time"){
+			$("#call_res").html("<b>呼叫失败</b> 原因:现在不是对方通话时间");
+			
+			}
+			if(res=="silent"){
+			$("#call_res").html("<b>呼叫失败</b> 原因:对方设置了免打扰一天");
+			}
+			if(res=="phone"){
+				$("#call_res").html("对不起，请您先绑定手机号&nbsp;<a href='javascript:void(0)' onclick='setPhone()' class='a_blue_14'><b>点此绑定</b>");
+			}
+			if(res=="phone_state"){
+				$("#call_res").html("对不起，您绑定的手机已关机或停机");
+			}
+			if(res=="ok"){
+				$("#call_res").html("<b>呼叫成功</b> 请注意接听电话");
+				var device=$("#device").val();
+				if(device=="pc") ReadyCall(voip,pass);
+			}
+			if(res=="limit"){
+				$("#call_res").html("<b>呼叫失败</b> 原因:对方未通过审核");
+				}
+			
+		});
+
+
+	}
+
+/*flash*/
+function ReadyCall(){
+	
+	$("#call_log").append('<div style="height:20px;font-size:12px">'+voip+'</div>');
+	$("#call_time").val("0");
+	var device=$("#device").val();
+	if(device=="pc"){
+		Cloopen.initByUser("flash_div",initCallBack,notifyCallBack,voip,pass);
+		$("#call_state").val("dial");
+	}
+}
+function initCallBack(){
+$("#call_res").html("初始化...");
+
+$("#call_res").html('<img style="margin-top:10px" src="/images/chat/progress.gif" />');
+}
+
+
+
+/*-------------------time-------------------*/
+var timer_call=null;
+
+function StartCallTimer(){
+
+	$("#call_time").val("0");
+	clearInterval(timer_call);
+	
+	timer_call=setInterval(CallTimer,1000);
+}
+function CallTimer(){
+	
+	var t=$("#call_time").val();
+	t=parseInt(t);
+	t++;
+	$("#call_time").val(t);
+	
+	var state=$("#call_state").val();
+	switch(state)
+	{
+	case "dial":///超时重拨
+		if(t>4){
+			$("#call_res").html("正在重拨...");
+			Dial();	
+		}
+		break;
+	case "ringing"://检测called是否接通
+		Callid();
+		break;
+	case "chatting"://聊天计时
+		CallSecond();
+		break;
+	
+	}
+	
+}
+function CallSecond(){//聊天计时
+	var t=$("#call_time").val();
+	var m=t/60; m=parseInt(m); if(m<10) m="0"+m;
+	var s=t%60; if(s<10) s="0"+s;
+	$("#CallSecond").html(m+":"+s);
+	
+}
+function Callid(){//检测called是否接通
+	var timestamp = (new Date()).valueOf();
+	var callid=$("#callid").val();
+	var url="/callid?t="+timestamp+"&callid="+callid;
+	$.get(url,function(res){
+		if(res>1) CallChatting();
+	});
+	
+}
+function CallChatting(){//计时开始
+	$("#call_state").val("chatting");
+	$("#call_res").html('通话中');
+	StartCallTimer();
+}
+function CallStop(){//通话结束
+	 $("#dial").attr("class","dial_on");
+	 $("#dial_text").html("接通电话");
+	$("#call_state").val("stop");
+	$("#call_res").html('通话结束');
+	$("#call_time").val("0");
+	clearInterval(timer_call);
+	
+}
+function notifyCallBack(type,msg){
+	$("#call_log").append('<div style="height:20px;font-size:12px">'+type+'-'+msg+'</div>');
+
+	switch(type)
+	{
+	case 'Microphone.Muted':
+		$("#call_res").html("<span style='color:#f00'>请允许浏览器访问麦克风</span>");
+		break;
+	case 'connecting':
+		$("#call_res").html('初始化...');
+		$("#call_res").html('<img style="margin-top:10px" src="/images/chat/progress.gif" />');
+		break;
+		
+	case 'connected':
+
+		if(msg=="已登录") Dial();
+		break;
+	case 'ringing':
+		
+		break;
+	case 'onHangup':
+		
+		CallStop();
+		break;
+	}
+	
+	//if(type!="Microphone.timer.checkMic")
+	//showNote(type+msg,200,"loading");
+}
+
+function Dial(){
+	
+	var uid=readCookie("uid");
+	var url="/ivr/dial.jsp?caller="+voip+"&uid="+uid;
+	$.get(url,function(res){
+		$("#callid").val(res);
+		StartCallTimer();
+	});
+	
+}
+
+Cloopen.when_inbound(function(){
+	 Cloopen.accept();
+	 
+	 $("#dial").attr("class","dial_off");
+	 $("#dial_text").html("挂断电话");
+	 
+	 $("#call_state").val("ringing");
+	 CallTimer();
+	 $("#call_res").html('正在呼叫...');
+	 });
+
+
+
+
+
+window.onbeforeunload = function(e)
+{
+	
+	var state=$("#call_state").val();
+	if(state=="chatting"||state=="ringing")
+		{
+       var e = window.event || e;
+       if (e.returnValue= '当前正在通话，离开此页面将会中断通话。'){}
+		}
+
+ 
+}
+
+
+
+
+
+

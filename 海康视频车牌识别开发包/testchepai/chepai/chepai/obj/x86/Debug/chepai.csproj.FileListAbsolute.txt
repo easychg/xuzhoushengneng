@@ -1,0 +1,8 @@
+C:\我的文件\车牌识别\testchepai\chepai\chepai\obj\x86\Debug\chepai.Form1.resources
+C:\我的文件\车牌识别\testchepai\chepai\chepai\obj\x86\Debug\chepai.Properties.Resources.resources
+C:\我的文件\车牌识别\testchepai\chepai\chepai\obj\x86\Debug\chepai.csproj.GenerateResource.Cache
+C:\我的文件\车牌识别\testchepai\chepai\chepai\obj\x86\Debug\chepai.exe
+C:\我的文件\车牌识别\testchepai\chepai\chepai\obj\x86\Debug\chepai.pdb
+C:\我的文件\车牌识别\testchepai\chepai\chepai\bin\chepai.exe
+C:\我的文件\车牌识别\testchepai\chepai\chepai\bin\chepai.pdb
+C:\我的文件\车牌识别\testchepai\chepai\chepai\bin\chepai.exe.config

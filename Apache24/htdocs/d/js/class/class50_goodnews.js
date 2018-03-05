@@ -1,0 +1,1 @@
+document.write("<li><a href=\"/flash/youxi/4.html\" title=\"万花筒\">万花筒</a></li><li><a href=\"/flash/youxi/2.html\" title=\"火炬手\">火炬手</a></li>");

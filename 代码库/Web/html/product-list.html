@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>产品列表</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+
+<body class="body-prolist">
+	<header class="header header-prolist">
+		<form class="form form-search">
+			<div class="search-group">
+				<input class="input-control" type="text" placeholder="搜索" />
+				<!-- <button class="btn-search">搜索</button> -->
+			</div>
+		</form>
+
+		<!-- 筛选 -->
+		<div class="filter-wrapper clearfix">
+			<a class="filter-all active"><em>综合排序</em><i class="icon-up"></i></a>
+			<a class="filter"><em>销量优先</em><i></i></a>
+			<ul class="clear filter-list">
+				<li class="up" data-mark="价格"><a href="#">价格由低到高</a></li>
+				<li class="down" data-mark="价格"><a href="#">价格由高到低</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="wrapper"></div>
+	
+	<article class="init init-prolist">
+		<section class="init-mod">
+			<div class="bd">
+				<!-- 无数据 -->
+				<div class="nodata">
+					<div class="name">列表为空</div>
+					<div class="subname">当有数据时，他们会展现在这里</div>
+				</div>
+				<!-- 有数据 -->
+				<ul class="product-list clearfix">
+					
+					<li>
+						<a href="product.html">
+							<div class="pic"><img src="images/img-pro01.jpg" /></div>
+							<div class="info">
+								<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+								<div class="unit">¥399</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="product.html">
+							<div class="pic"><img src="images/banner01.jpg" /></div>
+							<div class="info">
+								<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+								<div class="unit">¥399</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+	<div id="JScrollToTop" class="scroll-top"></div>
+
+	<script src="js/jquery.1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>
+

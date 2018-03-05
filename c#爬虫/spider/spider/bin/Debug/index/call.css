@@ -1,0 +1,60 @@
+
+.call_title{position:relative;height:30px;line-height:30px;background:#227dc5;margin-bottom:5px;padding-top:2px;
+word-wrap: break-word;word-break: break-all;display:none2;width:100%;float:left;color:#fff;font-weight:bold;
+border-radius: 6px 6px 0px 0px;}
+.call_close{width:16px;height:16px;float:left;background:url(/images/p/dial_close.png);position:absolute;
+left:275px;top:8px}
+.call_menu_on{width:80px;height:30px;float:left;border-bottom:solid 1px #0aa7ff;color:#0aa7ff;TEXT-DECORATION: none;
+font-size:14px;}
+.call_menu_off{width:80px;height:30px;float:left;border-bottom:solid 1px #ccc;color:#222;TEXT-DECORATION: none;
+font-size:14px;}
+.call_menu_off:hover{color:#0aa7ff}
+
+.call_res{font-size:13px;height:35px;line-height:35px;background:#f2f2f2;color:#222;width:100%;float:left;}
+
+
+
+
+.CallSecond{width:50px;height:30px;line-height:30px;float:left;position:absolute;color:#539D34;
+left:250px;font-size:14px;font-family:Arial;font-weight:bold}
+
+.price_detail{width:126px;height:60px;float:left;background:url(/images/p/detail.png?t=1);
+position:absolute;left:-2px;top:-60px;cursor:default}
+.call_price1{color:#f60;font-size:13px;width:100%;float:left;height:30px;line-height:30px}
+.call_price2{margin-left:5px;text-align:left;color:#8d9ccf;font-size:12px;width:100%;float:left;height:20px;line-height:20px}
+
+
+A.dial_on{position:relative;width:50px;height:50px;float:left;background:url(/images/p/dial.png) no-repeat 0px 0px}
+A.dial_on:hover{background:url(/images/p/dial.png) no-repeat 0px -54px}
+A.dial_on:active{background:url(/images/p/dial.png) no-repeat 0px -0px}
+
+
+.dial_on .dial_text{position:absolute;left:-5px;top:55px;width:60px;font-size:12px;height:20px;line-height:20px;
+background:#76BB41;color:#fff;border-radius:5px}
+
+A.dial_off{position:relative;width:50px;height:50px;float:left;background:url(/images/p/dial.png) no-repeat 0px -108px}
+A.dial_off:hover{background:url(/images/p/dial.png) no-repeat 0px -163px}
+A.dial_off:active{background:url(/images/p/dial.png) no-repeat 0px -108px}
+.dial_off .dial_text{position:absolute;left:-5px;top:55px;width:60px;font-size:12px;height:20px;line-height:20px;
+background:#FF3376;color:#fff;border-radius:5px}
+
+
+
+.ul_call{line-height:20px;color: #8d9ccf;;
+margin: 0px;
+padding: 0px;
+width: 290px;
+text-align: left;
+list-style-type: disc;
+list-style-position: inside;
+font-size: 12px;margin-left:25px;float:left;}
+.ul_call li{text-align:left}
+
+.callCover{display:none;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); 
+opacity:0.5;background-color:#000; width: 100%; 
+height: 100%; position:fixed; left: 0px; top: 0px; z-index: 9}
+.callWindow{width:300px;height:450px;float:left;position: fixed;
+_position: absolute;z-index:999;
+left:50%;margin-left:-150px;;top:20px;display:none;overflow:hidden}
+
+

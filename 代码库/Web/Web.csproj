@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BDE7EE9-35D0-4912-BE7E-B7E600DD1738}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoreLibrary">
+      <HintPath>..\CoreLibrary\bin\Debug\CoreLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\httpclient\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\accordion.htm" />
+    <Content Include="bootstrap\breadcrumb.htm" />
+    <Content Include="bootstrap\buttons.htm" />
+    <Content Include="bootstrap\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\form.htm" />
+    <Content Include="bootstrap\index.htm" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\DD_belatedPNG_0.0.8a-min.js" />
+    <Content Include="bootstrap\js\html5shiv.js" />
+    <Content Include="bootstrap\js\jquery.min.js" />
+    <Content Include="bootstrap\js\respond.min.js" />
+    <Content Include="bootstrap\navbar.htm" />
+    <Content Include="bootstrap\modellabel.htm" />
+    <Content Include="bootstrap\pagination.htm" />
+    <Content Include="bootstrap\tab.htm" />
+    <Content Include="bootstrap\table.htm" />
+    <Content Include="bootstrap\thumbnail.htm" />
+    <Content Include="css3test.htm" />
+    <Content Include="data.js" />
+    <Content Include="es6.htm" />
+    <Content Include="html\cart.html" />
+    <Content Include="html\catagory.html" />
+    <Content Include="html\css\all.css" />
+    <Content Include="html\images\add-images.png" />
+    <Content Include="html\images\banner01.jpg" />
+    <Content Include="html\images\bg-hd.jpg" />
+    <Content Include="html\images\bg-jobber.png" />
+    <Content Include="html\images\bg-status.jpg" />
+    <Content Include="html\images\bg-user.jpg" />
+    <Content Include="html\images\brand\1.png" />
+    <Content Include="html\images\brand\10.png" />
+    <Content Include="html\images\brand\2.png" />
+    <Content Include="html\images\brand\3.png" />
+    <Content Include="html\images\brand\4.png" />
+    <Content Include="html\images\brand\5.png" />
+    <Content Include="html\images\brand\6.png" />
+    <Content Include="html\images\brand\7.png" />
+    <Content Include="html\images\brand\8.png" />
+    <Content Include="html\images\brand\9.png" />
+    <Content Include="html\images\empty.png" />
+    <Content Include="html\images\facility01.png" />
+    <Content Include="html\images\facility02.png" />
+    <Content Include="html\images\facility03.png" />
+    <Content Include="html\images\facility04.png" />
+    <Content Include="html\images\facility05.png" />
+    <Content Include="html\images\facility06.png" />
+    <Content Include="html\images\facility07.png" />
+    <Content Include="html\images\facility08.png" />
+    <Content Include="html\images\hook.png" />
+    <Content Include="html\images\icon-edit.png" />
+    <Content Include="html\images\icon-filter.png" />
+    <Content Include="html\images\icon-nav.png" />
+    <Content Include="html\images\icon-recharge.png" />
+    <Content Include="html\images\icon-status.png" />
+    <Content Include="html\images\icon-surplus.png" />
+    <Content Include="html\images\icon-wechat.png" />
+    <Content Include="html\images\icon.png" />
+    <Content Include="html\images\img-pro01.jpg" />
+    <Content Include="html\images\img-pro02.jpg" />
+    <Content Include="html\images\jobber.png" />
+    <Content Include="html\images\no-image.jpg" />
+    <Content Include="html\images\scrollTop.png" />
+    <Content Include="html\images\sprite-icon.png" />
+    <Content Include="html\images\sprite-login.png" />
+    <Content Include="html\images\tips.png" />
+    <Content Include="html\images\weixin.png" />
+    <Content Include="html\index.html" />
+    <Content Include="html\js\all.js" />
+    <Content Include="html\js\jquery.1.10.2.min.js" />
+    <Content Include="html\js\slick.min.js" />
+    <Content Include="html\login.html" />
+    <Content Include="html\pay.html" />
+    <Content Include="html\product-list.html" />
+    <Content Include="html\product.html" />
+    <Content Include="html\register.html" />
+    <Content Include="html\user-center.html" />
+    <Content Include="html\余额明细.html" />
+    <Content Include="html\发表评论.html" />
+    <Content Include="html\我的地址.html" />
+    <Content Include="html\我的收藏.html" />
+    <Content Include="html\我的评论.html" />
+    <Content Include="html\结算页面.html" />
+    <Content Include="html\订单列表.html" />
+    <Content Include="html\订单详细.html" />
+    <Content Include="html\账户余额.html" />
+    <Content Include="index.html" />
+    <Content Include="md5.js" />
+    <Content Include="myBootstrap\css\bootstrap-theme.css" />
+    <Content Include="myBootstrap\css\bootstrap.css" />
+    <Content Include="myBootstrap\css\my.css" />
+    <Content Include="myBootstrap\index.htm" />
+    <Content Include="myBootstrap\js\bootstrap.min.js" />
+    <Content Include="myBootstrap\js\DD_belatedPNG_0.0.8a-min.js" />
+    <Content Include="myBootstrap\js\html5shiv.js" />
+    <Content Include="myBootstrap\js\jquery.min.js" />
+    <Content Include="myBootstrap\js\respond.min.js" />
+    <Content Include="pay.htm" />
+    <Content Include="rotate.htm" />
+    <Content Include="scan.htm" />
+    <Content Include="server.js" />
+    <Content Include="sever.htm" />
+    <Content Include="static\css\main.80167f63421a9b54a940.css" />
+    <Content Include="static\images\headimg-bg.55bfe251347ce829af67d68847a6806c.jpg" />
+    <Content Include="static\js\main.80167f63421a9b54a940.js" />
+    <Content Include="test.aspx" />
+    <Content Include="vue.js" />
+    <Content Include="vuetest.htm" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="wx.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="html\.DS_Store" />
+    <None Include="html\css\.DS_Store" />
+    <None Include="html\images\.DS_Store" />
+    <None Include="html\images\brand\.DS_Store" />
+    <None Include="html\js\.DS_Store" />
+    <None Include="myBootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="myBootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="myBootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="myBootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="myBootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="static\iconfont\iconfont.548fdc09b576af6519a95b42e391d458.woff" />
+    <None Include="static\iconfont\iconfont.743aaf1371248c4164bf8a80cce44b23.ttf" />
+    <None Include="static\iconfont\iconfont.93ed80423f4fb0fbbe6784e5fa8ea921.eot" />
+    <None Include="static\iconfont\iconfont.f75c1d74e2d01262ca536edd222702da.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6624</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

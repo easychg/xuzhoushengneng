@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>注册</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+
+<body class="body-login">
+	<!-- <header class="header header-login">
+		<a class="btn-back" href="#">back</a>
+		<span class="title">注册</span>
+	</header> -->
+
+	<section class="init login">
+		<div class="mod">
+			<form class="form form-login">
+				<div class="form-group">
+	                <label class="control-label control-name" for="name">用户名</label>
+	                <input type="text" id="name" class="form-control required" placeholder="请输入用户名" />
+	            </div>
+	            <div class="form-group form-vertify">
+	                <label class="control-label control-verify" for="verify">验证码</label>
+	                <input type="text" id="verify" class="form-control required" placeholder="请输入验证码" />
+	                <input type="button" id="btnSendCode" class="btn-check border-rect text-center" value="获取验证码" onclick="sendMessage()" /> 
+	            </div>
+	            <div class="form-group">
+	                <label class="control-label control-pwd" for="pwd">密码</label>
+	                <input type="password" id="pwd" class="form-control required" placeholder="请输入密码" />
+	            </div>
+	            <div class="form-group">
+	                <label class="control-label control-repwd" for="repwd">确认密码</label>
+	                <input type="password" id="repwd" class="form-control required" placeholder="请输入确认密码" />
+	            </div>
+	            
+	            <div class="form-btns">
+	                <button id="register" class="btn-register border-rect" type="submit">立即注册</button>
+	                <a class="link-login text-right" href="login.html">
+	                	已有账号，<span class="red">立即登录</span>
+	                </a>
+	            </div>
+			</form>
+		</div>
+
+		<div class="third-party text-center">
+			<div class="caption">第三方登录</div>
+			<a class="pic" href="#">
+				<img src="images/weixin.png" />
+			</a>
+			<div class="form-protocol">
+        		注册即表示同意
+        		<a class="btn-model btn-right red">服务协议</a>
+            </div>
+		</div>
+	</section>
+
+	<div class="model-dialog model-clause">
+		<div class="model-header">
+			<span>用户条款</span>
+			<span class="btn-close"></span>
+		</div>
+		<div class="model-body">
+			<p>用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款用户条款</p>
+		</div>
+		<div class="model-footer">
+			<div class="clearfix">
+				<a class="btn border-rect btn-confirm">确认</a>
+				<a class="btn border-rect btn-cancel">取消</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="JScrollToTop" class="scroll-top"></div>
+
+	<script src="js/jquery.1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript">
+		var InterValObj;
+	    var count = 60;
+	    var curCount;
+	    var code = ""; //验证码
+	    var codeLength = 6;//验证码长度
+	    function sendMessage() {
+	        curCount = count;
+	        $("#btnSendCode").attr("disabled", "true");
+	        $("#btnSendCode").val( curCount + "秒内验证");
+	        InterValObj = window.setInterval(SetRemainTime, 1000);
+	    }
+	    //timer处理函数
+	    function SetRemainTime() {
+	        if (curCount == 0) {                
+	            window.clearInterval(InterValObj);
+	            $("#btnSendCode").removeAttr("disabled");
+	            $("#btnSendCode").val("获取验证码");
+	            code = ""; //清除验证码。如果不清除，过时间后，输入收到的验证码依然有效    
+	        }
+	        else {
+	            curCount--;
+	            $("#btnSendCode").val(curCount + "秒内验证");
+	        }
+	    }  
+
+	    $(function(){
+	    	$(document).keyup(function(event){
+				if(event.keyCode ==13){
+					// alertForm();
+				    $(".btn-register").click();
+				}
+			});
+	    });
+	</script>
+</body>
+</html>

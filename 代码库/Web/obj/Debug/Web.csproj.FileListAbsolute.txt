@@ -1,0 +1,16 @@
+C:\ceshixiangmu\Solution1\Web\bin\Web.dll
+C:\ceshixiangmu\Solution1\Web\bin\Web.pdb
+C:\ceshixiangmu\Solution1\Web\obj\Debug\Web.dll
+C:\ceshixiangmu\Solution1\Web\obj\Debug\Web.pdb
+C:\ceshixiangmu\Solution1\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\ceshixiangmu\Solution1\Web\bin\CoreLibrary.dll
+C:\ceshixiangmu\Solution1\Web\bin\NPOI.dll
+C:\ceshixiangmu\Solution1\Web\bin\ICSharpCode.SharpZipLib.dll
+C:\ceshixiangmu\Solution1\Web\bin\CoreLibrary.pdb
+C:\ceshixiangmu\Solution1\Web\bin\NPOI.xml
+C:\ceshixiangmu\Solution1\Web\bin\NPOI.OOXML.dll
+C:\ceshixiangmu\Solution1\Web\bin\NPOI.OpenXmlFormats.dll
+C:\ceshixiangmu\Solution1\Web\bin\NPOI.OpenXml4Net.dll
+C:\ceshixiangmu\Solution1\Web\bin\NPOI.OOXML.xml
+C:\ceshixiangmu\Solution1\Web\bin\NPOI.OpenXml4Net.xml
+C:\ceshixiangmu\Solution1\Web\bin\System.Net.Http.dll

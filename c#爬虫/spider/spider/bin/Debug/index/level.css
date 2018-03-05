@@ -1,0 +1,55 @@
+.user_level{width:55px;height:18px;float:left;
+background-repeat:no-repeat;background-position:0px 0px;}
+
+.user0{background-image:url(/images/level/level_user.png);}
+.user1{background-position:0px -40px}
+.user2{background-position:0px -80px}
+.user3{background-position:0px -120px}
+.user4{background-position:0px -160px}
+.user5{background-position:0px -200px}
+.user6{background-position:0px -240px}
+.user7{background-position:0px -280px}
+.user8{background-position:0px -320px}
+.user9{background-position:0px -360px}
+.user10{background-position:0px -400px}
+
+.user11{background-position:0px -440px}
+.user12{background-position:0px -480px}
+.user13{background-position:0px -520px}
+.user14{background-position:0px -560px}
+.user15{background-position:0px -600px}
+.user16{background-position:0px -640px}
+.user17{background-position:0px -680px}
+.user18{background-position:0px -720px}
+.user19{background-position:0px -760px}
+.user20{background-position:0px -800px}
+.user21{background-position:0px -840px}
+
+
+.angel_level{width:23px;height:23px;float:left;
+background-repeat:no-repeat;background-position:0px 0px}
+
+.angel0{background-position:-27px -0px}
+.angel1{background-position:0px -0px}
+.angel2{background-position:0px -0px}
+.angel2{background-position:0px -39px}
+.angel3{background-position:0px -79px}
+.angel4{background-position:0px -119px}
+.angel5{background-position:0px -159px}
+.angel6{background-position:0px -199px}
+.angel7{background-position:0px -239px}
+.angel8{background-position:0px -279px}
+.angel9{background-position:0px -319px}
+.angel10{background-position:0px -359px}
+
+.angel11{background-position:0px -399px}
+.angel12{background-position:0px -439px}
+.angel13{background-image:url(/images/level/angel_13.png);}
+.angel14{background-position:0px -519px}
+.angel15{background-position:0px -559px}
+.angel16{background-position:0px -599px}
+.angel17{background-position:0px -639px}
+.angel18{background-position:0px -679px}
+.angel19{background-position:0px -719px}
+.angel20{background-position:0px -759px}
+.angel21{background-position:0px -799px}

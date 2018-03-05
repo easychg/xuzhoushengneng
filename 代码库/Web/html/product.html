@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>产品详情</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+
+<body>
+	<header class="header header-product">
+		<!-- <a class="btn-back" href="#">back</a> -->
+		<a class="first active">商品</a>
+		<a>详情</a>
+		<a>评价</a>
+	</header>
+
+	<nav class="fixed-nav fixed-nav-pro clearfix">
+		<a class="btn-collect"><i class="icon-collect"></i> 收藏</a>
+		<a href="cart.html"><i class="icon-cart"><b class="cart-num border-circle">3</b></i>购物车</a>
+		<a class="btn-cart">加入购物车</a>
+		<a class="btn-buy">立即购买</a>
+	</nav>
+	
+	<article class="init init-product">
+		<div class="tab-pane active">
+			<!-- banner -->
+			<div class="banner">
+				<div class="slider slider-product">
+					<div><img src="images/banner01.jpg" /></div>
+					<div><img src="images/img-pro01.jpg" /></div>
+					<div><img src="images/img-pro02.jpg" /></div>
+				</div>
+			</div>
+
+			<section class="mod-pro summary">
+				<div class="info">
+					<div class="name">innisfree/悦诗风吟石榴精华露套装50ml 改善暗沉</div>
+					<div class="clearfix">
+						<span class="unit red">¥<em>280</em></span>
+						<span class="fr sku">库存：<em>256233</em></span>
+					</div>
+					<div class="nature-box box-flex">
+						<div class="flex">运费：¥15</div>
+						<div class="flex text-center">已售234件</div>
+						<div class="flex text-right">江苏徐州</div>
+					</div>
+					<div class="ensure-outer clearfix">
+						<ul class="ensure-list box-flex">
+							<li class="flex"><span>无理由退货</span></li>
+							<li class="flex"><span>正品保障</span></li>
+							<li class="flex"><span>极速退款</span></li>
+						</ul>
+						<i class="icon-right"></i>
+					</div>
+				</div>
+
+				<div class="arrow-right choose-good clearfix">选择产品规格<i class="icon-right"></i></div>
+			</section>
+
+			<!-- slideUp -->
+			<div class="slideUpWrapper"></div>
+			<div class="slideUp slideUp-ensure">
+				<h5 class="title">基本保障</h5>
+				<div class="content">
+					<ul class="ensure-list">
+						<li class="flex">
+							<span class="name">7天无理由退款</span>
+							<div class="info">该卖家已缴纳 1000.0 元保证金。在确认收货 15 天内，如有商品质量问题、描述不符或未收到货等，您有权申请退款或退货，来回邮费由卖家承担。</div>
+						</li>
+						<li class="flex"><span>正品保障</span></li>
+						<li class="flex"><span>无理由退货</span></li>
+						<li class="flex"><span>正品保障</span></li>
+						<li class="flex"><span>极速退款</span></li>
+					</ul>
+				</div>
+				<div class="btn-confirm">完成</div>
+			</div>
+
+			<!--  选择商品规格 -->
+			<div class="slideUp slideUp-cart">
+				<div class="content">
+					<div class="hd clearfix">
+						<div class="pic"><img src="images/img-pro01.jpg" /></div>
+						<div class="unit red">¥<em id="proPrice">80</em></div>
+						<div class="sku">库存：<em id="emStock">256</em></div>
+					</div>
+					<div class="bd">
+						<div class="tb-sku">
+			                <!-- 尺寸 -->
+			                <div id="tbSize" class="tb-size mb-12 clearfix">
+			                    <span>尺码</span>
+			                    <label class="radio-sku"> 
+			                        <input type="radio" hidden="" name="size"> 
+			                        <i></i>S
+			                        <em class="price">1</em>
+			                        <em class="sku">10</em>
+			                    </label> 
+			                    <label class="radio-sku"> 
+			                        <input type="radio" hidden="" name="size" checked="checked"> 
+			                        <i></i>128G
+			                        <em class="price">2</em>
+			                        <em class="sku">20</em>
+			                    </label> 
+			                    <label class="radio-sku"> 
+			                        <input type="radio" hidden="" name="size"> 
+			                        <i></i>XL
+			                        <em class="price">3</em>
+			                        <em class="sku">30</em>
+			                    </label> 
+			                </div>
+			                <!-- 颜色 -->
+			                <div id="tbColor" class="tb-color mb-12 clearfix">
+			                    <span>颜色</span>
+			                    <label class="radio-sku"> 
+			                        <input type="radio" hidden="" name="color" checked="checked"> 
+			                        <i></i>蓝色
+			                        <em class="price">4</em>
+			                        <em class="sku">40</em>
+			                    </label> 
+			                    <label class="radio-sku"> 
+			                        <input type="radio" hidden="" name="color"> 
+			                        <i></i>白色
+			                        <em class="price">5</em>
+			                        <em class="sku">50</em>
+			                    </label> 
+			                </div>
+			                
+			                <div class="tb-num mb-12 clearfix">
+			                    <span>数量</span>
+			                    <span class="amount-widget clearfix">
+			                        <input id="amountInput" class="amount-input" type="text" value="1" title="请输入购买量">
+			                        <span class="amount-btn">
+			                            <i class="amount-increase"></i>
+			                            <i class="amount-decrease"></i>
+			                        </span>
+			                    </span>
+			                </div>
+			                <div class="sku-tips">您所填写的商品数量超过库存数！</div>
+			            </div>
+						<a class="btn-confirm">确定</a>
+					</div>
+				</div>
+			</div>
+			<!-- slideUp cart end -->
+
+			<section id="modComment" class="mod-pro mod-comment">
+				<div class="title-outer">
+					<div class="title"><i class="icon-comment"></i> 评价</div>
+				</div>
+				<div class="content">
+					<div class="mb-8 clearfix">
+						<div class="portrait"><img src="images/img-pro01.jpg" /></div>
+						<div class="portrait-relate">
+							<div class="name">158*****3785</div>
+							<div class="date">2016-11-11 10:58</div>
+						</div>
+					</div>
+
+					<div class="info">用过之前精华露的小样觉得很棒，这次的套装很划算，石榴洗面奶出人意料的好用，好多泡泡哈哈哈哈哈哈，已经安利给舍友了，来张悦悦家产品不完整全家福吧</div>
+					<ul class="pic-list box-flex">
+						<li class="pic flex"><img src="images/img-pro02.jpg" /></li>
+						<li class="pic flex"><img src="images/img-pro01.jpg" /></li>
+						<li class="pic flex"><img src="images/img-pro02.jpg" /></li>
+					</ul>
+					<div class="replay"><span>管理员回复：</span>悦诗风吟的爱很简单，只要看着你就好，只要默默守护你就好，只要知道你产品用的好就好，就这么简单
+					</div>
+
+					<a class="border-more" href="#">查看更多</a>
+				</div>
+			</section>
+
+			<section id="modDetail" class="mod-pro mod-details">
+				<div class="title-outer">
+					<div class="title"><i class="icon-image"></i> 详情</div>
+				</div>
+				<div class="content">
+					<div class="pic"><img src="images/img-pro02.jpg" /></div>
+
+					<a class="border-more" href="#">查看更多</a>
+				</div>
+			</section>
+
+			<section class="mod-pro mod-recommend">
+				<div class="title-outer">
+					<div class="title"><i class="icon-recommend"></i>推荐</div>
+				</div>
+				<div class="content">
+					<ul class="product-list clearfix">
+						<li>
+							<a href="product.html">
+								<div class="pic"><img src="images/img-pro01.jpg" /></div>
+								<div class="info">
+									<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+									<div class="unit">¥399</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<div class="pic"><img src="images/banner01.jpg" /></div>
+								<div class="info">
+									<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+									<div class="unit">¥399</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<div class="pic"><img src="images/banner01.jpg" /></div>
+								<div class="info">
+									<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+									<div class="unit">¥399</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<div class="pic"><img src="images/img-pro01.jpg" /></div>
+								<div class="info">
+									<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+									<div class="unit">¥399</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<div class="pic"><img src="images/img-pro01.jpg" /></div>
+								<div class="info">
+									<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+									<div class="unit">¥399</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<div class="pic"><img src="images/banner01.jpg" /></div>
+								<div class="info">
+									<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+									<div class="unit">¥399</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<div class="mod-pro mod-foot">
+				<div class="title-outer">
+					<div class="title">已经到底了</div>
+				</div>
+			</div>
+		</div>
+		<!-- 商品详情 -->
+		<div class="tab-pane">
+			<section class="mod-pro mod-details">
+				<div class="content">
+					<div class="pic"><img src="images/img-pro02.jpg" /></div>
+					<div class="pic"><img src="images/img-pro01.jpg" /></div>
+					<div class="pic"><img src="images/img-pro02.jpg" /></div>
+				</div>
+			</section>
+		</div>
+		<!-- 评价 -->
+		<div class="tab-pane">
+			<section class="mod-pro mod-comment">
+				<ul class="comment-list">
+					<li class="item">
+						<div class="mb-8 clearfix">
+							<div class="portrait"><img src="images/img-pro01.jpg" /></div>
+							<div class="portrait-relate">
+								<div class="name">158*****3785</div>
+								<div class="date">2016-11-11 10:58</div>
+							</div>
+						</div>
+
+						<div class="info">用过之前精华露的小样觉得很棒，这次的套装很划算，石榴洗面奶出人意料的好用，好多泡泡哈哈哈哈哈哈，已经安利给舍友了，来张悦悦家产品不完整全家福吧</div>
+						<ul class="pic-list box-flex">
+							<li class="pic flex"><img src="images/img-pro02.jpg" /></li>
+							<li class="pic flex"><img src="images/img-pro01.jpg" /></li>
+							<li class="pic flex"><img src="images/img-pro02.jpg" /></li>
+						</ul>
+						<div class="replay"><span>管理员回复：</span>悦诗风吟的爱很简单，只要看着你就好，只要默默守护你就好，只要知道你产品用的好就好，就这么简单
+						</div>
+					</li>
+
+					<li class="item">
+						<div class="mb-8 clearfix">
+							<div class="portrait"><img src="images/img-pro01.jpg" /></div>
+							<div class="portrait-relate">
+								<div class="name">158*****3785</div>
+								<div class="date">2016-11-11 10:58</div>
+							</div>
+						</div>
+
+						<div class="info">用过之前精华露的小样觉得很棒，这次的套装很划算，石榴洗面奶出人意料的好用，好多泡泡哈哈哈哈哈哈，已经安利给舍友了，来张悦悦家产品不完整全家福吧</div>
+						<ul class="pic-list box-flex">
+							<li class="pic flex"><img src="images/img-pro02.jpg" /></li>
+							<li class="pic flex"><img src="images/img-pro01.jpg" /></li>
+							<li class="pic flex"><img src="images/img-pro02.jpg" /></li>
+						</ul>
+						<div class="replay"><span>管理员回复：</span>悦诗风吟的爱很简单，只要看着你就好，只要默默守护你就好，只要知道你产品用的好就好，就这么简单
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</article>
+
+	<div id="JScrollToTop" class="scroll-top"></div>
+
+	<script src="js/jquery.1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>
+

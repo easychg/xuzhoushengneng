@@ -1,0 +1,1 @@
+document.write("<li><a href=\"/download/netsoft/9.html\" title=\"腾讯QQ2008 贺岁版\">腾讯QQ2008 贺岁版</a></li><li><a href=\"/download/netsoft/8.html\" title=\"快车FlashGet 2.0 简体中文版\">快车FlashGet 2.0 简体中文版</a></li>");

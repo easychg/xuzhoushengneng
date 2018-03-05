@@ -1,0 +1,71 @@
+ 
+ 
+ 
+ document.writeln('<div id="note" style="display:none" class="note" onmousedown="hideNote()">');
+ document.writeln('<div id="noteStyle" class="noteOK"></div>');
+ document.writeln('<div id="noteText"></div>');
+ document.writeln('</div>');
+
+
+ function getTopWindow()
+ {
+ 	var scrollTop=0;
+ 	  if(document.documentElement&&document.documentElement.scrollTop)
+ 	  {
+ 	  scrollTop=document.documentElement.scrollTop;
+ 	  }
+ 	  else if(document.body)
+ 	  {
+ 	  scrollTop=document.body.scrollTop;
+ 	  }
+ 	  
+ 	 
+ 	  
+ 	  return scrollTop;
+  
+   }
+
+   
+   function fadeNote(Func){
+	   $("#note").hide();
+  $("#note").fadeOut(500,function(){
+  if(Func!=null) Func();
+  });
+  }
+  
+  function hideNote(){
+   if($("#noteStyle").attr("className")!="note_loading"){
+	   
+	   $("#note").hide();
+	   $("#note").fadeOut(500);
+   }
+   
+  }
+    
+    var timerNote=null;
+    function resizeNote(){
+   var w1=$("#noteStyle").css("width"); w1=parseInt(w1);
+    var w2=$("#noteText").width(); w2=parseInt(w2);
+    var w=(w1+w2+22);
+     var left=parseInt(w/2)*-1;
+    $("#note").css("margin-left",left+"px");/**/
+    }
+    function showNote(text,top,style,Func){
+    
+    	 clearTimeout(timerNote);
+    $("#noteText").html(text);
+   
+    if(style==null) style="ok";
+    if(top==null) top=200; top=parseInt(getTopWindow())+parseInt(top);;
+  $("#noteStyle").attr("className","note_"+style);
+  $("#noteStyle").attr("class","note_"+style);
+  
+    $("#note").css("top",top+"px");
+    $("#note").show();
+   
+    resizeNote();
+   
+    if($("#noteStyle").attr("className")!="note_loading")
+    timerNote=setTimeout('fadeNote('+Func+')',3000);
+
+    }

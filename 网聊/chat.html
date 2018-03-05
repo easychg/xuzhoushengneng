@@ -1,0 +1,512 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/header-foter.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-3.4.1.min.js"></script>
+    <!-- 控制font-size大小 -->
+    <script src="js/important.js"></script>
+    <script>
+        $(function () {
+            var sVal = $('header span.fr b').text();
+            if (sVal > 0) {
+                $('header span.fr b').show();
+            } else {
+                $('header span.fr b').hide();
+            }
+            var a = $('.hot_m a').length;
+            $('.fix_t').text(a)
+            var b = $('.fix_t').text();
+            var c = $('.fix_b').text();
+            if (b == c) {
+                $('.hot_b').show();
+            }
+            $('.change-city').on('click', function () {
+                $('.city-hide').animate({
+                    'right': 0
+                }, 400);
+                $('.city-right').animate({
+                    'right': 0
+                }, 400);
+                // $('.inp').focus();
+                $('.city-left div,.city-left span').show();
+                $('.wrap').children().hide().filter('.city-hide').show();
+            })
+            $('.city-hide h2').on('click', function () {
+                $('.city-hide').animate({
+                    'right': '100%'
+                }, 400);
+                $('.city-right').animate({
+                    'right': '100%'
+                }, 400);
+                $('.inp').val('');
+                $('.wrap').children().not('.return-top').show();
+            })
+            $('.city-left>span').on('click', function () {
+                $('.inp').val('')
+                var valObj = $(this).find('a').text();
+                var iObj = $(this).find('i').text();
+                alert(valObj);
+                alert(iObj);
+                $('.change-city').text(valObj);
+                $('.city-home').text(valObj);
+                $('.city-hide').animate({
+                    'right': '100%'
+                }, 400);
+                $('.city-right').animate({
+                    'right': '100%'
+                }, 400);
+                $('body').scrollTop(0);
+                $('.wrap').children().not('.return-top').show();
+            });
+            $('.city-right a').on('click', function () {
+                $('.city-hide').css('height', '100%')
+            });
+
+            // 输入查找城市
+            $('.inp').on('keyup', function () {
+                var ina = $('.inp').val();
+                var inp = ina.toUpperCase()
+                if (inp == '') {
+                    $('.city-left div,.city-left span').show();
+                } else {
+                    $('.city-left div,.city-left span').hide().filter(':contains("' + inp + '")').show();
+                }
+            });
+            $('.city-area').on('click', function () {
+                var a = $(this).find('span').text();
+                alert(a)
+                localStorage.setItem('cityObj', a);
+                localStorage.getItem('cityObj');
+                $('.change-city').text(a);
+                var b = $(this).find('i').text();
+                alert(b);
+                $('.inp').val('');
+                $('.city-hide').animate({
+                    'right': '100%'
+                }, 400);
+                $('.city-right').animate({
+                    'right': '100%'
+                }, 400);
+                $('body').scrollTop(0);
+                $('.wrap').children().not('.return-top').show();
+            })
+            $('.city-home').click(function () {
+                $('.city-hide').animate({
+                    'right': '100%'
+                }, 400);
+                $('.city-right').animate({
+                    'right': '100%'
+                }, 400);
+                $('.wrap').children().not('.return-top').show();
+            });
+
+            // 底部购物车
+            var a = $('.footer-cart').find('b').text();
+            if (a > 0) {
+                $('.footer-cart').find('b').show();
+            } else {
+                $('.footer-cart').find('b').hide();
+            }
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 隐藏城市 -->
+        <div class="city-hide">
+            <h2>城市列表选项</h2>
+            <!-- 城市首字母 -->
+            <div class="city-left">
+                <input type="text" class="inp" placeholder="请输入要查找的内容">
+                <br>
+                <br>
+                <div class="city-main">
+                    当前所在地区:
+                    <br>
+                    <p class="city-home">乌鲁木齐</p>
+                    <br> 所在区县:
+                    <br>
+                    <p class="city-area"><span>全市</span><i>0</i></p>
+                    <p class="city-area"><span>全市</span><i>1</i></p>
+                    <p class="city-area"><span>沛县</span><i>2</i></p>
+                    <p class="city-area"><span>全市</span><i>3</i></p>
+                    <p class="city-area"><span>全市</span><i>4</i></p>
+                    <p class="city-area"><span>全市</span><i>5</i></p>
+                </div>
+                <div class="zimu-title" id="a">A</div>
+                <span><a>澳门</a><i>0</i><b>A</b></span>
+                <div class="zimu-title" id="b">B</div>
+                <span><a>北京</a><i>0</i><b>B</b></span>
+                <div class="zimu-title" id="c">C</div>
+                <span><a>长安</a><i>0</i><b>C</b></span>
+                <div class="zimu-title" id="d">D</div>
+                <span><a>东土大唐</a><i>0</i><b>D</b></span>
+                <div class="zimu-title" id="e">E</div>
+                <span><a>一去二三里</a><i>0</i><b>E</b></span>
+                <div class="zimu-title" id="f">F</div>
+                <span><a>佛珠</a><i>0</i><b>F</b></span>
+                <div class="zimu-title" id="g">G</div>
+                <span><a>哥哥</a><i>0</i><b>G</b></span>
+                <div class="zimu-title" id="h">H</div>
+                <span><a>哈哈</a><i>0</i><b>H</b></span>
+                <div class="zimu-title" id="i">I</div>
+                <span><a>i</a><i>0</i><b>I</b></span>
+                <div class="zimu-title" id="j">J</div>
+                <span><a>机场</a><i>0</i><b>J</b></span>
+                <div class="zimu-title" id="k">K</div>
+                <span><a>ko</a><i>0</i><b>K</b></span>
+                <div class="zimu-title" id="l">L</div>
+                <span><a>老了</a><i>0</i><b>L</b></span>
+                <div class="zimu-title" id="m">M</div>
+                <span><a>密码</a><i>0</i><b>M</b></span>
+                <div class="zimu-title" id="n">N</div>
+                <span><a>那你</a><i>0</i><b>N</b></span>
+                <div class="zimu-title" id="o">O</div>
+                <span><a>哦哦</a><i>0</i><b>O</b></span>
+                <div class="zimu-title" id="p">P</div>
+                <span><a>票票</a><i>0</i><b>P</b></span>
+                <div class="zimu-title" id="q">Q</div>
+                <span><a>请求</a><i>0</i><b>Q</b></span>
+                <div class="zimu-title" id="r">R</div>
+                <span><a>让人</a><i>0</i><b>R</b></span>
+                <div class="zimu-title" id="s">S</div>
+                <span><a>试试</a><i>0</i><b>S</b></span>
+                <div class="zimu-title" id="t">T</div>
+                <span><a>天天</a><i>0</i><b>T</b></span>
+                <div class="zimu-title" id="u">U</div>
+                <span><a>uu</a><i>0</i><b>U</b></span>
+                <div class="zimu-title" id="v">V</div>
+                <span><a>vv</a><i>0</i><b>V</b></span>
+                <div class="zimu-title" id="w">W</div>
+                <span><a>问问</a><i>0</i><b>W</b></span>
+                <div class="zimu-title" id="x">X</div>
+                <span><a>信息</a><i>0</i><b>X</b></span>
+                <div class="zimu-title" id="y">Y</div>
+                <span><a>原因</a><i>0</i><b>Y</b></span>
+                <div class="zimu-title" id="z">Z</div>
+                <span><a>这种</a><i>0</i><b>Z</b></span>
+            </div>
+            <!-- 右侧选择字母 -->
+            <div class="city-right">
+                <a href="#a">A</a>
+                <a href="#b">B</a>
+                <a href="#c">C</a>
+                <a href="#d">D</a>
+                <a href="#e">E</a>
+                <a href="#f">F</a>
+                <a href="#g">G</a>
+                <a href="#h">H</a>
+                <a href="#i">I</a>
+                <a href="#j">J</a>
+                <a href="#k">K</a>
+                <a href="#l">L</a>
+                <a href="#m">M</a>
+                <a href="#n">N</a>
+                <a href="#o">O</a>
+                <a href="#p">P</a>
+                <a href="#q">Q</a>
+                <a href="#r">R</a>
+                <a href="#s">S</a>
+                <a href="#t">T</a>
+                <a href="#u">U</a>
+                <a href="#v">V</a>
+                <a href="#w">W</a>
+                <a href="#x">X</a>
+                <a href="#y">Y</a>
+                <a href="#z">Z</a>
+            </div>
+        </div>
+        <!-- 头部 -->
+        <div class="header">
+            <header>
+                <a class="change-city">乌鲁木齐</a>
+                <div class="h_inp">
+                    <input type="search" placeholder="请输入关键字">
+                </div>
+                <span  class="fr">
+                    <a href="news.html"><b>1</b><img src="images/h_weixin.jpg" alt=""></a>
+                </span>
+            </header>
+        </div>
+        <!-- 导航 -->
+        <div class="swiper-nav">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="">首页</a></div>
+                <div class="swiper-slide"><a href="">降火</a></div>
+                <div class="swiper-slide"><a href="">中药饮品</a></div>
+                <div class="swiper-slide"><a href="">戒酒</a></div>
+                <div class="swiper-slide"><a href="">戒酒</a></div>
+                <div class="swiper-slide"><a href="">活血化瘀</a></div>
+                <div class="swiper-slide"><a href="">去火</a></div>
+                <div class="swiper-slide"><a href="">戒酒</a></div>
+                <div class="swiper-slide"><a href="">戒酒</a></div>
+                <div class="swiper-slide"><a href="">中药饮品</a></div>
+                <div class="swiper-slide"><a href="">活血化瘀</a></div>
+                <div class="swiper-slide"><a href="">去火</a></div>
+            </div>
+        </div>
+
+        <!-- 轮播 -->
+        <div class="swiper-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href=""><img src="images/h_1.jpg"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="images/h_1.jpg"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="images/h_1.jpg"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="images/h_1.jpg"></a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 超值热卖 -->
+        <section class="hot">
+            <div class="hot_t">超值热卖</div>
+            <div class="hot_m">
+                <a href="chanpinlb.html">
+                    <img src="images/h_1.jpg" alt="">
+                    <div class="hot_txt">
+                        <div class="hot_txt_l fl">
+                            <p>新鲜水果 进口新西兰猕猴桃</p>
+                            <p>单果重146-175g</p>
+                        </div>
+                        <div class="hot_txt_r fr">
+                            <p>¥252.36</p>
+                            <p>¥189.9</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="chanpinlb.html">
+                    <img src="images/h_1.jpg" alt="">
+                    <div class="hot_txt">
+                        <div class="hot_txt_l fl">
+                            <p>新鲜水果 进口新西兰猕猴桃</p>
+                            <p>单果重146-175g</p>
+                        </div>
+                        <div class="hot_txt_r fr">
+                            <p>¥252.36</p>
+                            <p>¥189.9</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="images/h_1.jpg" alt="">
+                    <div class="hot_txt">
+                        <div class="hot_txt_l fl">
+                            <p>新鲜水果 进口新西兰猕猴桃</p>
+                            <p>单果重146-175g</p>
+                        </div>
+                        <div class="hot_txt_r fr">
+                            <p>¥252.36</p>
+                            <p>¥189.9</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="images/h_1.jpg" alt="">
+                    <div class="hot_txt">
+                        <div class="hot_txt_l fl">
+                            <p>新鲜水果 进口新西兰猕猴桃</p>
+                            <p>单果重146-175g</p>
+                        </div>
+                        <div class="hot_txt_r fr">
+                            <p>¥252.36</p>
+                            <p>¥189.9</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="images/h_1.jpg" alt="">
+                    <div class="hot_txt">
+                        <div class="hot_txt_l fl">
+                            <p>新鲜水果 进口新西兰猕猴桃</p>
+                            <p>单果重146-175g</p>
+                        </div>
+                        <div class="hot_txt_r fr">
+                            <p>¥252.36</p>
+                            <p>¥189.9</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="images/h_1.jpg" alt="">
+                    <div class="hot_txt">
+                        <div class="hot_txt_l fl">
+                            <p>新鲜水果 进口新西兰猕猴桃</p>
+                            <p>单果重146-175g</p>
+                        </div>
+                        <div class="hot_txt_r fr">
+                            <p>¥252.36</p>
+                            <p>¥189.9</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="images/h_1.jpg" alt="">
+                    <div class="hot_txt">
+                        <div class="hot_txt_l fl">
+                            <p>新鲜水果 进口新西兰猕猴桃</p>
+                            <p>单果重146-175g</p>
+                        </div>
+                        <div class="hot_txt_r fr">
+                            <p>¥252.36</p>
+                            <p>¥189.9</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="images/h_1.jpg" alt="">
+                    <div class="hot_txt">
+                        <div class="hot_txt_l fl">
+                            <p>新鲜水果 进口新西兰猕猴桃</p>
+                            <p>单果重146-175g</p>
+                        </div>
+                        <div class="hot_txt_r fr">
+                            <p>¥252.36</p>
+                            <p>¥189.9</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="hot_b">已经显示全部内容</div>
+        </section>
+        <!-- 固定右侧 -->
+        <section class="fix">
+            <p class="fix_t">12</p>
+            <p class="fix_m"></p>
+            <p class="fix_b">12</p>
+        </section>
+        <!-- 返回顶部 -->
+        <div class="return-top">
+            <img src="images/top.png">
+        </div>
+        <footer>
+            <a href="index.html">
+                <img src="images/home.png">
+                <span style="color:#8DD531;">首页</span>
+            </a>
+            <a href="gongneng.html">
+                <img src="images/gongneng1.png">
+                <span >功能</span>
+            </a>
+            <a href="">
+                <img src="images/tuijian1.png">
+                <span >定制推荐</span>
+            </a>
+            <a href="cart.html" class="footer-cart">
+                <b>2</b>
+                <img src="images/cart1.png">
+                <span >购物车</span>
+            </a>
+            <a href="my.html">
+                <img src="images/my1.png">
+                <span >我的</span>
+            </a>
+        </footer>
+    </div>
+</body>
+
+
+<!-- 轮播 -->
+<script>
+    var swiperNav = new Swiper('.swiper-nav', {
+        slidesPerView: 5,
+        spaceBetween: 10
+    });
+
+    var swiper = new Swiper('.swiper-carousel', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+        autoplayDisableOnInteraction: false, //触屏后继续轮播
+        autoplay: 2000 // 轮播时间
+    });
+
+    var carouselWidth = $('.swiper-carousel').width();
+    $('.swiper-carousel').height(carouselWidth * 340 / 640);
+
+    $(function () {
+        // 返回顶部
+        $('.return-top').click(function () {
+            $('body, html').animate({
+                'scrollTop': 0
+            }, 400)
+        })
+        $(document).scroll(function () {
+            var a = $('.hot_m a').length;
+            $('.fix_t').text(a)
+            var b = $('.fix_t').text();
+            var c = $('.fix_b').text();
+            if (b == c) {
+                $('.hot_b').show();
+            } else {
+                // 上拉加载
+                var s = $(document).scrollTop(); //1381
+
+                var dh = $(document).height(); //固定不变的 1949
+                var wh = $(window).height(); //固定不变的 568
+                var ws = $(window).scrollTop(); //1381
+
+                var hh = parseFloat($(window).height()) + parseFloat($(window).scrollTop());
+                var ds = parseFloat($(document).height()) - hh;
+                if (ds <= 0) {
+                    // $.ajax({
+                    //     type: 'post',
+                    //     url: 'demo.php',
+                    //     dataType: 'json',
+                    //     success: function(res, status, xhr) {},
+                    //     error: function(res, status, xhr) {}
+                    // })
+
+                    $(".hot_m").append('<a href="chanpinlb.html">' +
+                        '<img src="images/h_1.jpg" alt="">' +
+                        '<div class="hot_txt">' +
+                            '<div class="hot_txt_l fl">' +
+                                '<p>新鲜水果 进口新西兰猕猴桃</p>' +
+                                '<p>单果重146-175g</p>' +
+                            '</div>' +
+                            '<div class="hot_txt_r fr">' +
+                                '<p>¥252.36</p>' +
+                                '<p>¥189.9</p>' +
+                            '</div>' +
+                        '</div>' +
+                    '</a>');
+                }
+            }
+
+            if (s == 0) {
+                $('header').css('position', 'static');
+
+            } else if (s > 94) {
+                $('header').css('position', 'fixed')
+            }
+            if (s < 600) {
+                $('.return-top').hide()
+            } else {
+                $('.return-top').show();
+            }
+        })
+    })
+</script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript">
+    var html = "";
+    for (var i in data) {
+        html += "<li><img src='" + data[i].image + "' alt='" + data[i].name + "'/><p><span>" + data[i].name + "</span><span>" + data[i].age + "</span></p><p>" + data[i].address + "</p></li>";
+    }
+    document.getElementById("ulmm").innerHTML = html;
+</script>
+</html>

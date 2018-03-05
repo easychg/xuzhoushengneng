@@ -1,0 +1,972 @@
+[Wed Nov 15 10:09:19.092615 2017] [mpm_winnt:notice] [pid 6280:tid 460] AH00455: Apache/2.4.25 (Win64) configured -- resuming normal operations
+[Wed Nov 15 10:09:19.092615 2017] [mpm_winnt:notice] [pid 6280:tid 460] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Nov 15 10:09:19.092615 2017] [core:notice] [pid 6280:tid 460] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Nov 15 10:09:19.104615 2017] [mpm_winnt:notice] [pid 6280:tid 460] AH00418: Parent: Created child process 6900
+[Wed Nov 15 10:09:19.612615 2017] [mpm_winnt:notice] [pid 6900:tid 400] AH00354: Child: Starting 64 worker threads.
+[Wed Nov 15 10:28:27.260615 2017] [mpm_winnt:notice] [pid 6280:tid 460] AH00424: Parent: Received restart signal -- Restarting the server.
+[Wed Nov 15 10:28:27.307615 2017] [mpm_winnt:notice] [pid 6280:tid 460] AH00455: Apache/2.4.25 (Win64) configured -- resuming normal operations
+[Wed Nov 15 10:28:27.307615 2017] [mpm_winnt:notice] [pid 6280:tid 460] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Nov 15 10:28:27.307615 2017] [core:notice] [pid 6280:tid 460] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Nov 15 10:28:27.332615 2017] [mpm_winnt:notice] [pid 6280:tid 460] AH00418: Parent: Created child process 1204
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Wed Nov 15 10:28:28.260615 2017] [mpm_winnt:notice] [pid 1204:tid 452] AH00354: Child: Starting 64 worker threads.
+[Wed Nov 15 10:28:29.260615 2017] [mpm_winnt:notice] [pid 6900:tid 400] AH00364: Child: All worker threads have exited.
+[Wed Nov 15 11:10:44.943615 2017] [:error] [pid 1204:tid 1008] [client ::1:7174] PHP Fatal error:  Call to undefined function mysql_connect() in C:\\apache\\Apache24\\htdocs\\wp-includes\\wp-db.php on line 1568, referer: http://localhost:8090/wp-admin/setup-config.php
+[Wed Nov 15 11:11:04.192615 2017] [:error] [pid 1204:tid 1008] [client ::1:7179] PHP Fatal error:  Call to undefined function mysql_connect() in C:\\apache\\Apache24\\htdocs\\wp-includes\\wp-db.php on line 1568, referer: http://localhost:8090/wp-admin/setup-config.php
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Nov 16 08:13:34.866400 2017] [core:warn] [pid 1576:tid 484] AH00098: pid file C:/apache/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Thu Nov 16 08:13:34.975600 2017] [mpm_winnt:notice] [pid 1576:tid 484] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Nov 16 08:13:34.975600 2017] [mpm_winnt:notice] [pid 1576:tid 484] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Nov 16 08:13:34.975600 2017] [core:notice] [pid 1576:tid 484] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Nov 16 08:13:34.975600 2017] [mpm_winnt:notice] [pid 1576:tid 484] AH00418: Parent: Created child process 2604
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Thu Nov 16 08:13:36.005200 2017] [mpm_winnt:notice] [pid 2604:tid 452] AH00354: Child: Starting 64 worker threads.
+[Thu Nov 16 17:13:43.160000 2017] [mpm_winnt:notice] [pid 1576:tid 484] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Nov 16 17:13:45.198000 2017] [mpm_winnt:notice] [pid 2604:tid 452] AH00364: Child: All worker threads have exited.
+[Thu Nov 16 17:13:45.385200 2017] [mpm_winnt:notice] [pid 1576:tid 484] AH00430: Parent: Child process 2604 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Fri Nov 17 08:23:42.331200 2017] [mpm_winnt:notice] [pid 1820:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Nov 17 08:23:42.331200 2017] [mpm_winnt:notice] [pid 1820:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Nov 17 08:23:42.331200 2017] [core:notice] [pid 1820:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Nov 17 08:23:42.331200 2017] [mpm_winnt:notice] [pid 1820:tid 508] AH00418: Parent: Created child process 2688
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Fri Nov 17 08:23:43.017600 2017] [mpm_winnt:notice] [pid 2688:tid 452] AH00354: Child: Starting 64 worker threads.
+[Fri Nov 17 17:14:44.850600 2017] [mpm_winnt:notice] [pid 1820:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Nov 17 17:14:46.879600 2017] [mpm_winnt:notice] [pid 2688:tid 452] AH00364: Child: All worker threads have exited.
+[Fri Nov 17 17:14:47.036600 2017] [mpm_winnt:notice] [pid 1820:tid 508] AH00430: Parent: Child process 2688 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Mon Nov 20 08:11:53.194000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Nov 20 08:11:53.194000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Nov 20 08:11:53.194000 2017] [core:notice] [pid 1584:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Nov 20 08:11:53.209600 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00418: Parent: Created child process 2520
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Mon Nov 20 08:11:54.145600 2017] [mpm_winnt:notice] [pid 2520:tid 452] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 20 17:18:58.231030 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 20 17:19:00.278230 2017] [mpm_winnt:notice] [pid 2520:tid 452] AH00364: Child: All worker threads have exited.
+[Mon Nov 20 17:19:00.355230 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00430: Parent: Child process 2520 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Tue Nov 21 08:20:33.648000 2017] [mpm_winnt:notice] [pid 1600:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Nov 21 08:20:33.648000 2017] [mpm_winnt:notice] [pid 1600:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Nov 21 08:20:33.648000 2017] [core:notice] [pid 1600:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Nov 21 08:20:33.648000 2017] [mpm_winnt:notice] [pid 1600:tid 508] AH00418: Parent: Created child process 2076
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Tue Nov 21 08:20:34.724400 2017] [mpm_winnt:notice] [pid 2076:tid 452] AH00354: Child: Starting 64 worker threads.
+[Tue Nov 21 17:17:53.869739 2017] [mpm_winnt:notice] [pid 1600:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Nov 21 17:17:55.884339 2017] [mpm_winnt:notice] [pid 2076:tid 452] AH00364: Child: All worker threads have exited.
+[Tue Nov 21 17:17:55.913339 2017] [mpm_winnt:notice] [pid 1600:tid 508] AH00430: Parent: Child process 2076 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Wed Nov 22 08:14:17.944400 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Nov 22 08:14:17.944400 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Nov 22 08:14:17.944400 2017] [core:notice] [pid 1576:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Nov 22 08:14:17.944400 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00418: Parent: Created child process 2468
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Wed Nov 22 08:14:19.052000 2017] [mpm_winnt:notice] [pid 2468:tid 452] AH00354: Child: Starting 64 worker threads.
+[Wed Nov 22 17:14:16.668160 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Nov 22 17:14:18.714760 2017] [mpm_winnt:notice] [pid 2468:tid 452] AH00364: Child: All worker threads have exited.
+[Wed Nov 22 17:14:18.818760 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00430: Parent: Child process 2468 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Fri Nov 24 08:10:47.367200 2017] [mpm_winnt:notice] [pid 1620:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Nov 24 08:10:47.367200 2017] [mpm_winnt:notice] [pid 1620:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Nov 24 08:10:47.367200 2017] [core:notice] [pid 1620:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Nov 24 08:10:47.382800 2017] [mpm_winnt:notice] [pid 1620:tid 508] AH00418: Parent: Created child process 2068
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Fri Nov 24 08:10:48.537200 2017] [mpm_winnt:notice] [pid 2068:tid 452] AH00354: Child: Starting 64 worker threads.
+[Fri Nov 24 17:11:15.551006 2017] [mpm_winnt:notice] [pid 1620:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Nov 24 17:11:17.617606 2017] [mpm_winnt:notice] [pid 2068:tid 452] AH00364: Child: All worker threads have exited.
+[Fri Nov 24 17:11:17.726606 2017] [mpm_winnt:notice] [pid 1620:tid 508] AH00430: Parent: Child process 2068 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Mon Nov 27 08:15:00.367200 2017] [mpm_winnt:notice] [pid 1656:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Nov 27 08:15:00.367200 2017] [mpm_winnt:notice] [pid 1656:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Nov 27 08:15:00.367200 2017] [core:notice] [pid 1656:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Nov 27 08:15:00.382800 2017] [mpm_winnt:notice] [pid 1656:tid 508] AH00418: Parent: Created child process 2096
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Mon Nov 27 08:15:01.474800 2017] [mpm_winnt:notice] [pid 2096:tid 452] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 18:59:30.054412 2017] [mpm_winnt:notice] [pid 1656:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 27 18:59:32.086412 2017] [mpm_winnt:notice] [pid 2096:tid 452] AH00364: Child: All worker threads have exited.
+[Mon Nov 27 18:59:32.154412 2017] [mpm_winnt:notice] [pid 1656:tid 508] AH00430: Parent: Child process 2096 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Tue Nov 28 08:12:59.693200 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Nov 28 08:12:59.693200 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Nov 28 08:12:59.693200 2017] [core:notice] [pid 1592:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Nov 28 08:12:59.693200 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00418: Parent: Created child process 2588
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Tue Nov 28 08:13:01.144000 2017] [mpm_winnt:notice] [pid 2588:tid 452] AH00354: Child: Starting 64 worker threads.
+[Tue Nov 28 17:22:26.934371 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Nov 28 17:22:28.984171 2017] [mpm_winnt:notice] [pid 2588:tid 452] AH00364: Child: All worker threads have exited.
+[Tue Nov 28 17:22:29.085171 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00430: Parent: Child process 2588 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Wed Nov 29 08:16:57.710400 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Nov 29 08:16:57.710400 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Nov 29 08:16:57.710400 2017] [core:notice] [pid 1592:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Nov 29 08:16:57.726000 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00418: Parent: Created child process 2392
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Wed Nov 29 08:16:58.802400 2017] [mpm_winnt:notice] [pid 2392:tid 452] AH00354: Child: Starting 64 worker threads.
+[Wed Nov 29 09:06:32.334004 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Nov 29 09:06:34.348204 2017] [mpm_winnt:notice] [pid 2392:tid 452] AH00364: Child: All worker threads have exited.
+[Wed Nov 29 09:06:34.377204 2017] [mpm_winnt:notice] [pid 1592:tid 508] AH00430: Parent: Child process 2392 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Wed Nov 29 14:45:09.334400 2017] [mpm_winnt:notice] [pid 1588:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Nov 29 14:45:09.334400 2017] [mpm_winnt:notice] [pid 1588:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Nov 29 14:45:09.334400 2017] [core:notice] [pid 1588:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Nov 29 14:45:09.334400 2017] [mpm_winnt:notice] [pid 1588:tid 508] AH00418: Parent: Created child process 2592
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Wed Nov 29 14:45:10.286000 2017] [mpm_winnt:notice] [pid 2592:tid 452] AH00354: Child: Starting 64 worker threads.
+[Wed Nov 29 17:12:33.556800 2017] [mpm_winnt:notice] [pid 1588:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Nov 29 17:12:35.571000 2017] [mpm_winnt:notice] [pid 2592:tid 452] AH00364: Child: All worker threads have exited.
+[Wed Nov 29 17:12:35.594000 2017] [mpm_winnt:notice] [pid 1588:tid 508] AH00430: Parent: Child process 2592 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Thu Nov 30 08:15:58.616800 2017] [mpm_winnt:notice] [pid 1660:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Nov 30 08:15:58.616800 2017] [mpm_winnt:notice] [pid 1660:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Nov 30 08:15:58.616800 2017] [core:notice] [pid 1660:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Nov 30 08:15:58.632400 2017] [mpm_winnt:notice] [pid 1660:tid 508] AH00418: Parent: Created child process 2308
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Thu Nov 30 08:15:59.662000 2017] [mpm_winnt:notice] [pid 2308:tid 452] AH00354: Child: Starting 64 worker threads.
+[Thu Nov 30 17:15:24.489384 2017] [mpm_winnt:notice] [pid 1660:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Nov 30 17:15:26.537784 2017] [mpm_winnt:notice] [pid 2308:tid 452] AH00364: Child: All worker threads have exited.
+[Thu Nov 30 17:15:26.657784 2017] [mpm_winnt:notice] [pid 1660:tid 508] AH00430: Parent: Child process 2308 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Fri Dec 01 08:15:39.991200 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Dec 01 08:15:39.991200 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Dec 01 08:15:39.991200 2017] [core:notice] [pid 1576:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Dec 01 08:15:39.991200 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00418: Parent: Created child process 2200
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Fri Dec 01 08:15:41.005200 2017] [mpm_winnt:notice] [pid 2200:tid 452] AH00354: Child: Starting 64 worker threads.
+[Fri Dec 01 17:11:30.519652 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Dec 01 17:11:32.567852 2017] [mpm_winnt:notice] [pid 2200:tid 452] AH00364: Child: All worker threads have exited.
+[Fri Dec 01 17:11:32.654852 2017] [mpm_winnt:notice] [pid 1576:tid 508] AH00430: Parent: Child process 2200 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Mon Dec 04 08:15:57.084800 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Dec 04 08:15:57.084800 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Dec 04 08:15:57.084800 2017] [core:notice] [pid 1584:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Dec 04 08:15:57.084800 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00418: Parent: Created child process 2620
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_mysqli.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Mon Dec 04 08:15:58.098800 2017] [mpm_winnt:notice] [pid 2620:tid 452] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 04 16:39:54.785000 2017] [:error] [pid 2620:tid 968] [client ::1:21142] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\\apache\\Apache24\\htdocs\\phpinfo.php on line 2
+[Mon Dec 04 16:41:34.847000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Mon Dec 04 16:41:35.009000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Dec 04 16:41:35.009000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Dec 04 16:41:35.009000 2017] [core:notice] [pid 1584:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Dec 04 16:41:35.183000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00418: Parent: Created child process 9204
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_fileinfo.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_gd2.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\\php_pdo_mysql.dll' - \xef\xbf\xbd\xd2\xb2\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb8\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xa3\xef\xbf\xbd\xe9\xa1\xa3\r\n in Unknown on line 0
+[Mon Dec 04 16:41:35.851000 2017] [mpm_winnt:notice] [pid 9204:tid 452] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 04 16:41:36.851000 2017] [mpm_winnt:notice] [pid 2620:tid 452] AH00364: Child: All worker threads have exited.
+[Mon Dec 04 16:41:43.747000 2017] [:error] [pid 9204:tid 1012] [client ::1:21196] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\\apache\\Apache24\\htdocs\\phpinfo.php on line 2
+[Mon Dec 04 16:43:27.504000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00424: Parent: Received restart signal -- Restarting the server.
+[Mon Dec 04 16:43:27.557000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Dec 04 16:43:27.557000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Dec 04 16:43:27.557000 2017] [core:notice] [pid 1584:tid 508] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Dec 04 16:43:27.573000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00418: Parent: Created child process 9088
+[Mon Dec 04 16:43:28.504000 2017] [mpm_winnt:notice] [pid 9088:tid 444] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 04 16:43:29.504000 2017] [mpm_winnt:notice] [pid 9204:tid 452] AH00364: Child: All worker threads have exited.
+[Mon Dec 04 16:43:29.865000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Dec 04 16:43:31.865000 2017] [mpm_winnt:notice] [pid 9088:tid 444] AH00364: Child: All worker threads have exited.
+[Mon Dec 04 16:43:31.887000 2017] [mpm_winnt:notice] [pid 1584:tid 508] AH00430: Parent: Child process 9088 exited successfully.
+[Mon Dec 04 16:43:38.437000 2017] [mpm_winnt:notice] [pid 8336:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Dec 04 16:43:38.437000 2017] [mpm_winnt:notice] [pid 8336:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Dec 04 16:43:38.437000 2017] [core:notice] [pid 8336:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Dec 04 16:43:38.454000 2017] [mpm_winnt:notice] [pid 8336:tid 504] AH00418: Parent: Created child process 8920
+[Mon Dec 04 16:43:38.997000 2017] [mpm_winnt:notice] [pid 8920:tid 444] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 04 16:43:45.810000 2017] [:error] [pid 8920:tid 964] [client ::1:21308] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\\apache\\Apache24\\htdocs\\phpinfo.php on line 2
+[Mon Dec 04 17:12:42.570000 2017] [mpm_winnt:notice] [pid 8336:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Dec 04 17:12:44.571000 2017] [mpm_winnt:notice] [pid 8920:tid 444] AH00364: Child: All worker threads have exited.
+[Mon Dec 04 17:12:44.605000 2017] [mpm_winnt:notice] [pid 8336:tid 504] AH00430: Parent: Child process 8920 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 05 08:16:07.367200 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Dec 05 08:16:07.367200 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Dec 05 08:16:07.367200 2017] [core:notice] [pid 1652:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Dec 05 08:16:07.367200 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00418: Parent: Created child process 2088
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 05 08:16:08.459200 2017] [mpm_winnt:notice] [pid 2088:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 05 17:16:50.700861 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 05 17:16:52.750061 2017] [mpm_winnt:notice] [pid 2088:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Dec 05 17:16:52.886061 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00430: Parent: Child process 2088 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 06 08:20:37.022400 2017] [mpm_winnt:notice] [pid 1588:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Dec 06 08:20:37.022400 2017] [mpm_winnt:notice] [pid 1588:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Dec 06 08:20:37.022400 2017] [core:notice] [pid 1588:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Dec 06 08:20:37.022400 2017] [mpm_winnt:notice] [pid 1588:tid 504] AH00418: Parent: Created child process 2560
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 06 08:20:38.130000 2017] [mpm_winnt:notice] [pid 2560:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Dec 06 17:17:56.567652 2017] [mpm_winnt:notice] [pid 1588:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Dec 06 17:17:58.632452 2017] [mpm_winnt:notice] [pid 2560:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Dec 06 17:17:58.754452 2017] [mpm_winnt:notice] [pid 1588:tid 504] AH00430: Parent: Child process 2560 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 07 08:17:06.460800 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Dec 07 08:17:06.460800 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Dec 07 08:17:06.460800 2017] [core:notice] [pid 1652:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Dec 07 08:17:06.460800 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00418: Parent: Created child process 2084
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 07 08:17:07.584000 2017] [mpm_winnt:notice] [pid 2084:tid 444] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 07 17:15:48.323846 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Dec 07 17:15:50.389446 2017] [mpm_winnt:notice] [pid 2084:tid 444] AH00364: Child: All worker threads have exited.
+[Thu Dec 07 17:15:50.513446 2017] [mpm_winnt:notice] [pid 1652:tid 504] AH00430: Parent: Child process 2084 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 08 08:25:25.710400 2017] [mpm_winnt:notice] [pid 1640:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Dec 08 08:25:25.710400 2017] [mpm_winnt:notice] [pid 1640:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Dec 08 08:25:25.710400 2017] [core:notice] [pid 1640:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Dec 08 08:25:25.726000 2017] [mpm_winnt:notice] [pid 1640:tid 504] AH00418: Parent: Created child process 2208
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 08 08:25:26.677600 2017] [mpm_winnt:notice] [pid 2208:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Dec 08 17:12:27.252419 2017] [mpm_winnt:notice] [pid 1640:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Dec 08 17:12:29.322019 2017] [mpm_winnt:notice] [pid 2208:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Dec 08 17:12:29.422019 2017] [mpm_winnt:notice] [pid 1640:tid 504] AH00430: Parent: Child process 2208 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 11 08:27:19.038000 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Dec 11 08:27:19.038000 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Dec 11 08:27:19.038000 2017] [core:notice] [pid 1600:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Dec 11 08:27:19.038000 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00418: Parent: Created child process 2240
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 11 08:27:20.036400 2017] [mpm_winnt:notice] [pid 2240:tid 444] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 11 16:20:53.693621 2017] [:error] [pid 2240:tid 960] [client ::1:28951] PHP Notice:  Undefined index: pic in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 49
+[Mon Dec 11 16:20:53.694621 2017] [:error] [pid 2240:tid 960] [client ::1:28951] PHP Notice:  Undefined index: pic in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 50
+[Mon Dec 11 16:20:53.694621 2017] [:error] [pid 2240:tid 960] [client ::1:28951] PHP Notice:  Undefined index: pic in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 51
+[Mon Dec 11 16:20:53.694621 2017] [:error] [pid 2240:tid 960] [client ::1:28951] PHP Notice:  Undefined index: pic in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 52
+[Mon Dec 11 16:29:42.337621 2017] [:error] [pid 2240:tid 960] [client ::1:29197] PHP Notice:  Undefined index: pic in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 49
+[Mon Dec 11 16:29:42.337621 2017] [:error] [pid 2240:tid 960] [client ::1:29197] PHP Notice:  Undefined index: pic in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 50
+[Mon Dec 11 16:29:42.337621 2017] [:error] [pid 2240:tid 960] [client ::1:29197] PHP Notice:  Undefined index: pic in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 51
+[Mon Dec 11 16:29:42.337621 2017] [:error] [pid 2240:tid 960] [client ::1:29197] PHP Notice:  Undefined index: pic in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 52
+[Mon Dec 11 16:36:31.433621 2017] [:error] [pid 2240:tid 972] [client ::1:29483] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 220, referer: http://localhost:8090/uploadclass/upform.html
+[Mon Dec 11 16:38:32.007621 2017] [:error] [pid 2240:tid 972] [client ::1:29532] PHP Warning:  date_default_timezone_set() expects exactly 1 parameter, 0 given in C:\\apache\\Apache24\\htdocs\\uploadclass\\fileupload.class.php on line 220, referer: http://localhost:8090/uploadclass/upform.html
+[Mon Dec 11 17:16:31.352821 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Dec 11 17:16:33.387221 2017] [mpm_winnt:notice] [pid 2240:tid 444] AH00364: Child: All worker threads have exited.
+[Mon Dec 11 17:16:33.498221 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00430: Parent: Child process 2240 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 12 08:31:53.084800 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Dec 12 08:31:53.084800 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Dec 12 08:31:53.084800 2017] [core:notice] [pid 1596:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Dec 12 08:31:53.084800 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00418: Parent: Created child process 2456
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 12 08:31:54.145600 2017] [mpm_winnt:notice] [pid 2456:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 12 17:17:50.058301 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 12 17:17:52.091101 2017] [mpm_winnt:notice] [pid 2456:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Dec 12 17:17:52.200101 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00430: Parent: Child process 2456 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 13 08:04:23.537200 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Dec 13 08:04:23.537200 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Dec 13 08:04:23.537200 2017] [core:notice] [pid 1584:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Dec 13 08:04:23.552800 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00418: Parent: Created child process 2632
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 13 08:04:24.520000 2017] [mpm_winnt:notice] [pid 2632:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Dec 13 08:42:49.895802 2017] [:error] [pid 2632:tid 944] [client ::1:1923] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\\apache\\Apache24\\htdocs\\phpinfo.php on line 2
+[Wed Dec 13 08:45:42.262003 2017] [:error] [pid 2632:tid 948] [client ::1:2110] script 'C:/apache/Apache24/htdocs/Mysqlpdo.php' not found or unable to stat
+[Wed Dec 13 08:49:42.493804 2017] [:error] [pid 2632:tid 944] [client ::1:2348] PHP Fatal error:  Uncaught exception 'PDOException' with message 'invalid data source name' in C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php:11\nStack trace:\n#0 C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php(11): PDO->__construct('localhost', 'root', '')\n#1 C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php(6): MySQLPDO::_connect()\n#2 C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php(50): MySQLPDO->__construct()\n#3 {main}\n  thrown in C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php on line 11
+[Wed Dec 13 08:53:12.643405 2017] [:error] [pid 2632:tid 944] [client ::1:2675] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'access_control'' in C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php:11\nStack trace:\n#0 C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php(11): PDO->__construct('mysql:host=loca...', 'root', '')\n#1 C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php(6): MySQLPDO::_connect()\n#2 C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php(50): MySQLPDO->__construct()\n#3 {main}\n  thrown in C:\\apache\\Apache24\\htdocs\\MySQLPDO.class.php on line 11
+[Wed Dec 13 09:18:57.591813 2017] [:error] [pid 2632:tid 948] [client ::1:4475] PHP Notice:  Undefined index: myEditor in C:\\apache\\Apache24\\htdocs\\umeditor\\php\\getContent.php on line 6, referer: http://localhost:8090/umeditor/index.html
+[Wed Dec 13 17:16:39.467817 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Dec 13 17:16:41.516617 2017] [mpm_winnt:notice] [pid 2632:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Dec 13 17:16:41.651617 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00430: Parent: Child process 2632 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 14 08:16:48.428000 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Dec 14 08:16:48.428000 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Dec 14 08:16:48.428000 2017] [core:notice] [pid 1580:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Dec 14 08:16:48.443600 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00418: Parent: Created child process 2592
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 14 08:16:49.520000 2017] [mpm_winnt:notice] [pid 2592:tid 444] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 14 17:17:26.104800 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Dec 14 17:17:28.135400 2017] [mpm_winnt:notice] [pid 2592:tid 444] AH00364: Child: All worker threads have exited.
+[Thu Dec 14 17:17:28.229400 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00430: Parent: Child process 2592 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 15 08:33:11.396800 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Dec 15 08:33:11.396800 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Dec 15 08:33:11.396800 2017] [core:notice] [pid 1600:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Dec 15 08:33:11.412400 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00418: Parent: Created child process 2120
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 15 08:33:12.426400 2017] [mpm_winnt:notice] [pid 2120:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Dec 15 17:15:44.658611 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Dec 15 17:15:46.714811 2017] [mpm_winnt:notice] [pid 2120:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Dec 15 17:15:46.948811 2017] [mpm_winnt:notice] [pid 1600:tid 504] AH00430: Parent: Child process 2120 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 18 08:15:15.913200 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Dec 18 08:15:15.913200 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Dec 18 08:15:15.913200 2017] [core:notice] [pid 1576:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Dec 18 08:15:15.913200 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00418: Parent: Created child process 2524
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 18 08:15:16.927200 2017] [mpm_winnt:notice] [pid 2524:tid 444] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 18 17:14:04.723803 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Dec 18 17:14:06.772203 2017] [mpm_winnt:notice] [pid 2524:tid 444] AH00364: Child: All worker threads have exited.
+[Mon Dec 18 17:14:06.868203 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00430: Parent: Child process 2524 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 19 08:25:28.022400 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Dec 19 08:25:28.022400 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Dec 19 08:25:28.022400 2017] [core:notice] [pid 1580:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Dec 19 08:25:28.022400 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00418: Parent: Created child process 2148
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 19 08:25:29.192400 2017] [mpm_winnt:notice] [pid 2148:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 19 17:15:28.896200 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 19 17:15:30.957800 2017] [mpm_winnt:notice] [pid 2148:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Dec 19 17:15:31.052800 2017] [mpm_winnt:notice] [pid 1580:tid 504] AH00430: Parent: Child process 2148 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 20 08:09:33.726000 2017] [mpm_winnt:notice] [pid 1628:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Dec 20 08:09:33.726000 2017] [mpm_winnt:notice] [pid 1628:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Dec 20 08:09:33.726000 2017] [core:notice] [pid 1628:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Dec 20 08:09:33.726000 2017] [mpm_winnt:notice] [pid 1628:tid 504] AH00418: Parent: Created child process 2608
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 20 08:09:34.786800 2017] [mpm_winnt:notice] [pid 2608:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Dec 20 17:18:30.326700 2017] [mpm_winnt:notice] [pid 1628:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Dec 20 17:18:32.350700 2017] [mpm_winnt:notice] [pid 2608:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Dec 20 17:18:32.573500 2017] [mpm_winnt:notice] [pid 1628:tid 504] AH00430: Parent: Child process 2608 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 21 08:15:04.521600 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Dec 21 08:15:04.521600 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Dec 21 08:15:04.521600 2017] [core:notice] [pid 1592:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Dec 21 08:15:04.521600 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00418: Parent: Created child process 2572
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 21 08:15:05.488800 2017] [mpm_winnt:notice] [pid 2572:tid 444] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 21 17:15:54.832200 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Dec 21 17:15:56.906600 2017] [mpm_winnt:notice] [pid 2572:tid 444] AH00364: Child: All worker threads have exited.
+[Thu Dec 21 17:15:57.055600 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00430: Parent: Child process 2572 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 22 08:19:43.365600 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Dec 22 08:19:43.365600 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Dec 22 08:19:43.365600 2017] [core:notice] [pid 1572:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Dec 22 08:19:43.365600 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00418: Parent: Created child process 2100
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 22 08:19:44.800800 2017] [mpm_winnt:notice] [pid 2100:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Dec 22 14:53:30.587400 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Dec 22 14:53:32.636000 2017] [mpm_winnt:notice] [pid 2100:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Dec 22 14:53:32.748000 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00430: Parent: Child process 2100 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 22 14:54:14.240800 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Dec 22 14:54:14.240800 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Dec 22 14:54:14.240800 2017] [core:notice] [pid 1572:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Dec 22 14:54:14.240800 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00418: Parent: Created child process 2584
+[Fri Dec 22 14:54:15.208000 2017] [mpm_winnt:notice] [pid 2584:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Dec 22 16:26:16.894800 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Dec 22 16:26:18.925600 2017] [mpm_winnt:notice] [pid 2584:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Dec 22 16:26:19.023600 2017] [mpm_winnt:notice] [pid 1572:tid 504] AH00430: Parent: Child process 2584 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 22 16:26:50.570000 2017] [mpm_winnt:notice] [pid 1632:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Dec 22 16:26:50.570000 2017] [mpm_winnt:notice] [pid 1632:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Dec 22 16:26:50.570000 2017] [core:notice] [pid 1632:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Dec 22 16:26:50.570000 2017] [mpm_winnt:notice] [pid 1632:tid 504] AH00418: Parent: Created child process 2092
+[Fri Dec 22 16:26:51.864800 2017] [mpm_winnt:notice] [pid 2092:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Dec 22 17:12:25.236800 2017] [mpm_winnt:notice] [pid 1632:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Dec 22 17:12:27.237000 2017] [mpm_winnt:notice] [pid 2092:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Dec 22 17:12:27.256000 2017] [mpm_winnt:notice] [pid 1632:tid 504] AH00430: Parent: Child process 2092 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 08:26:57.788400 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Dec 25 08:26:57.788400 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Dec 25 08:26:57.788400 2017] [core:notice] [pid 1584:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Dec 25 08:26:57.788400 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00418: Parent: Created child process 2528
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 08:26:58.802400 2017] [mpm_winnt:notice] [pid 2528:tid 444] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 25 17:19:52.895000 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Dec 25 17:19:54.943000 2017] [mpm_winnt:notice] [pid 2528:tid 444] AH00364: Child: All worker threads have exited.
+[Mon Dec 25 17:19:55.047000 2017] [mpm_winnt:notice] [pid 1584:tid 504] AH00430: Parent: Child process 2528 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 26 08:29:38.084800 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Dec 26 08:29:38.084800 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Dec 26 08:29:38.084800 2017] [core:notice] [pid 1576:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Dec 26 08:29:38.084800 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00418: Parent: Created child process 2592
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 26 08:29:39.036400 2017] [mpm_winnt:notice] [pid 2592:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 26 17:27:59.350000 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 26 17:28:01.414200 2017] [mpm_winnt:notice] [pid 2592:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Dec 26 17:28:01.519200 2017] [mpm_winnt:notice] [pid 1576:tid 504] AH00430: Parent: Child process 2592 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 27 08:14:10.710400 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Dec 27 08:14:10.710400 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Dec 27 08:14:10.710400 2017] [core:notice] [pid 1596:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Dec 27 08:14:10.710400 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00418: Parent: Created child process 2264
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 27 08:14:11.724400 2017] [mpm_winnt:notice] [pid 2264:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Dec 27 17:32:42.861400 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Dec 27 17:32:44.892400 2017] [mpm_winnt:notice] [pid 2264:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Dec 27 17:32:45.022400 2017] [mpm_winnt:notice] [pid 1596:tid 504] AH00430: Parent: Child process 2264 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 28 08:12:41.474800 2017] [mpm_winnt:notice] [pid 1604:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Dec 28 08:12:41.474800 2017] [mpm_winnt:notice] [pid 1604:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Dec 28 08:12:41.474800 2017] [core:notice] [pid 1604:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Dec 28 08:12:41.474800 2017] [mpm_winnt:notice] [pid 1604:tid 504] AH00418: Parent: Created child process 2560
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 28 08:12:42.473200 2017] [mpm_winnt:notice] [pid 2560:tid 444] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 28 17:11:54.230000 2017] [mpm_winnt:notice] [pid 1604:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Dec 28 17:11:56.277600 2017] [mpm_winnt:notice] [pid 2560:tid 444] AH00364: Child: All worker threads have exited.
+[Thu Dec 28 17:11:56.416600 2017] [mpm_winnt:notice] [pid 1604:tid 504] AH00430: Parent: Child process 2560 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 29 08:19:35.804000 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Dec 29 08:19:35.804000 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Dec 29 08:19:35.804000 2017] [core:notice] [pid 1592:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Dec 29 08:19:35.804000 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00418: Parent: Created child process 2544
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 29 08:19:36.818000 2017] [mpm_winnt:notice] [pid 2544:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Dec 29 17:12:03.721000 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Dec 29 17:12:05.767000 2017] [mpm_winnt:notice] [pid 2544:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Dec 29 17:12:05.937200 2017] [mpm_winnt:notice] [pid 1592:tid 504] AH00430: Parent: Child process 2544 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 02 08:13:21.429600 2018] [mpm_winnt:notice] [pid 1676:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jan 02 08:13:21.429600 2018] [mpm_winnt:notice] [pid 1676:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Jan 02 08:13:21.429600 2018] [core:notice] [pid 1676:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Jan 02 08:13:21.429600 2018] [mpm_winnt:notice] [pid 1676:tid 504] AH00418: Parent: Created child process 2080
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 02 08:13:22.708800 2018] [mpm_winnt:notice] [pid 2080:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Jan 02 17:25:07.085001 2018] [mpm_winnt:notice] [pid 1676:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jan 02 17:25:09.133001 2018] [mpm_winnt:notice] [pid 2080:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Jan 02 17:25:09.237001 2018] [mpm_winnt:notice] [pid 1676:tid 504] AH00430: Parent: Child process 2080 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 03 08:23:13.131600 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Jan 03 08:23:13.131600 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Jan 03 08:23:13.131600 2018] [core:notice] [pid 1592:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Jan 03 08:23:13.131600 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00418: Parent: Created child process 2504
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 03 08:23:14.208000 2018] [mpm_winnt:notice] [pid 2504:tid 444] AH00354: Child: Starting 64 worker threads.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 03 15:52:44.663600 2018] [core:warn] [pid 1588:tid 484] AH00098: pid file C:/apache/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jan 03 15:52:44.757200 2018] [mpm_winnt:notice] [pid 1588:tid 484] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Jan 03 15:52:44.757200 2018] [mpm_winnt:notice] [pid 1588:tid 484] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Jan 03 15:52:44.757200 2018] [core:notice] [pid 1588:tid 484] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Jan 03 15:52:44.757200 2018] [mpm_winnt:notice] [pid 1588:tid 484] AH00418: Parent: Created child process 2080
+[Wed Jan 03 15:52:45.958400 2018] [mpm_winnt:notice] [pid 2080:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Jan 03 17:53:42.212800 2018] [mpm_winnt:notice] [pid 1588:tid 484] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jan 03 17:53:44.245000 2018] [mpm_winnt:notice] [pid 2080:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Jan 03 17:53:44.525800 2018] [mpm_winnt:notice] [pid 1588:tid 484] AH00430: Parent: Child process 2080 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Jan 04 08:18:55.476400 2018] [mpm_winnt:notice] [pid 1644:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Jan 04 08:18:55.476400 2018] [mpm_winnt:notice] [pid 1644:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Jan 04 08:18:55.476400 2018] [core:notice] [pid 1644:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Jan 04 08:18:55.476400 2018] [mpm_winnt:notice] [pid 1644:tid 504] AH00418: Parent: Created child process 2140
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Jan 04 08:18:56.599600 2018] [mpm_winnt:notice] [pid 2140:tid 444] AH00354: Child: Starting 64 worker threads.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 16 08:15:15.819600 2018] [core:warn] [pid 1560:tid 484] AH00098: pid file C:/apache/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jan 16 08:15:15.897600 2018] [mpm_winnt:notice] [pid 1560:tid 484] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jan 16 08:15:15.897600 2018] [mpm_winnt:notice] [pid 1560:tid 484] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Jan 16 08:15:15.897600 2018] [core:notice] [pid 1560:tid 484] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Jan 16 08:15:15.897600 2018] [mpm_winnt:notice] [pid 1560:tid 484] AH00418: Parent: Created child process 1280
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 16 08:15:16.927200 2018] [mpm_winnt:notice] [pid 1280:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Jan 16 17:48:29.557400 2018] [mpm_winnt:notice] [pid 1560:tid 484] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jan 16 17:48:31.606000 2018] [mpm_winnt:notice] [pid 1280:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Jan 16 17:48:31.704000 2018] [mpm_winnt:notice] [pid 1560:tid 484] AH00430: Parent: Child process 1280 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 17 08:17:37.630800 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Jan 17 08:17:37.630800 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Jan 17 08:17:37.630800 2018] [core:notice] [pid 1596:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Jan 17 08:17:37.646400 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00418: Parent: Created child process 2132
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 17 08:17:38.598000 2018] [mpm_winnt:notice] [pid 2132:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Jan 17 17:41:19.652600 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jan 17 17:41:21.700000 2018] [mpm_winnt:notice] [pid 2132:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Jan 17 17:41:21.801000 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00430: Parent: Child process 2132 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Jan 18 08:18:35.740000 2018] [mpm_winnt:notice] [pid 1588:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Jan 18 08:18:35.740000 2018] [mpm_winnt:notice] [pid 1588:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Jan 18 08:18:35.740000 2018] [core:notice] [pid 1588:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Jan 18 08:18:35.740000 2018] [mpm_winnt:notice] [pid 1588:tid 504] AH00418: Parent: Created child process 2608
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Jan 18 08:18:36.738400 2018] [mpm_winnt:notice] [pid 2608:tid 444] AH00354: Child: Starting 64 worker threads.
+[Thu Jan 18 17:53:04.954000 2018] [mpm_winnt:notice] [pid 1588:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jan 18 17:53:06.988200 2018] [mpm_winnt:notice] [pid 2608:tid 444] AH00364: Child: All worker threads have exited.
+[Thu Jan 18 17:53:07.103200 2018] [mpm_winnt:notice] [pid 1588:tid 504] AH00430: Parent: Child process 2608 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Jan 19 08:15:52.833600 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Jan 19 08:15:52.833600 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Jan 19 08:15:52.833600 2018] [core:notice] [pid 1572:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Jan 19 08:15:52.833600 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00418: Parent: Created child process 2216
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Jan 19 08:15:54.315600 2018] [mpm_winnt:notice] [pid 2216:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Jan 19 17:28:02.972400 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Jan 19 17:28:05.026400 2018] [mpm_winnt:notice] [pid 2216:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Jan 19 17:28:05.169400 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00430: Parent: Child process 2216 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Mon Jan 22 08:15:53.615200 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Jan 22 08:15:53.615200 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Jan 22 08:15:53.615200 2018] [core:notice] [pid 1592:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Jan 22 08:15:53.615200 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00418: Parent: Created child process 2596
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Mon Jan 22 08:15:54.660400 2018] [mpm_winnt:notice] [pid 2596:tid 444] AH00354: Child: Starting 64 worker threads.
+[Mon Jan 22 17:41:15.634600 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jan 22 17:41:17.648600 2018] [mpm_winnt:notice] [pid 2596:tid 444] AH00364: Child: All worker threads have exited.
+[Mon Jan 22 17:41:17.721600 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00430: Parent: Child process 2596 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 23 08:16:06.412400 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jan 23 08:16:06.412400 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Jan 23 08:16:06.412400 2018] [core:notice] [pid 1592:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Jan 23 08:16:06.412400 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00418: Parent: Created child process 2292
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 23 08:16:07.956800 2018] [mpm_winnt:notice] [pid 2292:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Jan 23 17:44:48.794200 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jan 23 17:44:50.874200 2018] [mpm_winnt:notice] [pid 2292:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Jan 23 17:44:50.984200 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00430: Parent: Child process 2292 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 24 08:14:22.928800 2018] [mpm_winnt:notice] [pid 1576:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Jan 24 08:14:22.928800 2018] [mpm_winnt:notice] [pid 1576:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Jan 24 08:14:22.928800 2018] [core:notice] [pid 1576:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Jan 24 08:14:22.928800 2018] [mpm_winnt:notice] [pid 1576:tid 504] AH00418: Parent: Created child process 2296
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 24 08:14:24.036400 2018] [mpm_winnt:notice] [pid 2296:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Jan 24 17:59:25.036000 2018] [mpm_winnt:notice] [pid 1576:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jan 24 17:59:27.069000 2018] [mpm_winnt:notice] [pid 2296:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Jan 24 17:59:27.179000 2018] [mpm_winnt:notice] [pid 1576:tid 504] AH00430: Parent: Child process 2296 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Jan 25 08:16:50.616800 2018] [mpm_winnt:notice] [pid 1660:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Jan 25 08:16:50.616800 2018] [mpm_winnt:notice] [pid 1660:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Jan 25 08:16:50.616800 2018] [core:notice] [pid 1660:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Jan 25 08:16:50.616800 2018] [mpm_winnt:notice] [pid 1660:tid 504] AH00418: Parent: Created child process 2156
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Jan 25 08:16:51.927200 2018] [mpm_winnt:notice] [pid 2156:tid 444] AH00354: Child: Starting 64 worker threads.
+[Thu Jan 25 17:49:38.829801 2018] [mpm_winnt:notice] [pid 1660:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jan 25 17:49:40.894801 2018] [mpm_winnt:notice] [pid 2156:tid 444] AH00364: Child: All worker threads have exited.
+[Thu Jan 25 17:49:41.002801 2018] [mpm_winnt:notice] [pid 1660:tid 504] AH00430: Parent: Child process 2156 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Jan 26 08:16:54.334400 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Jan 26 08:16:54.334400 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Jan 26 08:16:54.334400 2018] [core:notice] [pid 1596:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Jan 26 08:16:54.334400 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00418: Parent: Created child process 2600
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Jan 26 08:16:55.410800 2018] [mpm_winnt:notice] [pid 2600:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Jan 26 17:45:26.797000 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Jan 26 17:45:28.845400 2018] [mpm_winnt:notice] [pid 2600:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Jan 26 17:45:28.954400 2018] [mpm_winnt:notice] [pid 1596:tid 504] AH00430: Parent: Child process 2600 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 30 08:17:28.287600 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jan 30 08:17:28.287600 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Jan 30 08:17:28.287600 2018] [core:notice] [pid 1592:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Jan 30 08:17:28.287600 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00418: Parent: Created child process 2532
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 30 08:17:29.504400 2018] [mpm_winnt:notice] [pid 2532:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Jan 30 17:25:47.089200 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jan 30 17:25:49.137000 2018] [mpm_winnt:notice] [pid 2532:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Jan 30 17:25:49.236000 2018] [mpm_winnt:notice] [pid 1592:tid 504] AH00430: Parent: Child process 2532 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 31 08:20:24.209600 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Jan 31 08:20:24.209600 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Jan 31 08:20:24.209600 2018] [core:notice] [pid 1572:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Jan 31 08:20:24.209600 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00418: Parent: Created child process 2592
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Jan 31 08:20:25.317200 2018] [mpm_winnt:notice] [pid 2592:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Jan 31 17:40:31.928207 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jan 31 17:40:33.995007 2018] [mpm_winnt:notice] [pid 2592:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Jan 31 17:40:34.138007 2018] [mpm_winnt:notice] [pid 1572:tid 504] AH00430: Parent: Child process 2592 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Feb 01 08:21:27.523200 2018] [mpm_winnt:notice] [pid 1644:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Feb 01 08:21:27.523200 2018] [mpm_winnt:notice] [pid 1644:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Feb 01 08:21:27.523200 2018] [core:notice] [pid 1644:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Feb 01 08:21:27.538800 2018] [mpm_winnt:notice] [pid 1644:tid 504] AH00418: Parent: Created child process 2076
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Feb 01 08:21:29.005200 2018] [mpm_winnt:notice] [pid 2076:tid 444] AH00354: Child: Starting 64 worker threads.
+[Thu Feb 01 17:42:35.033400 2018] [mpm_winnt:notice] [pid 1644:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Feb 01 17:42:37.051800 2018] [mpm_winnt:notice] [pid 2076:tid 444] AH00364: Child: All worker threads have exited.
+[Thu Feb 01 17:42:37.223400 2018] [mpm_winnt:notice] [pid 1644:tid 504] AH00430: Parent: Child process 2076 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 02 08:20:42.568400 2018] [mpm_winnt:notice] [pid 1608:tid 504] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Feb 02 08:20:42.568400 2018] [mpm_winnt:notice] [pid 1608:tid 504] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Feb 02 08:20:42.568400 2018] [core:notice] [pid 1608:tid 504] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Feb 02 08:20:42.568400 2018] [mpm_winnt:notice] [pid 1608:tid 504] AH00418: Parent: Created child process 2608
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 02 08:20:43.878800 2018] [mpm_winnt:notice] [pid 2608:tid 444] AH00354: Child: Starting 64 worker threads.
+[Fri Feb 02 17:15:30.737401 2018] [mpm_winnt:notice] [pid 1608:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Feb 02 17:15:32.803801 2018] [mpm_winnt:notice] [pid 2608:tid 444] AH00364: Child: All worker threads have exited.
+[Fri Feb 02 17:15:33.006801 2018] [mpm_winnt:notice] [pid 1608:tid 504] AH00430: Parent: Child process 2608 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 02 17:15:59.520000 2018] [mpm_winnt:notice] [pid 1580:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Feb 02 17:15:59.520000 2018] [mpm_winnt:notice] [pid 1580:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Feb 02 17:15:59.520000 2018] [core:notice] [pid 1580:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Feb 02 17:15:59.520000 2018] [mpm_winnt:notice] [pid 1580:tid 500] AH00418: Parent: Created child process 1740
+[Fri Feb 02 17:16:00.237600 2018] [mpm_winnt:notice] [pid 1740:tid 440] AH00354: Child: Starting 64 worker threads.
+[Fri Feb 02 17:21:05.330000 2018] [mpm_winnt:notice] [pid 1580:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Feb 02 17:21:07.330000 2018] [mpm_winnt:notice] [pid 1740:tid 440] AH00364: Child: All worker threads have exited.
+[Fri Feb 02 17:21:07.353000 2018] [mpm_winnt:notice] [pid 1580:tid 500] AH00430: Parent: Child process 1740 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Mon Feb 05 08:16:32.069200 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Feb 05 08:16:32.069200 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Feb 05 08:16:32.069200 2018] [core:notice] [pid 1572:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Feb 05 08:16:32.069200 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00418: Parent: Created child process 2596
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Mon Feb 05 08:16:33.176800 2018] [mpm_winnt:notice] [pid 2596:tid 440] AH00354: Child: Starting 64 worker threads.
+[Mon Feb 05 08:38:17.800600 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00424: Parent: Received restart signal -- Restarting the server.
+[Mon Feb 05 08:38:17.864600 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Feb 05 08:38:17.864600 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Feb 05 08:38:17.864600 2018] [core:notice] [pid 1572:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Feb 05 08:38:18.087600 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00418: Parent: Created child process 6468
+[Mon Feb 05 08:38:18.800600 2018] [mpm_winnt:notice] [pid 6468:tid 440] AH00354: Child: Starting 64 worker threads.
+[Mon Feb 05 08:38:26.900600 2018] [mpm_winnt:notice] [pid 2596:tid 440] AH00364: Child: All worker threads have exited.
+[Mon Feb 05 08:41:29.409600 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00424: Parent: Received restart signal -- Restarting the server.
+[Mon Feb 05 08:41:29.454600 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Feb 05 08:41:29.454600 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Feb 05 08:41:29.454600 2018] [core:notice] [pid 1572:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Feb 05 08:41:29.478600 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00418: Parent: Created child process 1860
+[Mon Feb 05 08:41:30.409600 2018] [mpm_winnt:notice] [pid 1860:tid 440] AH00354: Child: Starting 64 worker threads.
+[Mon Feb 05 08:41:34.909600 2018] [mpm_winnt:notice] [pid 6468:tid 440] AH00364: Child: All worker threads have exited.
+[Mon Feb 05 17:49:42.295001 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Feb 05 17:49:44.325401 2018] [mpm_winnt:notice] [pid 1860:tid 440] AH00364: Child: All worker threads have exited.
+[Mon Feb 05 17:49:44.412401 2018] [mpm_winnt:notice] [pid 1572:tid 500] AH00430: Parent: Child process 1860 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Feb 06 08:17:46.974000 2018] [mpm_winnt:notice] [pid 1592:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Feb 06 08:17:46.974000 2018] [mpm_winnt:notice] [pid 1592:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Feb 06 08:17:46.974000 2018] [core:notice] [pid 1592:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Feb 06 08:17:46.974000 2018] [mpm_winnt:notice] [pid 1592:tid 500] AH00418: Parent: Created child process 2436
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Feb 06 08:17:48.175200 2018] [mpm_winnt:notice] [pid 2436:tid 440] AH00354: Child: Starting 64 worker threads.
+[Tue Feb 06 13:31:07.105400 2018] [core:error] [pid 2436:tid 968] (20024)The given path is misformatted or contained invalid characters: [client ::1:16182] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_templets_skin/%7D/style/dedecms.css HTTP/1.1 to file, referer: http://localhost:8090/templets/default/article_soft.htm
+[Tue Feb 06 13:31:07.105400 2018] [core:error] [pid 2436:tid 936] (20024)The given path is misformatted or contained invalid characters: [client ::1:16183] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_cmsurl/%7D/include/dedeajax2.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/article_soft.htm
+[Tue Feb 06 13:31:07.108400 2018] [core:error] [pid 2436:tid 956] (20024)The given path is misformatted or contained invalid characters: [client ::1:16184] AH00127: Cannot map GET /templets/default/%7Bdede:field.phpurl/%7D/disdls.php?aid={dede:field.id/} HTTP/1.1 to file, referer: http://localhost:8090/templets/default/article_soft.htm
+[Tue Feb 06 13:31:07.114400 2018] [core:error] [pid 2436:tid 956] (20024)The given path is misformatted or contained invalid characters: [client ::1:16184] AH00127: Cannot map GET /templets/default/%7Bdede:global%20name='cfg_phpurl'/%7D/count.php?aid={dede:field%20name=%27id%27/}&mid={dede:field%20name=%27mid%27/} HTTP/1.1 to file, referer: http://localhost:8090/templets/default/article_soft.htm
+[Tue Feb 06 13:31:07.120400 2018] [core:error] [pid 2436:tid 956] (20024)The given path is misformatted or contained invalid characters: [client ::1:16184] AH00127: Cannot map GET /templets/default/[field:face/] HTTP/1.1 to file, referer: http://localhost:8090/templets/default/article_soft.htm
+[Tue Feb 06 13:31:07.128400 2018] [core:error] [pid 2436:tid 956] (20024)The given path is misformatted or contained invalid characters: [client ::1:16184] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_cmsurl/%7D/include/dedeajax2.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/article_soft.htm
+[Tue Feb 06 13:31:07.132400 2018] [core:error] [pid 2436:tid 956] (20024)The given path is misformatted or contained invalid characters: [client ::1:16184] AH00127: Cannot map GET /templets/default/%7Bdede:field.phpurl/%7D/disdls.php?aid={dede:field.id/} HTTP/1.1 to file, referer: http://localhost:8090/templets/default/article_soft.htm
+[Tue Feb 06 13:31:07.188400 2018] [core:error] [pid 2436:tid 956] (20024)The given path is misformatted or contained invalid characters: [client ::1:16184] AH00127: Cannot map GET /templets/default/%7Bdede:global%20name='cfg_phpurl'/%7D/count.php?aid={dede:field%20name=%27id%27/}&mid={dede:field%20name=%27mid%27/} HTTP/1.1 to file, referer: http://localhost:8090/templets/default/article_soft.htm
+[Tue Feb 06 13:31:23.536400 2018] [core:error] [pid 2436:tid 956] (20024)The given path is misformatted or contained invalid characters: [client ::1:16193] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_cmspath/%7D/images/js/j.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 13:31:23.537400 2018] [core:error] [pid 2436:tid 936] (20024)The given path is misformatted or contained invalid characters: [client ::1:16194] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_templets_skin/%7D/style/dedecms.css HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 13:31:23.538400 2018] [core:error] [pid 2436:tid 968] (20024)The given path is misformatted or contained invalid characters: [client ::1:16195] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_templets_skin/%7D/js/pic_scroll.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 13:31:23.539400 2018] [core:error] [pid 2436:tid 948] (20024)The given path is misformatted or contained invalid characters: [client ::1:16196] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_cmsurl/%7D/include/dedeajax2.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 13:31:23.546400 2018] [core:error] [pid 2436:tid 948] (20024)The given path is misformatted or contained invalid characters: [client ::1:16196] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_cmsurl/%7D/data/vote/vote_1.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 13:31:23.552400 2018] [core:error] [pid 2436:tid 968] (20024)The given path is misformatted or contained invalid characters: [client ::1:16195] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_cmspath/%7D/images/js/j.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 13:31:23.556400 2018] [core:error] [pid 2436:tid 968] (20024)The given path is misformatted or contained invalid characters: [client ::1:16195] AH00127: Cannot map GET /templets/default/[field:face/] HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 13:31:23.557400 2018] [core:error] [pid 2436:tid 948] (20024)The given path is misformatted or contained invalid characters: [client ::1:16196] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_templets_skin/%7D/js/pic_scroll.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 13:31:23.628400 2018] [core:error] [pid 2436:tid 948] (20024)The given path is misformatted or contained invalid characters: [client ::1:16196] AH00127: Cannot map GET /templets/default/%7Bdede:global.cfg_cmsurl/%7D/data/vote/vote_1.js HTTP/1.1 to file, referer: http://localhost:8090/templets/default/index.htm
+[Tue Feb 06 17:45:34.308000 2018] [mpm_winnt:notice] [pid 1592:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Feb 06 17:45:36.341800 2018] [mpm_winnt:notice] [pid 2436:tid 440] AH00364: Child: All worker threads have exited.
+[Tue Feb 06 17:45:36.591400 2018] [mpm_winnt:notice] [pid 1592:tid 500] AH00430: Parent: Child process 2436 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Feb 07 08:17:00.036400 2018] [mpm_winnt:notice] [pid 1556:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Feb 07 08:17:00.036400 2018] [mpm_winnt:notice] [pid 1556:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Feb 07 08:17:00.036400 2018] [core:notice] [pid 1556:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Feb 07 08:17:00.036400 2018] [mpm_winnt:notice] [pid 1556:tid 500] AH00418: Parent: Created child process 1776
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Feb 07 08:17:00.598000 2018] [mpm_winnt:notice] [pid 1776:tid 440] AH00354: Child: Starting 64 worker threads.
+[Wed Feb 07 17:47:41.635400 2018] [mpm_winnt:notice] [pid 1556:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Feb 07 17:47:43.668600 2018] [mpm_winnt:notice] [pid 1776:tid 440] AH00364: Child: All worker threads have exited.
+[Wed Feb 07 17:47:43.809000 2018] [mpm_winnt:notice] [pid 1556:tid 500] AH00430: Parent: Child process 1776 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Thu Feb 08 08:17:46.490400 2018] [mpm_winnt:notice] [pid 1540:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Feb 08 08:17:46.490400 2018] [mpm_winnt:notice] [pid 1540:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Feb 08 08:17:46.490400 2018] [core:notice] [pid 1540:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Feb 08 08:17:46.490400 2018] [mpm_winnt:notice] [pid 1540:tid 500] AH00418: Parent: Created child process 1684
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Feb 08 08:17:47.130000 2018] [mpm_winnt:notice] [pid 1684:tid 440] AH00354: Child: Starting 64 worker threads.
+[Thu Feb 08 17:27:05.572000 2018] [mpm_winnt:notice] [pid 1540:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Feb 08 17:27:07.590400 2018] [mpm_winnt:notice] [pid 1684:tid 440] AH00364: Child: All worker threads have exited.
+[Thu Feb 08 17:27:07.777600 2018] [mpm_winnt:notice] [pid 1540:tid 500] AH00430: Parent: Child process 1684 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 09 08:19:14.804000 2018] [mpm_winnt:notice] [pid 1544:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Feb 09 08:19:14.804000 2018] [mpm_winnt:notice] [pid 1544:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Feb 09 08:19:14.804000 2018] [core:notice] [pid 1544:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Feb 09 08:19:14.804000 2018] [mpm_winnt:notice] [pid 1544:tid 500] AH00418: Parent: Created child process 1124
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 09 08:19:15.490400 2018] [mpm_winnt:notice] [pid 1124:tid 440] AH00354: Child: Starting 64 worker threads.
+[Fri Feb 09 17:46:15.734600 2018] [mpm_winnt:notice] [pid 1544:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Feb 09 17:46:17.757600 2018] [mpm_winnt:notice] [pid 1124:tid 440] AH00364: Child: All worker threads have exited.
+[Fri Feb 09 17:46:17.851200 2018] [mpm_winnt:notice] [pid 1544:tid 500] AH00430: Parent: Child process 1124 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Sun Feb 11 08:21:47.913200 2018] [mpm_winnt:notice] [pid 1548:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Sun Feb 11 08:21:47.913200 2018] [mpm_winnt:notice] [pid 1548:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Sun Feb 11 08:21:47.913200 2018] [core:notice] [pid 1548:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Sun Feb 11 08:21:47.913200 2018] [mpm_winnt:notice] [pid 1548:tid 500] AH00418: Parent: Created child process 1208
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Sun Feb 11 08:21:48.771200 2018] [mpm_winnt:notice] [pid 1208:tid 440] AH00354: Child: Starting 64 worker threads.
+[Sun Feb 11 13:04:42.826202 2018] [mpm_winnt:notice] [pid 1548:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Feb 11 13:04:44.828202 2018] [mpm_winnt:notice] [pid 1208:tid 440] AH00364: Child: All worker threads have exited.
+[Sun Feb 11 13:04:44.843802 2018] [mpm_winnt:notice] [pid 1548:tid 500] AH00430: Parent: Child process 1208 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Feb 13 09:42:51.116000 2018] [mpm_winnt:notice] [pid 1536:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Feb 13 09:42:51.116000 2018] [mpm_winnt:notice] [pid 1536:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Feb 13 09:42:51.116000 2018] [core:notice] [pid 1536:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Feb 13 09:42:51.116000 2018] [mpm_winnt:notice] [pid 1536:tid 500] AH00418: Parent: Created child process 1812
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Feb 13 09:42:51.864800 2018] [mpm_winnt:notice] [pid 1812:tid 440] AH00354: Child: Starting 64 worker threads.
+[Tue Feb 13 09:48:52.136000 2018] [mpm_winnt:notice] [pid 1536:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Feb 13 09:48:54.139800 2018] [mpm_winnt:notice] [pid 1812:tid 440] AH00364: Child: All worker threads have exited.
+[Tue Feb 13 09:48:54.155400 2018] [mpm_winnt:notice] [pid 1536:tid 500] AH00430: Parent: Child process 1812 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Feb 22 08:20:16.147200 2018] [mpm_winnt:notice] [pid 1528:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Feb 22 08:20:16.147200 2018] [mpm_winnt:notice] [pid 1528:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Feb 22 08:20:16.147200 2018] [core:notice] [pid 1528:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Feb 22 08:20:16.147200 2018] [mpm_winnt:notice] [pid 1528:tid 500] AH00418: Parent: Created child process 2044
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Feb 22 08:20:16.708800 2018] [mpm_winnt:notice] [pid 2044:tid 440] AH00354: Child: Starting 64 worker threads.
+[Thu Feb 22 17:23:59.900205 2018] [mpm_winnt:notice] [pid 1528:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Feb 22 17:24:01.976805 2018] [mpm_winnt:notice] [pid 2044:tid 440] AH00364: Child: All worker threads have exited.
+[Thu Feb 22 17:24:02.132805 2018] [mpm_winnt:notice] [pid 1528:tid 500] AH00430: Parent: Child process 2044 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 23 08:13:12.750800 2018] [mpm_winnt:notice] [pid 1760:tid 500] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Feb 23 08:13:12.750800 2018] [mpm_winnt:notice] [pid 1760:tid 500] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Feb 23 08:13:12.750800 2018] [core:notice] [pid 1760:tid 500] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Feb 23 08:13:12.750800 2018] [mpm_winnt:notice] [pid 1760:tid 500] AH00418: Parent: Created child process 2380
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 23 08:13:13.250000 2018] [mpm_winnt:notice] [pid 2380:tid 448] AH00354: Child: Starting 64 worker threads.
+[Fri Feb 23 17:15:52.803400 2018] [mpm_winnt:notice] [pid 1760:tid 500] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Feb 23 17:15:54.872000 2018] [mpm_winnt:notice] [pid 2380:tid 448] AH00364: Child: All worker threads have exited.
+[Fri Feb 23 17:15:55.028000 2018] [mpm_winnt:notice] [pid 1760:tid 500] AH00430: Parent: Child process 2380 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Sat Feb 24 08:12:31.303200 2018] [mpm_winnt:notice] [pid 1536:tid 496] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Sat Feb 24 08:12:31.303200 2018] [mpm_winnt:notice] [pid 1536:tid 496] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Sat Feb 24 08:12:31.303200 2018] [core:notice] [pid 1536:tid 496] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Sat Feb 24 08:12:31.303200 2018] [mpm_winnt:notice] [pid 1536:tid 496] AH00418: Parent: Created child process 1592
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Sat Feb 24 08:12:32.083200 2018] [mpm_winnt:notice] [pid 1592:tid 436] AH00354: Child: Starting 64 worker threads.
+[Sat Feb 24 17:12:33.994000 2018] [mpm_winnt:notice] [pid 1536:tid 496] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Feb 24 17:12:36.024600 2018] [mpm_winnt:notice] [pid 1592:tid 436] AH00364: Child: All worker threads have exited.
+[Sat Feb 24 17:12:36.227400 2018] [mpm_winnt:notice] [pid 1536:tid 496] AH00430: Parent: Child process 1592 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Mon Feb 26 08:13:58.379600 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Feb 26 08:13:58.379600 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Feb 26 08:13:58.379600 2018] [core:notice] [pid 1544:tid 496] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Feb 26 08:13:58.379600 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00418: Parent: Created child process 1788
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Mon Feb 26 08:13:58.878800 2018] [mpm_winnt:notice] [pid 1788:tid 436] AH00354: Child: Starting 64 worker threads.
+[Mon Feb 26 17:24:49.218200 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Feb 26 17:24:51.254200 2018] [mpm_winnt:notice] [pid 1788:tid 436] AH00364: Child: All worker threads have exited.
+[Mon Feb 26 17:24:51.394600 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00430: Parent: Child process 1788 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Tue Feb 27 08:15:36.693200 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Feb 27 08:15:36.693200 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Feb 27 08:15:36.693200 2018] [core:notice] [pid 1544:tid 496] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Feb 27 08:15:36.693200 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00418: Parent: Created child process 1488
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Tue Feb 27 08:15:37.332800 2018] [mpm_winnt:notice] [pid 1488:tid 436] AH00354: Child: Starting 64 worker threads.
+[Tue Feb 27 17:04:20.677600 2018] [core:warn] [pid 1548:tid 476] AH00098: pid file C:/apache/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Feb 27 17:04:20.740000 2018] [mpm_winnt:notice] [pid 1548:tid 476] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Tue Feb 27 17:04:20.740000 2018] [mpm_winnt:notice] [pid 1548:tid 476] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Tue Feb 27 17:04:20.740000 2018] [core:notice] [pid 1548:tid 476] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Tue Feb 27 17:04:20.740000 2018] [mpm_winnt:notice] [pid 1548:tid 476] AH00418: Parent: Created child process 2060
+[Tue Feb 27 17:04:21.660400 2018] [mpm_winnt:notice] [pid 2060:tid 436] AH00354: Child: Starting 64 worker threads.
+[Tue Feb 27 17:21:49.906000 2018] [mpm_winnt:notice] [pid 1548:tid 476] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Feb 27 17:21:51.907200 2018] [mpm_winnt:notice] [pid 2060:tid 436] AH00364: Child: All worker threads have exited.
+[Tue Feb 27 17:21:51.922800 2018] [mpm_winnt:notice] [pid 1548:tid 476] AH00430: Parent: Child process 2060 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using ::1. Set the 'ServerName' directive globally to suppress this message
+[Wed Feb 28 08:18:16.741600 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Wed Feb 28 08:18:16.741600 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Wed Feb 28 08:18:16.741600 2018] [core:notice] [pid 1544:tid 496] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Wed Feb 28 08:18:16.757200 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00418: Parent: Created child process 1488
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Wed Feb 28 08:18:17.396800 2018] [mpm_winnt:notice] [pid 1488:tid 436] AH00354: Child: Starting 64 worker threads.
+[Wed Feb 28 13:04:50.408800 2018] [:error] [pid 1488:tid 960] [client ::1:6099] PHP Warning:  require(C:\\apache\\Apache24\\htdocs/../vendor/autoload.php): failed to open stream: No such file or directory in C:\\apache\\Apache24\\htdocs\\index.php on line 7
+[Wed Feb 28 13:04:50.409800 2018] [:error] [pid 1488:tid 960] [client ::1:6099] PHP Fatal error:  require(): Failed opening required 'C:\\apache\\Apache24\\htdocs/../vendor/autoload.php' (include_path='.;C:\\php\\pear') in C:\\apache\\Apache24\\htdocs\\index.php on line 7
+[Wed Feb 28 13:05:27.589800 2018] [:error] [pid 1488:tid 948] [client ::1:6108] PHP Warning:  require(C:\\apache\\Apache24\\htdocs/../vendor/autoload.php): failed to open stream: No such file or directory in C:\\apache\\Apache24\\htdocs\\index.php on line 7
+[Wed Feb 28 13:05:27.590800 2018] [:error] [pid 1488:tid 948] [client ::1:6108] PHP Fatal error:  require(): Failed opening required 'C:\\apache\\Apache24\\htdocs/../vendor/autoload.php' (include_path='.;C:\\php\\pear') in C:\\apache\\Apache24\\htdocs\\index.php on line 7
+[Wed Feb 28 13:07:37.122800 2018] [:error] [pid 1488:tid 932] [client ::1:6134] PHP Warning:  require(C:\\apache\\Apache24\\htdocs\\yiicms\\config/db.php): failed to open stream: No such file or directory in C:\\apache\\Apache24\\htdocs\\yiicms\\config\\web.php on line 54
+[Wed Feb 28 13:07:37.122800 2018] [:error] [pid 1488:tid 932] [client ::1:6134] PHP Fatal error:  require(): Failed opening required 'C:\\apache\\Apache24\\htdocs\\yiicms\\config/db.php' (include_path='.;C:\\php\\pear') in C:\\apache\\Apache24\\htdocs\\yiicms\\config\\web.php on line 54
+[Wed Feb 28 17:19:42.830800 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Feb 28 17:19:44.851600 2018] [mpm_winnt:notice] [pid 1488:tid 436] AH00364: Child: All worker threads have exited.
+[Wed Feb 28 17:19:45.116800 2018] [mpm_winnt:notice] [pid 1544:tid 496] AH00430: Parent: Child process 1488 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Mar 01 08:15:42.708800 2018] [mpm_winnt:notice] [pid 1528:tid 496] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Thu Mar 01 08:15:42.708800 2018] [mpm_winnt:notice] [pid 1528:tid 496] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Thu Mar 01 08:15:42.708800 2018] [core:notice] [pid 1528:tid 496] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Thu Mar 01 08:15:42.708800 2018] [mpm_winnt:notice] [pid 1528:tid 496] AH00418: Parent: Created child process 1128
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Thu Mar 01 08:15:43.442000 2018] [mpm_winnt:notice] [pid 1128:tid 436] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 01 17:27:13.138004 2018] [mpm_winnt:notice] [pid 1528:tid 496] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 01 17:27:15.146204 2018] [mpm_winnt:notice] [pid 1128:tid 436] AH00364: Child: All worker threads have exited.
+[Thu Mar 01 17:27:15.161804 2018] [mpm_winnt:notice] [pid 1528:tid 496] AH00430: Parent: Child process 1128 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Mar 02 08:12:48.786800 2018] [mpm_winnt:notice] [pid 1532:tid 496] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Fri Mar 02 08:12:48.786800 2018] [mpm_winnt:notice] [pid 1532:tid 496] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Fri Mar 02 08:12:48.786800 2018] [core:notice] [pid 1532:tid 496] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Fri Mar 02 08:12:48.786800 2018] [mpm_winnt:notice] [pid 1532:tid 496] AH00418: Parent: Created child process 1832
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Fri Mar 02 08:12:49.707200 2018] [mpm_winnt:notice] [pid 1832:tid 436] AH00354: Child: Starting 64 worker threads.
+[Fri Mar 02 17:15:30.148400 2018] [mpm_winnt:notice] [pid 1532:tid 496] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Mar 02 17:15:32.171200 2018] [mpm_winnt:notice] [pid 1832:tid 436] AH00364: Child: All worker threads have exited.
+[Fri Mar 02 17:15:32.342800 2018] [mpm_winnt:notice] [pid 1532:tid 496] AH00430: Parent: Child process 1832 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 05 08:12:32.596400 2018] [mpm_winnt:notice] [pid 1920:tid 496] AH00455: Apache/2.4.25 (Win64) PHP/5.6.30 configured -- resuming normal operations
+[Mon Mar 05 08:12:32.596400 2018] [mpm_winnt:notice] [pid 1920:tid 496] AH00456: Apache Lounge VC14 Server built: Dec 17 2016 11:15:57
+[Mon Mar 05 08:12:32.596400 2018] [core:notice] [pid 1920:tid 496] AH00094: Command line: 'C:\\apache\\Apache24\\bin\\httpd.exe -d C:/apache/Apache24'
+[Mon Mar 05 08:12:32.596400 2018] [mpm_winnt:notice] [pid 1920:tid 496] AH00418: Parent: Created child process 2372
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::8cd7:e15d:a053:28db. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 05 08:12:33.220400 2018] [mpm_winnt:notice] [pid 2372:tid 436] AH00354: Child: Starting 64 worker threads.

@@ -1,0 +1,4 @@
+C:\类库\DrawImage\DrawImage\bin\Debug\DrawImage.dll
+C:\类库\DrawImage\DrawImage\bin\Debug\DrawImage.pdb
+C:\类库\DrawImage\DrawImage\obj\Debug\DrawImage.dll
+C:\类库\DrawImage\DrawImage\obj\Debug\DrawImage.pdb

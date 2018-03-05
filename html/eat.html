@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>美食盒</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <style type="text/css">
+        *
+        {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
+        {
+            margin: 0;
+            padding: 0;
+        }
+        table
+        {
+            border-collapse: collapse;
+            border-spacing: 0px;
+        }
+        fieldset, img
+        {
+            border: 0;
+        }
+        em, th, var
+        {
+            font-style: normal;
+            font-weight: normal;
+        }
+        ol, ul
+        {
+            list-style: none;
+        }
+        caption, th
+        {
+            text-align: left;
+        }
+        h1, h2, h3, h4, h5, h6
+        {
+            font-size: 100%;
+            font-weight: normal;
+        }
+        q:before, q:after
+        {
+            content: '';
+        }
+        abbr, acronym
+        {
+            border: 0;
+        }
+        img
+        {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            border: 0;
+        }
+        li
+        {
+            list-style-type: none;
+        }
+        a
+        {
+            text-decoration: none;
+            color: #666;
+        }
+        a, button, input, select
+        {
+            -webkit-tap-highlight-color: rgba(255,0,0,0);
+            outline: none;
+        }
+        /*input,button,select,textarea{outline:none} //取消chrome下input和textarea的聚焦边框 textarea{resize:none} //取消chrome下textarea可拖动放大 */html
+        {
+            -webkit-text-size-adjust: none;
+        }
+        body
+        {
+            font: 14px/26px "Microsoft YaHei" , "微软雅黑" , "宋体" , Arial;
+            color: #222;
+            letter-spacing: .03em;
+            -webkit-font-smoothing: antialiased;
+        }
+        input, select, textarea, button
+        {
+            font: 14px/26px "Microsoft YaHei" , "微软雅黑" , "宋体" , Arial;
+            border: 0 none;
+            color: #333;
+        }
+        input:focus
+        {
+            outline: none;
+        }
+        button
+        {
+            border: 0 none;
+        }
+        table
+        {
+            font-size: inherit;
+            font: 100%;
+        }
+        select
+        {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        i
+        {
+            font-style: normal;
+        }
+        ::-webkit-input-placeholder
+        {
+            color: #999;
+        }
+        :-moz-placeholder
+        {
+            color: #999;
+            opacity: 1;
+        }
+        ::-moz-placeholder
+        {
+            color: #999;
+            opacity: 1;
+        }
+        :-ms-input-placeholder
+        {
+            color: #999;
+        }
+        /* Clearfix */.clearfix:after, .clearfixlist li:after
+        {
+            content: "\0020";
+            display: block;
+            clear: both;
+            height: 0;
+            font-size: 0;
+        }
+        .clearfix, .clearfixlist li
+        {
+            zoom: 1;
+        }
+        .clear
+        {
+            clear: both;
+            display: block;
+        }
+        .hide
+        {
+            display: none;
+        }
+        .fl
+        {
+            float: left;
+        }
+        .fr
+        {
+            float: right;
+        }
+        .pl-8
+        {
+            padding-left: 8px;
+        }
+        .pl-15
+        {
+            padding-left: 15px;
+        }
+        .pr-15
+        {
+            padding-right: 15px;
+        }
+        .mt-8
+        {
+            margin-top: 8px;
+        }
+        .mb-8
+        {
+            margin-bottom: 8px;
+        }
+        .mr-8
+        {
+            margin-right: 8px;
+        }
+        .mt-12
+        {
+            margin-top: 12px;
+        }
+        .mb-12
+        {
+            margin-bottom: 12px;
+        }
+        .mr-12
+        {
+            margin-right: 12px;
+        }
+        .red
+        {
+            color: #f13030;
+        }
+        .blue
+        {
+            color: #f13030;
+        }
+        .gray
+        {
+            color: #999;
+        }
+        .orange
+        {
+            color: #ff740d;
+        }
+        .btn-orange
+        {
+            color: #fff;
+            padding: 4px;
+            background: #ff7417;
+        }
+        .border-circle, .portrait img
+        {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .border-rect
+        {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -o-border-radius: 4px;
+            -ms-border-radius: 4px;
+            border-radius: 4px;
+        }
+        .text-left
+        {
+            text-align: left;
+        }
+        .text-right
+        {
+            text-align: right;
+        }
+        .text-center
+        {
+            text-align: center;
+        }
+        .text-ellipsis
+        {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .pic img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .nodata
+        {
+            padding: 50px 28px 58px;
+            color: #aaa;
+            text-align: center;
+            background: url(images/empty.png) no-repeat center 10px;
+            background-size: 128px;
+        }
+        .nodata .name
+        {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .box-flex
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+        }
+        .flex, .box-flex li
+        {
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            box-flex: 1;
+        }
+        /* header */body
+        {
+            padding-bottom: 58px;
+            background: #f5f5f5;
+        }
+        .body-login, .body-bottom
+        {
+            padding: 0;
+        }
+        .body-hidden
+        {
+            overflow: hidden;
+        }
+        .btn-back, .search-group .input-control, .label-single input:checked~i, .label-check input:checked~i, .model-header .btn-close, .init-mod .btn-more, .amount-btn i, .tb-sku .sku-tips, .edit-wrapper .sku-tips, .cart-list .btn-spec
+        {
+            background: url(../images/sprite-icon.png) no-repeat 0 -999em;
+            background-size: 28px 364px;
+        }
+        .btn-back
+        {
+            display: block;
+            position: absolute;
+            top: 13px;
+            left: 12px;
+            width: 32px;
+            height: 32px;
+            text-indent: -9999em;
+            background-position: center 2px;
+        }
+        .header
+        {
+            position: fixed;
+            z-index: 9;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .header .title
+        {
+            font-size: 20px;
+            color: #f13030;
+        }
+        .header-index
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .header-index.bg-red
+        {
+            background: #f13030;
+        }
+        .header-index .btn-login
+        {
+            float: right;
+            margin-right: 12px;
+            font-size: 16px;
+            color: #fff;
+        }
+        .form-search
+        {
+            float: left;
+            width: 88%;
+        }
+        .search-group
+        {
+            position: relative;
+            padding: 8px 8px 8px 12px;
+        }
+        .search-group .input-control
+        {
+            display: block;
+            width: 100%;
+            height: 32px;
+            padding-left: 32px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -o-border-radius: 18px;
+            border-radius: 18px;
+            text-align: left;
+            background-color: #fff;
+            background-position: 0 -185px;
+        }
+        /* 结算页 */.fixed-footer
+        {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+            background: #fff;
+        }
+        .fixed-footer .btn-submit
+        {
+            width: 38%;
+            margin-left: 8px;
+            color: #fff;
+            background: #f13030;
+        }
+        .fixed-footer .subtotal
+        {
+            padding-left: 12px;
+            font-size: 15px;
+            color: #222;
+        }
+        .mod-more
+        {
+            display: block;
+            padding: 12px;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: #222;
+            background: #fff;
+        }
+        .mod-more i
+        {
+            margin-top: 18px;
+        }
+        .mod-more .info
+        {
+            width: 78%;
+            margin-left: 3%;
+        }
+        .mod-more .name
+        {
+            font-size: 16px;
+        }
+        .mod-more .address
+        {
+            margin-top: 4px;
+            line-height: 18px;
+        }
+        .mod-order .info
+        {
+            margin-left: 0;
+        }
+        .mod-order .icon-right
+        {
+            width: 58px;
+            margin-top: 10px;
+        }
+        .mod-property
+        {
+            background: #fff;
+        }
+        .mod-property .pro-info
+        {
+            padding: 12px;
+        }
+        .mod-property .pic
+        {
+            width: 88px;
+            height: 88px;
+        }
+        .mod-property .info
+        {
+            position: relative;
+            width: 72%;
+        }
+        .mod-property .tips, .mod-property .num-outer
+        {
+            font-size: 12px;
+            color: #999;
+        }
+        .mod-property .name
+        {
+            width: 80%;
+            margin-bottom: 4px;
+            line-height: 20px;
+        }
+        .mod-property .unit
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .mod-property .num-outer
+        {
+            position: absolute;
+            top: 46px;
+            right: 0;
+        }
+        .mod-property .line-top
+        {
+            padding: 8px 12px;
+            border-top: 1px solid #eee;
+        }
+        .line-bottom
+        {
+            padding: 8px 12px;
+            border-bottom: 1px solid #eee;
+        }
+        /* 订单列表 */.header-order
+        {
+            background: #fff;
+        }
+        .header-order a
+        {
+            display: block;
+            border-bottom: 3px solid transparent;
+            font-size: 16px;
+            color: #222;
+        }
+        .header-order a.active
+        {
+            border-bottom-color: #f13030;
+            color: #f13030;
+        }
+        .init-order
+        {
+            margin-top: 58px;
+        }
+        .order-list li
+        {
+            margin-bottom: 12px;
+        }
+        .btns a
+        {
+            display: inline-block;
+            padding: 4px 12px;
+            border: 1px solid #222;
+            -webkit-border-radius: 18px;
+            border-radius: 18px;
+            margin-left: 8px;
+            color: #222;
+        }
+        .btns .btn-red
+        {
+            border-color: #f13030;
+            color: #f13030;
+        }
+        @media (max-width: 360px)
+        {
+            .form-search
+            {
+                float: left;
+                width: 85%;
+            }
+            .ensure-list span
+            {
+                margin-right: 6px;
+            }
+            .mod-property .info
+            {
+                width: 68%;
+            }
+            .comment-list .pro-info .info
+            {
+                width: 70%;
+            }
+            .status-info
+            {
+                padding: 28px 15px;
+            }
+            .init-detailed .mod-more .info
+            {
+                width: 86%;
+            }
+            .cart-list .pro-info .info
+            {
+                width: 60%;
+            }
+            .edit-wrapper .amount-input
+            {
+                width: 42%;
+            }
+        }
+    </style>
+</head>
+<body class="body-bottom">
+    <header class="header header-order box-flex">
+		<a class="flex active" href="#">吃什么</a>
+	</header>
+    <section class="init init-order">
+		<!-- 有数据 -->
+		<ul class="order-list">
+			<li class="mod-property">
+				<div class="order-top line-bottom">
+					<span class="status red" id="msg">选择中</span>
+					<span id="msg2">...</span>
+				</div>
+				<div id="demo" style="height:100px;overflow:hidden;">
+                    <div id="demo1">
+                        
+                    </div>
+                    <div id="demo2"></div>
+                </div>
+				<div class="subtotal line-top text-right"></div>
+				<div class="btns line-top clearfix">
+					<a class="fr btn-red" onclick="sel()">确认</a>
+					<a class="fr" onclick="cancel()">取消</a>
+				</div>
+			</li>
+		</ul>
+	</section>
+    <!--<section class="init init-order">
+		
+		<ul class="product-list clearfix">
+			<li>
+				<a href="product.html">
+					<div class="pic"><img src="images/404.jpg" /></div>
+					<div class="info">
+						<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+						<div class="unit">¥399</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="product.html">
+					<div class="pic"><img src="images/404.jpg" /></div>
+					<div class="info">
+						<div class="name">秋冬新款双肩包简约百搭文艺学院风背包</div>
+						<div class="unit">¥399</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>-->
+    <!-- 无数据 -->
+		<div class="nodata">
+			<div class="name">广告位招商</div>
+			<div class="subname">我们的产品覆盖整个绿地商务城及周边<br />每天活跃用户达上千人<br />新店主，快速拥有第一批客户<br />老店主，拥有高质量客户<br />快速引流电话（微信号）：18363228341</div>
+		</div>
+</body>
+<script src="data.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var speed = 1;
+    var tab = document.getElementById("demo");
+    var tab1 = document.getElementById("demo1");
+    var tab2 = document.getElementById("demo2");
+    var html = "";
+    for (var i in data) {
+        html += "<div class='pro-info clearfix'><div class='fl pic'><img src='" + data[i].url + "' onerror=\"javascript:this.src='images/404.jpg'\"/></div><div class='fr info'><div class='name'>" + data[i].name + "</div><div class='tips'>" + data[i].tips + "</div><div class='unit'>¥<em id='Em1'>" + data[i].unit + "</em></div><div class='num-outer'>tel:<em id='Em2' class='num'>" + data[i].tel + "</em></div><span class='hide'>库存：<em id='em3'>8</em></span></div></div>";
+    }
+    tab2.innerHTML = tab1.innerHTML = html;
+    function Marquee() {
+        if (tab2.offsetTop - tab.scrollTop <= 0)
+            tab.scrollTop -= tab1.offsetHeight
+        else {
+            tab.scrollTop += 10
+        }
+    }
+    var MyMar = setInterval(Marquee, speed);
+    function sel() {
+        var j = Math.ceil(Math.random() * data.length - 1);
+        document.getElementById("msg").innerHTML = "选择成功：";
+        document.getElementById("msg2").innerHTML = data[j].name;
+        tab2.innerHTML = tab1.innerHTML = "<div class='pro-info clearfix'><div class='fl pic'><img src='" + data[j].url + "' onerror=\"javascript:this.src='images/404.jpg'\" /></div><div class='fr info'><div class='name'>" + data[j].name + "</div><div class='tips'>" + data[j].tips + "</div><div class='unit'>¥<em id='Em1'>" + data[j].unit + "</em></div><div class='num-outer'>tel:<em id='Em2' class='num'>" + data[j].tel + "</em></div><span class='hide'>库存：<em id='em3'>8</em></span></div></div>";
+    }
+    function cancel() {
+        document.getElementById("msg").innerHTML = "选择中";
+        document.getElementById("msg2").innerHTML = "...";
+        tab2.innerHTML = tab1.innerHTML = html;
+    }
+</script>
+</html>

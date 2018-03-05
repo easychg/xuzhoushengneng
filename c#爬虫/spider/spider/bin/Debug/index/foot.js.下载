@@ -1,0 +1,90 @@
+
+
+//alert(document.referrer);
+function overTop(s){
+$(s).find(".panel").show();
+}
+function outTop(s){
+$(s).find(".panel").hide();
+}
+
+
+function loginByQQ(){
+	var w=window.screen.availWidth;
+	var left=w/2-360;
+
+	var url='top=50,left='+left+',width=720,height=500,status=yes,toolbar=no,menubar=no,location=no,resizable=yes';
+	//alert(url);
+	window.open('/qq/index.jsp','qq',url);
+	}
+
+
+function login(){
+
+//showWindowBig("login/login.jsp","500","用户登录");
+	var timestamp = (new Date()).valueOf();
+showPop("用户登录",350,200,50,"1");
+	var html='<iframe style="width:520px;height:200px" scrolling="no" border="0" frameborder="0" src=""></iframe>';
+	$("#popContent").load("/login/login.html?t="+timestamp);
+}
+
+
+var action="none";
+
+function loginDone2(){
+
+
+       closePop();
+       initIndex();
+     
+       switch(action)
+       {
+       case "home":
+       window.location.href="/home/index.jsp";
+       break;
+       }
+
+}
+
+
+
+function logout(){
+var timestamp = (new Date()).valueOf();
+	var url="/login/logout.jsp?t="+timestamp;
+	$.get(url,function(res){
+		window.location.href="/center/index.jsp";
+		//$("#topHi").hide();
+		//$("#topLogin").show();
+		//login();
+		
+	});
+}
+function getDecode(str){
+var s=str;
+s=s.replace(/\#/g,'\%');
+s=decodeURI(s);return s;
+}
+
+
+function initIndex()
+{
+	
+
+var uid=readCookie("uid");
+if(uid==null) return;
+if(uid!=null){
+$("#topHi").show();
+$("#topLogin").hide();
+}
+
+
+
+try{init();} catch(e){}
+}
+
+function regist(){
+window.open("/index.jsp?do=regist");
+}
+initIndex();
+
+

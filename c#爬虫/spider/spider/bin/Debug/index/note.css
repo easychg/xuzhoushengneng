@@ -1,0 +1,12 @@
+	.note{float:left;height:47px;border:solid 1px #999;box-shadow: 0px 0px 2px #565656;
+	padding-left:10px;padding-right:10px;background:url(/images/p/note.png) repeat-x 0px -192px;
+	position:absolute;left:50%;z-index:99999
+	}
+	#noteStyle{float:left;width:30px;height:47px}
+	.note_ok{;background:url(/images/p/note.png) no-repeat 0px 0px;}
+	.note_info{;background:url(/images/p/note.png) no-repeat 0px -96px;}
+	.note_info2{;background:url(/images/p/note.png) no-repeat 0px -48px;}
+	.note_loading{;background:url(/images/p/note_loading.gif) no-repeat 0px 10px;}
+	
+	#noteText{margin-left:10px;float:left;;height:47px;line-height:47px;font-size:14px;font-weight:bold;color:#606060}
+	

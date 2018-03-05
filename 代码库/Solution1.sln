@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLibrary", "CoreLibrary\CoreLibrary.csproj", "{A606AE69-25CC-478E-A5E3-8FCDB41F5B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{1BDE7EE9-35D0-4912-BE7E-B7E600DD1738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A606AE69-25CC-478E-A5E3-8FCDB41F5B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A606AE69-25CC-478E-A5E3-8FCDB41F5B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A606AE69-25CC-478E-A5E3-8FCDB41F5B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A606AE69-25CC-478E-A5E3-8FCDB41F5B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDE7EE9-35D0-4912-BE7E-B7E600DD1738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDE7EE9-35D0-4912-BE7E-B7E600DD1738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDE7EE9-35D0-4912-BE7E-B7E600DD1738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDE7EE9-35D0-4912-BE7E-B7E600DD1738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

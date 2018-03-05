@@ -1,0 +1,27 @@
+
+
+
+document.writeln('<div id="loading" style="display:none;z-index:99999;width:60px;position:absolute;left:50%;top:30px;margin-left:-30px" src="/images/p/loading.gif" />');
+
+document.writeln('<div id="loadingText"  style="font-size:13px;width:60px;position:absolute;top:-30px;left:0px">号码</div>');
+
+document.writeln('<img  style="z-index:99999;width:60px;position:absolute;left:0;top:0px;" src="/images/p/loading.gif" />');
+document.writeln('</div>');
+
+
+
+function loading(top,t){
+	
+	$("#loadingText").hide();
+	var top2=parseInt(getTopWindow());
+	top=parseInt(top);
+	$("#loading").css("top",(top2+top)+"px");
+	$("#loading").show();  
+	if(t!=null){
+		$("#loadingText").show();
+		$("#loadingText").html(t);
+	}
+}
+function loadingClose(){
+	$("#loading").hide();  
+}

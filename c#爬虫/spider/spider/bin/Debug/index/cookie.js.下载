@@ -1,0 +1,55 @@
+function writeCookie(name, value) {
+
+ 
+ var expires = new Date((new Date()).getTime() + 3600000*24*365*20);
+
+    document.cookie = name + "=" + value + (";expires=" + expires.toGMTString()) + ("; path=/") + (";domain=" + ".likeliao.com" );
+}
+function addCookie(name,value){
+	var timestamp = (new Date()).valueOf();
+	var url='/home/do/addCookie.jsp?t='+timestamp+'&name='+name+'&value='+value;
+	$.get(url,function(){
+		
+	});
+	
+}
+function readCookie(name) {
+  var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+  if (arr != null) {
+  return unescape(arr[2]);
+  }
+ return null;
+  }
+
+function delCookie(name) {
+ 
+  document.cookie = name + "=" + ("; path=/") + (";domain=" + ".likeliao.com") + ";expires=Fri, 02-Jan-1970 00:00:00 GMT";
+
+ }function writeCookie(name, value) {
+
+	 
+	 var expires = new Date((new Date()).getTime() + 3600000*24*365*20);
+
+	    document.cookie = name + "=" + value + (";expires=" + expires.toGMTString()) + ("; path=/") + (";domain=" + ".likeliao.com" );
+	}
+	function addCookie(name,value){
+		var timestamp = (new Date()).valueOf();
+		var url='/home/do/addCookie.jsp?t='+timestamp+'&name='+name+'&value='+value;
+		$.get(url,function(){
+			
+		});
+		
+	}
+	function readCookie(name) {
+	  var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+	  if (arr != null) {
+	  return unescape(arr[2]);
+	  }
+	 return null;
+	  }
+
+	function delCookie(name) {
+	 
+	  document.cookie = name + "=" + ("; path=/") + (";domain=" + ".likeliao.com") + ";expires=Fri, 02-Jan-1970 00:00:00 GMT";
+
+	 }

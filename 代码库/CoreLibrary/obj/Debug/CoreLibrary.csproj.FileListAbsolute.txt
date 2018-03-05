@@ -1,0 +1,12 @@
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\CoreLibrary.dll
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\CoreLibrary.pdb
+C:\ceshixiangmu\Solution1\CoreLibrary\obj\Debug\CoreLibrary.dll
+C:\ceshixiangmu\Solution1\CoreLibrary\obj\Debug\CoreLibrary.pdb
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.dll
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.OOXML.dll
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.OpenXml4Net.dll
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.xml
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.OOXML.xml
+C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.OpenXml4Net.xml

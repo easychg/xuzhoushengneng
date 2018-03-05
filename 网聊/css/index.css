@@ -1,0 +1,476 @@
+/* html的font-size是100px,所有
+    1rem就是100px
+    .1rem就是10px */
+.wrap {
+    min-height: 1rem;
+    background: #eee;
+    overflow:hidden;
+}
+
+
+/*适用于手机端：字体大小用rem，1rem=16px；为默认字体大小;最大宽度640*/
+
+
+/* // 隐藏城市 */
+
+.city-hide {
+    width: 100%;
+    // height: 100%;
+    position: absolute;
+    background-color: #eee;
+    z-index: 1111;
+    // overflow: auto;
+    top: 0;
+    right: 100%;
+}
+
+.city-hide h2 {
+    height: 1rem;
+    width: 100%;
+    background: #8DD62F;
+    text-align: center;
+    line-height: 1rem;
+    position: relative;
+    color: #fff;
+}
+
+.city-hide h2:before {
+    content: '';
+    position: absolute;
+    height: .5rem;
+    width: .5rem;
+    top: .25rem;
+    left: .25rem;
+    background: url(../images/fanhui.png) no-repeat;
+    background-size: 100%;
+}
+
+
+/* // 城市首字母 */
+
+.city-left {
+    width: 100%;
+    min-height: 1rem;
+    overflow: hidden;
+}
+
+.city-left b {
+    opacity: 0;
+}
+
+.city-left i {
+    display: none;
+}
+
+div.zimu-title {
+    height: .7rem;
+    line-height: .7rem;
+    font-weight: bold;
+    font-size: .3rem;
+    width: 6rem;
+    padding-left: .4rem;
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+.inp {
+    width: 75%;
+    height: .5rem;
+    margin-left: 10%;
+    font-size: .3rem;
+    padding-left: 5%;
+    margin-top: .4rem;
+}
+
+.city-left>span {
+    display: block;
+    height: .8rem;
+    line-height: .8rem;
+    width: 6rem;
+    padding-left: .4rem;
+    background-color: #e4e4e4;
+    border-bottom: 1px solid #eee;
+    color: #222;
+}
+
+.city-left>span a {
+    color: #222;
+    font-size: .28rem;
+}
+
+.city-main {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 1rem;
+    color: #999;
+}
+
+.city-main p {
+    display: inline-block;
+    height: .5rem;
+    min-width: 1rem;
+    text-align: center;
+    margin-bottom: .1rem;
+    line-height: .5rem;
+    background: #eee;
+    color: #222;
+    background: #fff;
+    padding: .1rem;
+}
+
+
+/* // 右侧选择字母 */
+
+.city-right {
+    width: .7rem;
+    min-height: 1rem;
+    opacity: .6;
+    position: fixed;
+    top: 20%;
+    right: 100%;
+    bottom: 10%;
+    z-index: 34545345;
+}
+
+.city-right a {
+    color: blue;
+    display: block;
+    width: 100%;
+    height: .3rem;
+    text-align: center;
+    line-height: .3rem;
+}
+
+
+/* // 头部 */
+
+.header {
+    z-index: 999;
+    height: .94rem;
+    width: 6.4rem;
+    background: #8DD62F;
+}
+
+header {
+    margin: 0 auto;
+    z-index: 999;
+    height: .94rem;
+    width: 6.4rem;
+    background: #8DD62F;
+}
+
+header>a {
+    display: block;
+    line-height: .94rem;
+    width: 58px; padding-right: 22px;
+    font-size: 14px;
+    color: #fff;
+    float: left;
+    text-align: left;
+    padding-left: 8px;
+    margin-right: 10px;
+    height: .94rem;
+    /*white-space: nowrap; text-overflow: ellipsis;*/
+    overflow: hidden; text-align: center; background: url(../images/_.png) no-repeat center right; background-size: 18px 10px;
+}
+
+header .h_inp {
+    float: left;
+    height: .6rem;
+    width: 3.5rem;
+    margin:0 auto;
+    border-radius: 50px;
+    position: relative;
+    background: #fff;
+    margin-top: .2rem;
+}
+
+/*header .h_inp:before {
+    content: '';
+    background: url(../images/_.png) no-repeat;
+    height: .3rem;
+    width: .3rem;
+    background-size: .3rem;
+    position: absolute;
+    top: .2rem;
+    left: -.8rem;
+}*/
+
+
+header .h_inp:after {
+    position: absolute;
+    top: .15rem;
+    left: .1rem;
+    content: '';
+    background: url(../images/icon.png) no-repeat;
+    background-size: .3rem;
+    height: .3rem;
+    width: .3rem;
+}
+
+header .h_inp input {
+    border: none;
+    outline: none;
+    font-size: .25rem;
+    height: .35rem;
+    margin: .125rem .5rem;
+    margin-right: .1rem;
+    color: #b6b6b6;
+    width: 2.7rem;
+}
+
+::-webkit-input-placeholder {
+    font-size: .25rem;
+    color: #b6b6b6;
+}
+
+header span.fr{
+    margin-right: .1rem;
+    width: .7rem;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+header span.fr img{
+    width: 85%;
+    margin-top:30%;
+}
+header span.fr a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+header span.fr b{
+    position: absolute;
+    top:.1rem;
+    right: 0;
+    height: .3rem;
+    line-height: .3rem;
+    text-align: center;
+    width: .3rem;
+    border-radius: 50%;
+    background: #FF7E00;
+    font-size: .19rem;
+    font-weight: normal;
+}
+
+
+/* // 导航 */
+.swiper-nav{ width: 100%; height: 38px; line-height: 38px; text-align: center; overflow: hidden; background: #fff;}
+.swiper-nav a{ font-size: 14px; color: #222; text-decoration:}
+.swiper-slide{ font-size: 18px; text-align: center; background: #fff;
+/* Center slide text vertically */
+display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+-webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;
+-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;
+}
+
+/* 轮播 */
+.swiper-carousel{ position: relative; width: 100%; height: 170px; overflow: hidden;}
+.swiper-carousel a{ display: block;}
+.swiper-carousel img{ display: block; width: 100%;}
+
+/* // 超值热卖 */
+section.hot{
+    width: 100%;
+    min-height: 3rem;
+    background: #fff;
+    margin-bottom: .93rem;
+}
+.hot_t{
+    font-size: .27rem;
+    color: #222;
+    text-align: center;
+    height: .65rem;
+    line-height: .65rem;
+    font-weight: bold;
+}
+.hot a{
+    display: block;
+    height: 3.71rem;
+    width: 100%;
+    overflow: hidden;
+    border-bottom:1px solid  #f4f4f4;
+    margin-top: .2rem;
+}
+.hot a img{
+    display: block;
+    width: 100%;
+    height: 2.63rem;
+}
+.hot a .hot_txt{
+    height: 1rem;
+    width: 6rem;
+    margin: 0 auto;
+}
+
+.hot_txt{
+    line-height: .5rem;
+}
+
+.hot_txt_l{
+    width: 4.4rem;
+    height: 1rem;
+}
+
+.hot_txt_l p:first-child{
+    font-size: .25rem;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hot_txt_l p:last-child{
+    font-size: .2rem;
+    color: #999;
+}
+
+
+
+.hot_txt_r{
+    width: 1.6rem;
+    height: 1rem;
+    text-align: right;
+}
+
+.hot_txt_r p:first-child{
+    font-size: .2rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.hot_txt_r p:last-child{
+    font-size: .27rem;
+    color: #FF6000;
+    font-weight: bold;
+}
+
+
+.hot_b{
+    height: .84rem;
+    line-height: .84rem;
+    background: #f4f4f4;
+    color: #999;
+    font-size: .25rem;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+.hot_b:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1rem;
+    height: 1px;
+    margin-left: -2.1rem;
+    background: #999;
+}
+.hot_b:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: -2.1rem;
+    width: 1rem;
+    height: 1px;
+    background: #999;
+}
+
+/* // 固定右侧 */
+section.fix{
+    width: 1rem;
+    height: 1rem;
+    background: #8DD531;
+    opacity: .9;
+    position: fixed;
+    bottom: 2.5rem;
+    right: .14rem;
+    color:#fff;
+    font-size: .25rem;
+    text-align: center;
+    line-height: .5rem;
+}
+.fix .fix_m{
+    width: 90%;
+    height: 1px;
+    background: #fff;
+    margin-left: 5%;
+}
+
+/*返回顶部*/
+
+.return-top {
+    cursor: pointer;
+    position: fixed;
+    right: .14rem;
+    bottom: 1.24rem;
+    height: .78rem;
+    width: .78rem;
+    border-radius: .4rem;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 0px 20px #e2e2e2;
+    text-align: center;
+    background: #fff;
+    display: none;
+}
+
+.return-top img {
+    margin-top: .15rem;
+    height: .49rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    height: .93rem;
+    width: 6.4rem;
+    border-top: 1px solid #f5f5f5;
+}
+
+footer a {
+    display: block;
+    float: left;
+    width: 1.28rem;
+    height: .93rem;
+    color: #666;
+    font-size: .21rem;
+}
+
+footer a img {
+    display: block;
+    margin-top: .1rem;
+    margin-left: .41rem;
+    height: .49rem;
+    width: .45rem;
+}
+
+footer a span {
+    display: block;
+    height: .34rem;
+    width: 100%;
+    text-align: center;
+}
+
+footer a.footer-cart {
+    position: relative;
+}
+
+footer a.footer-cart b {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: .3rem;
+    width: .3rem;
+    min-width: .2rem;
+    min-height: .2rem;
+    border-radius: 50%;
+    line-height: .3rem;
+    text-align: center;
+    background: #FF7e00;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 100;
+}

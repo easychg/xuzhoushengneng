@@ -1,0 +1,43 @@
+
+function UID(){
+var url=window.location.href;
+
+var p1=url.indexOf("#");
+if(p1!=-1) url=url.substring(0,p1);
+
+p1=url.indexOf("?");
+if(p1!=-1) url=url.substring(0,p1);
+
+
+var len=url.length;
+p1=url.lastIndexOf("/");
+p1++;
+var uid=url.substring(p1);
+
+uid=uid.replace("v","");
+uid=uid.replace("m","");
+return uid;
+}
+
+
+
+
+
+function Request(strName)
+{
+    var strHref = window.document.location.href;
+    //strHref=strHref.replace("#","&page=");
+     strHref=strHref.replace("#","&id=");
+    var intPos = strHref.indexOf("?");
+    var strRight = strHref.substr(intPos + 1);
+ 
+    var arrTmp = strRight.split("&");
+    for(var i = 0; i < arrTmp.length; i++)
+    {
+        var arrTemp = arrTmp[i].split("=");
+ 
+        if(arrTemp[0].toUpperCase() == strName.toUpperCase()) return arrTemp[1];
+    }
+    return "";
+}
+

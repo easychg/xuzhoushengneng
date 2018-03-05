@@ -1,0 +1,15 @@
+var redisURL="http://c.likeliao.com";
+var domain="likeliao.com";
+var site="http://www.likeliao.com";
+var imgURL="http://img.likeliao.com";
+var imgURL2="http://img.likeliao.com";
+var cdnURL="";
+document.domain=domain;
+
+String.prototype.replaceAll  = function(s1,s2){   
+	return this.replace(new RegExp(s1,"gm"),s2);   
+	}; 
+	window.onerror=function(sMsg,sUrl,sLine){
+		 
+		return true;
+	}

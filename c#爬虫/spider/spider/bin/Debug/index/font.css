@@ -1,0 +1,151 @@
+.bodyPart{width:1000px;margin-left:auto;margin-right:auto;margin-top:15px}
+.leftPart{width:235px;float:left;background:#ffffff;}
+.rightPart{position:relative;width:750px;float:left;margin-left:15px;background:#ffffff}
+.rightPartCorner{left:730px;top:0px;position:absolute;width:20px;height:20px;float:left;background:url(/images/p/corner.png)}
+.leftPartTitle{font-size:18px;font-family:微软雅黑}
+
+
+
+.leftTitle{font-size:18px;font-weight:bold}
+
+
+
+A.BigBlue{text-align:center;font-size:20px;color:#ffffff;
+background:url(/images/p/btnBlue.png) no-repeat 0px 0px;width:150px;height:53px;
+float:left;line-height:53px;TEXT-DECORATION: none;font-family:微软雅黑}
+A.BigBlue:hover{background:url(/images/p/btnBlue.png) no-repeat 0px -55px; }
+
+.font_blue_12{FONT-SIZE: 12px; COLOR: #0579C6; TEXT-DECORATION: none;}
+.font_blue_13{FONT-SIZE: 13px; COLOR: #0579C6; TEXT-DECORATION: none;}
+.font_grey_12{FONT-SIZE: 12px; COLOR: #6D6E71; }
+.font_grey_13{FONT-SIZE: 12px; COLOR: #6D6E71; }
+
+.font_blue_14{FONT-SIZE: 14px; COLOR: #0579C6; TEXT-DECORATION: none;}
+
+A.a_grey_11{ FONT-SIZE: 11px; COLOR: #8D8980; TEXT-DECORATION: none;}
+A.a_grey_11:hover{ TEXT-DECORATION: underline}
+
+
+
+
+A.a_grey_12{ FONT-SIZE: 12px; COLOR: #8D8980; TEXT-DECORATION: none;}
+A.a_grey_12:hover{ TEXT-DECORATION: underline}
+
+A.a_light_12{ FONT-SIZE: 12px; COLOR: #8d9ccf; TEXT-DECORATION: none;}
+A.a_light_12:hover{ TEXT-DECORATION: underline}
+
+A.a_blue_11{ FONT-SIZE: 11px; COLOR: #005EAC; TEXT-DECORATION: none;}
+A.a_blue_11:hover{ TEXT-DECORATION: underline}
+
+A.a_blue_12{ FONT-SIZE: 12px; COLOR: #005EAC; TEXT-DECORATION: none;}
+A.a_blue_12:hover{ TEXT-DECORATION: underline}
+
+A.a_blue_13{ FONT-SIZE: 13px; COLOR: #005EAC; TEXT-DECORATION: none;}
+A.a_blue_13:hover{ TEXT-DECORATION: underline}
+
+A.a_blue_14{ FONT-SIZE: 14px; COLOR: #005EAC; TEXT-DECORATION: none;}
+A.a_blue_14:hover{ TEXT-DECORATION: underline}
+
+
+
+A.p1 {  margin-left: 2px; margin-right: 2px;font-family:����; cursor:pointer; border: solid 1px #cccccc; padding-left: 5px; padding-right: 5px; height: 20px; line-height: 20px; text-align:center;font-size: 13px ;color: #0579D9; text-decoration:none }
+A.p1:hover {TEXT-DECORATION: underline;  margin-left: 2px; margin-right: 2px;font-family:����;cursor:pointer;border: solid 1px #CCCCCC;   padding-left: 5px; padding-right: 5px; height: 20px; line-height: 20px; text-align:center;font-size: 13px ;color: #FF6600;}
+	/*��t��-��ҳ-2*/
+	  A.p2 {  margin-left: 2px; margin-right: 2px;font-family:����;border: solid 1px #91AAED;  background-color:#0196CE; padding-left: 5px; padding-right: 5px; height: 20px; line-height: 20px; text-align:center;font-size: 13px ;color: #ffffff; text-decoration:none }
+A.a_grey_12{ FONT-SIZE: 12px; COLOR: #89857C; TEXT-DECORATION: none;}
+A.a_grey_12:hover{ TEXT-DECORATION:underline}
+
+A.p1 {margin-left: 3px; font-family:Arial; cursor:pointer; border: solid 1px #d8dfea; background-color:#ffffff; padding-left: 5px; padding-right: 5px; height: 20px; line-height: 20px; text-align:center;font-size: 13px ;color: #0579C6; text-decoration:none }
+A.p1:hover { margin-left: 3px; font-family:Arial;border: solid 1px #d8dfea;  background-color:#d8dfea; padding-left: 5px; padding-right: 5px; height: 20px; line-height: 20px; text-align:center;font-size: 13px ;color: #0579C6; text-decoration:none }
+	/*��t��-��ҳ-2*/
+A.p2 { margin-left: 3px; font-family:Arial;border: solid 1px #0579C6;  background-color:#0579C6; padding-left: 5px; padding-right: 5px; height: 20px; line-height: 20px; text-align:center;font-size: 13px ;color: #ffffff; text-decoration:none }
+
+
+
+
+ .btnLiao{outline: none;padding-left:9px;padding-right:9px;
+height:30px;line-height:30px;background:#0193E6;color:#ffffff;
+TEXT-DECORATION: none;font-size:14px;
+border-left:solid 1px #A7D8FF;border-top:solid 1px #A7D8FF;
+border-bottom:solid 1px #004D90;border-right:solid 1px #004D90;cursor:pointer;
+}
+.btnLiao:hover{background:#038EDC}
+.btnLiao:active{;background:#0082D1;line-height:31px}
+
+
+
+
+
+.btnLiao2{outline: none;padding-left:9px;padding-right:9px;
+height:30px;line-height:30px;background:#F0F0F0;color:#333333;
+TEXT-DECORATION: none;font-size:14px;
+border-left:solid 1px #E6E0E0;border-top:solid 1px #E6E0E0;
+border-bottom:solid 1px #959191;border-right:solid 1px #959191;cursor:pointer;
+}
+.btnLiao2:hover{background:#EAE8E8}
+.btnLiao2:active{;background:#E0DEDE;line-height:31px}
+
+
+
+
+.red{width:125px;height:45px;line-height:45px;float:left; TEXT-DECORATION: none;background:#DB3652;
+color:#fff;border-radius: 4px;font-family:宋体;text-align:center;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+font-weight: 400;font-size:16px;}
+.red:hover{background:#EA4163}
+
+
+.blue{width:125px;height:45px;line-height:45px;float:left; TEXT-DECORATION: none;background:#1167EE;
+color:#fff;border-radius: 4px;font-family:宋体;text-align:center;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+font-weight: 400;font-size:16px;}
+.blue:hover{background:#1D71F6}
+
+.green{width:125px;height:45px;line-height:45px;float:left; TEXT-DECORATION: none;background:#6FC53A;
+color:#fff;border-radius: 4px;font-family:宋体;text-align:center;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+font-weight: 400;font-size:16px;}
+.green:hover{background:#5FB52A}
+
+
+
+
+body{
+	margin:0px;width:100%;text-align:center;
+}
+
+A.chat_free{border:solid 1px #539D34;font-weight:bold;text-align:center;text-indent:18px;;position:relative;TEXT-DECORATION: none;width:110px;height:32px;line-height:32px;font-size:14px;color:#fff;float:left;background:#66B240;
+border-radius: 4px}
+A.chat_free:hover{background:#71BE4A}
+A.chat_free .icon{left:8px;top:5px;position:absolute;width:14px;height:22px;float:left;background:url(/images/p/menu_angel.png) no-repeat 0px -77px}
+
+
+A.chat_notime{cursor:default;border:solid 1px #D2D2D2;font-weight:bold;text-align:center;;position:relative;TEXT-DECORATION: none;width:110px;height:32px;line-height:32px;font-size:14px;color:#888;float:left;background:#F2F0F0;
+border-radius: 4px}
+
+A.chat_silent{cursor:default;border:solid 1px #D2D2D2;font-weight:bold;text-align:center;;position:relative;TEXT-DECORATION: none;width:110px;height:32px;line-height:32px;font-size:14px;color:#888;float:left;background:#F2F0F0;
+border-radius: 4px}
+
+A.chat_flash{border:solid 1px #C10B2A;font-weight:bold;text-align:center;text-indent:18px;;position:relative;TEXT-DECORATION: none;width:110px;height:32px;line-height:32px;font-size:14px;color:#fff;float:left;background:#DB3652;
+border-radius: 4px}
+A.chat_flash:hover{background:#E5415D}
+A.chat_flash .icon{left:8px;top:5px;position:absolute;width:14px;height:22px;float:left;background:url(/images/p/menu_angel.png) no-repeat 0px -108px}
+
+
+A.chat_chatting{border:solid 1px #F49C03;font-weight:bold;text-align:center;text-indent:18px;;position:relative;TEXT-DECORATION: none;width:110px;height:32px;line-height:32px;font-size:14px;color:#fff;float:left;background:#E68905;
+border-radius: 4px}
+A.chat_chatting .icon{left:8px;top:5px;position:absolute;width:14px;height:22px;float:left;background:url(/images/p/menu_angel.png) no-repeat 0px -77px}
+
+
+A.chat_video{border:solid 1px #1B7DE0;font-weight:bold;text-align:center;text-indent:18px;;position:relative;TEXT-DECORATION: none;width:110px;height:32px;line-height:32px;font-size:14px;color:#fff;float:left;background:#3399FE;
+border-radius: 4px}
+A.chat_video:hover{background:#42A7FF}
+
+A.chat_video .icon{left:6px;top:5px;position:absolute;width:19px;height:22px;float:left;background:url(/images/p/menu_angel.png) no-repeat 0px 0px}
+
+A.btnGreen{padding-left:8px;padding-right:8px;border:solid 1px #266316;font-weight:bold;text-align:center;position:relative;TEXT-DECORATION: none;height:30px;line-height:30px;font-size:14px;color:#fff;float:left;background:#63A942;
+border-radius: 4px}
+A.btnGreen:hover{background:#5C9944}
+
+
+

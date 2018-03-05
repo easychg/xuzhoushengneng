@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>购物车</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+
+<body>
+	<nav class="fixed-nav clearfix">
+		<a href="index.html"><i class="icon-home"></i>首页</a>
+		<a href="catagory.html"><i class="icon-catagory"></i>分类</a>
+		<a class="active" href="cart.html">
+			<i class="icon-cart"><b class="cart-num border-circle">3</b></i>购物车
+		</a>
+		<a href="user-center.html"><i class="icon-me"></i>我的</a>
+	</nav>
+	
+	<article class="init init-cart">
+		<div class="mod-edit">
+			<a class="btnEdit">编辑</a>
+			<a class="hide btn-finish">完成</a>
+		</div>
+
+		<ul class="cart-list clearfixlist">
+			<li class="item tr-goods">
+				<label class="fl label-single">
+					<input class="check" type="checkbox" hidden />
+					<i class="border-circle"></i> 
+				</label>
+				<a class="fr target" href="#">
+					<div class="pro-info clearfix">
+						<div class="fl pic"><img src="images/img-pro02.jpg" /></div>
+						<div class="fr info">
+							<div class="show-info">
+								<div class="name">悦诗风吟石榴精华露套装50ml 改善暗沉</div>
+								<div class="tips gray">自然色 50ml</div>
+								<div class="price-relate clearfix">
+									<div class="fl unit-outer red">¥<em class="unit">10</em></div>
+									<div class="fr num-outer">x<em class="num">3</em></div>
+									<div class="sum hide">111</div>
+								</div>
+							</div>
+
+							<div class="edit-wrapper">
+								<div class="tb-num clearfix">
+				                    <span class="amount-widget clearfix">
+				                        <input class="amount-input" type="text" value="3" title="请输入购买量">
+				                        <span class="amount-btn">
+				                            <i class="amount-increase">+</i>
+				                            <i class="amount-decrease">-</i>
+				                        </span>
+				                    </span>
+				                </div>
+				                <div class="sku-tips">您所填写的商品数量超过库存数！</div>
+				                <div class="btn-spec gray">自然色 50ml</div>
+			                </div>
+							<span class="hide">库存：<em class="emStock">5</em></span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="item tr-goods">
+				<label class="fl label-single">
+					<input class="check" type="checkbox" hidden />
+					<i class="border-circle"></i> 
+				</label>
+				<a class="fr target" href="#">
+					<div class="pro-info clearfix">
+						<div class="fl pic"><img src="images/img-pro01.jpg" /></div>
+						<div class="fr info">
+							<div class="show-info">
+								<div class="name">悦诗风吟石榴精华露套装150ml 改善暗沉</div>
+								<div class="tips gray">枚红色 150ml</div>
+								<div class="price-relate clearfix">
+									<div class="fl unit-outer red">¥<em class="unit">100</em></div>
+									<div class="fr num-outer">x<em class="num">8</em></div>
+									<div class="sum hide">111</div>
+								</div>
+							</div>
+
+							<div class="edit-wrapper">
+								<div class="tb-num clearfix">
+				                    <span class="amount-widget clearfix">
+				                        <input class="amount-input" type="text" value="3" title="请输入购买量">
+				                        <span class="amount-btn">
+				                            <i class="amount-increase">+</i>
+				                            <i class="amount-decrease">-</i>
+				                        </span>
+				                    </span>
+				                </div>
+				                <div class="sku-tips">您所填写的商品数量超过库存数！</div>
+				                <div class="btn-spec gray">自然色 350ml</div>
+			                </div>
+							<span class="hide">库存：<em class="emStock">9</em></span>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+		<!-- slideUp -->
+		<div class="slideUpWrapper"></div>
+		<!--  选择商品规格 -->
+		<div class="slideUp slideUp-cart">
+			<div class="content">
+				<div class="hd clearfix">
+					<div class="pic"><img src="images/img-pro01.jpg" /></div>
+					<div class="unit red">¥<em id="proPrice">80</em></div>
+					<div class="sku">库存：<em id="emStock">256</em></div>
+				</div>
+				<div class="bd">
+					<div class="tb-sku">
+		                <!-- 尺寸 -->
+		                <div id="tbSize" class="tb-size mb-12 clearfix">
+		                    <span>尺码</span>
+		                    <label class="radio-sku"> 
+		                        <input type="radio" hidden="" name="size"> 
+		                        <i></i>S
+		                        <em class="price">1</em>
+		                        <em class="sku">10</em>
+		                    </label> 
+		                    <label class="radio-sku"> 
+		                        <input type="radio" hidden="" name="size" checked="checked"> 
+		                        <i></i>128G
+		                        <em class="price">2</em>
+		                        <em class="sku">20</em>
+		                    </label> 
+		                    <label class="radio-sku"> 
+		                        <input type="radio" hidden="" name="size"> 
+		                        <i></i>XL
+		                        <em class="price">3</em>
+		                        <em class="sku">30</em>
+		                    </label> 
+		                </div>
+		                <!-- 颜色 -->
+		                <div id="tbColor" class="tb-color mb-12 clearfix">
+		                    <span>颜色</span>
+		                    <label class="radio-sku"> 
+		                        <input type="radio" hidden="" name="color" checked="checked"> 
+		                        <i></i>蓝色
+		                        <em class="price">4</em>
+		                        <em class="sku">40</em>
+		                    </label> 
+		                    <label class="radio-sku"> 
+		                        <input type="radio" hidden="" name="color"> 
+		                        <i></i>白色
+		                        <em class="price">5</em>
+		                        <em class="sku">50</em>
+		                    </label> 
+		                </div>
+		            </div>
+					<a class="btn-confirm">确定</a>
+				</div>
+			</div>
+		</div>
+		<!-- slideUp ensure end -->
+	</article>
+
+	<footer class="fixed-footer fixed-cart clearfix">
+		<label class="label-single">
+			<input class="check-all check" type="checkbox" hidden />
+			<i class="border-circle"></i> 全选
+		</label>
+		<a class="fr btn-submit">结算(<em id="orderNum">12</em>)</a>
+		<a class="fr btn-cartdel">删除</a>
+		<div class="subtotal">合计:<span class="red">¥<em id="subtotal">0</em></span></div>
+	</footer>
+
+	<div id="JScrollToTop" class="scroll-top"></div>
+
+	<script src="js/jquery.1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>
+
