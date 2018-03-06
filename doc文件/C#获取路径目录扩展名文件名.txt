@@ -1,0 +1,19 @@
+//获取当前运行程序的目录
+ 7             string fileDir = Environment.CurrentDirectory;
+ 8             Console.WriteLine("当前程序目录："+fileDir);
+ 9             
+10             //一个文件目录
+11             string filePath = "C:\\JiYF\\BenXH\\BenXHCMS.xml";
+12             Console.WriteLine("该文件的目录："+filePath);
+13 
+14             string str = "获取文件的全路径：" + Path.GetFullPath(filePath);   //-->C:\JiYF\BenXH\BenXHCMS.xml
+15             Console.WriteLine(str);
+16             str = "获取文件所在的目录：" + Path.GetDirectoryName(filePath); //-->C:\JiYF\BenXH
+17             Console.WriteLine(str);
+18             str = "获取文件的名称含有后缀：" + Path.GetFileName(filePath);  //-->BenXHCMS.xml
+19             Console.WriteLine(str);
+20             str = "获取文件的名称没有后缀：" + Path.GetFileNameWithoutExtension(filePath); //-->BenXHCMS
+21             Console.WriteLine(str);
+22             str = "获取路径的后缀扩展名称：" + Path.GetExtension(filePath); //-->.xml
+23             Console.WriteLine(str);
+24             str = "获取路径的根目录：" + Path.GetPathRoot(filePath); //-->C:\
