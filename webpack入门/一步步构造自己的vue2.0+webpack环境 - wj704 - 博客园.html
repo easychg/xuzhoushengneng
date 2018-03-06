@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.cnblogs.com/wj204/p/6031435.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/bundle-CodingLife.css">
+<link type="text/css" rel="stylesheet" href="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/148747.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/bundle-CodingLife-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/wj204/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/wj204/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/wj204/wlwmanifest.xml">
+<script async="" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/analytics.js.下载"></script><script type="text/javascript" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/encoder.js.下载"></script><script src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/jquery-2.2.0.min.js.下载"></script>
+<script type="text/javascript">var currentBlogApp = 'wj204', cb_enable_mathjax=false;var isLogined=true;</script>
+<script src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/wj204/"><img id="blogLogo" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/wj204/">Eraser's blog :)</a></h1>
+<h2>好好活，就是做有意义的事
+♪~~((*^o^*)~~♪</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/wj204/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/wj704">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/wj204/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/wj204/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 136&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 301</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/wj204/p/6031435.html">一步步构造自己的vue2.0+webpack环境</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><p>前面vue2.0和webpack都已经有接触了些（<a href="http://www.cnblogs.com/wj204/p/5917603.html" target="_blank">vue.js入门</a>，<a href="http://www.cnblogs.com/wj204/p/6001559.html" target="_blank">webpack入门之简单例子跑起来</a>），现在开始学习如何构造自己的vue2.0+webpack环境。<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104183728111-190450511.jpg" alt=""></p>
+<p>1.首先新建一个目录vue-wkdemo，这是我们的项目目录。执行 npm init 命令生成package.json文件。执行npm init之后，会提示你填写一些项目的信息，一直回车默认就好了，或者直接执行 npm init -y 直接跳过询问步骤。<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104184005736-1339508771.gif" alt=""></p>
+<p>2.安装项目依赖项</p>
+<div class="cnblogs_code">
+<pre>npm install webpack webpack-dev-server vue-loader vue-html-loader css-loader vue-style-loader<br>vue-hot-reload-api babel-loader babel-core babel-plugin-transform-runtime babel-preset-es2015 babel-runtime@5 --save-dev</pre>
+<pre>npm install html-webpack-plugin --save-dev</pre>
+</div>
+<div class="cnblogs_code">
+<pre>npm install vue --save</pre>
+</div>
+<p>3.新建入口文件index.js，文件位置放置为：vue-wkdemo-&gt;app-&gt;index-&gt;index.js</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>import Vue from 'Vue'<span style="color: #000000;">
+import Favlist from </span>'./components/Favlist.vue'<span style="color: #000000;">
+Vue.config.debug </span>= <span style="color: #0000ff;">true</span>;<span style="color: #008000;">//</span><span style="color: #008000;">开启错误提示</span>
+window.onload = <span style="color: #0000ff;">function</span><span style="color: #000000;"> () {
+  </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> Vue({
+      el: </span>'#app'<span style="color: #000000;">,
+      components: {
+        </span>'my-component'<span style="color: #000000;">: Favlist
+      }
+  });
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>4.构建index.html模版，文件位置放置为：vue-wkdemo-&gt;app-&gt;index-&gt;index.html</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #0000ff;">&lt;!</span><span style="color: #ff00ff;">DOCTYPE html</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">html </span><span style="color: #ff0000;">lang</span><span style="color: #0000ff;">="zh"</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">head</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">meta </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">="viewport"</span><span style="color: #ff0000;"> content</span><span style="color: #0000ff;">="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no"</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">meta </span><span style="color: #ff0000;">charset</span><span style="color: #0000ff;">="utf-8"</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">title</span><span style="color: #0000ff;">&gt;</span>首页<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">title</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">head</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+      <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="app"</span><span style="color: #0000ff;">&gt;</span>
+
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">my-component</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">my-component</span><span style="color: #0000ff;">&gt;</span>
+      <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">html</span><span style="color: #0000ff;">&gt;</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>5.构建vue组件Favlist.vue ，文件放置为：vue-wkdemo-&gt;app-&gt;index-&gt;components-&gt;Favlist.vue&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">template </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="template-home"</span><span style="color: #0000ff;">&gt;</span>
+  <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">v-for</span><span style="color: #0000ff;">="n in 10"</span><span style="color: #0000ff;">&gt;</span>div<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+  <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">template</span><span style="color: #0000ff;">&gt;</span>
+<br><br><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">style</span><span style="color: #0000ff;">&gt;</span><span style="background-color: #f5f5f5; color: #800000;">
+body </span><span style="background-color: #f5f5f5; color: #000000;">{</span><span style="background-color: #f5f5f5; color: #ff0000;">
+    color</span><span style="background-color: #f5f5f5; color: #000000;">:</span><span style="background-color: #f5f5f5; color: #0000ff;"> red</span><span style="background-color: #f5f5f5; color: #000000;">;</span>
+<span style="background-color: #f5f5f5; color: #000000;">}</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">style</span><span style="color: #0000ff;">&gt;</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>6.构建&nbsp;webpack.config.js ，文件放置为：vue-wkdemo-&gt;build-&gt;webpack.config.js</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;7d987bdd-106b-4c1e-9ff2-0f723b4b7f49&#39;)"><img id="code_img_closed_7d987bdd-106b-4c1e-9ff2-0f723b4b7f49" class="code_img_closed" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_7d987bdd-106b-4c1e-9ff2-0f723b4b7f49" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;7d987bdd-106b-4c1e-9ff2-0f723b4b7f49&#39;,event)" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_7d987bdd-106b-4c1e-9ff2-0f723b4b7f49" class="cnblogs_code_hide">
+<pre><span style="color: #008000;">//</span><span style="color: #008000;"> nodejs 中的path模块</span>
+<span style="color: #0000ff;">var</span> path = require('path'<span style="color: #000000;">);
+</span><span style="color: #0000ff;">var</span> HtmlWebpackPlugin = require('html-webpack-plugin'<span style="color: #000000;">)
+
+module.exports </span>=<span style="color: #000000;"> {
+    </span><span style="color: #008000;">//</span><span style="color: #008000;"> 入口文件，path.resolve()方法，可以结合我们给定的两个参数最后生成绝对路径，最终指向的就是我们的index.js文件</span>
+    entry: path.resolve(__dirname, '../app/index/index.js'<span style="color: #000000;">),
+    </span><span style="color: #008000;">//</span><span style="color: #008000;"> 输出配置</span>
+<span style="color: #000000;">    output: {
+        </span><span style="color: #008000;">//</span><span style="color: #008000;"> 输出路径是 myProject/output/static</span>
+        path: path.resolve(__dirname, '../output/static'<span style="color: #000000;">),
+        publicPath: </span>'static/'<span style="color: #000000;">,
+        filename: </span>'[name].[hash].js'<span style="color: #000000;">,
+        chunkFilename: </span>'[id].[chunkhash].js'<span style="color: #000000;">
+    },
+    resolve: {
+        extensions: [</span>'', '.js', '.vue'<span style="color: #000000;">],
+        alias: {
+            </span>'Vue': 'vue/dist/vue.js'<span style="color: #000000;">
+        }
+    },
+    module: {
+
+        loaders: [
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 使用vue-loader 加载 .vue 结尾的文件</span>
+<span style="color: #000000;">            {
+                test: </span>/\.vue$/<span style="color: #000000;">,
+                loader: </span>'vue'<span style="color: #000000;">
+            },
+            {
+                test: </span>/\.js$/<span style="color: #000000;">,
+                loader: </span>'babel?presets=es2015'<span style="color: #000000;">,
+                exclude: </span>/node_modules/<span style="color: #000000;">
+            }
+        ]
+    },
+    Favlist: {
+        loaders: {
+            js: </span>'babel'<span style="color: #000000;">
+        }
+    },
+    plugins: [
+        </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> HtmlWebpackPlugin({
+            filename: </span>'../index.html'<span style="color: #000000;">,
+            template: path.resolve(__dirname, </span>'../app/index/index.html'<span style="color: #000000;">),
+            inject: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">
+        })
+    ]
+}</span></pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p><span style="color: #ff0000;">7.运行构建命令</span> ：</p>
+<div class="cnblogs_code">
+<pre>webpack --display-modules --display-chunks --config build/webpack.config.js</pre>
+</div>
+<p>可以看到输出文件：</p>
+<p><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104182148565-1292868126.png" alt=""></p>
+<p><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104182231283-783574793.png" alt=""></p>
+<p>8.到这里，我们的目录结构为：</p>
+<p><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104183055674-1826430650.png" alt=""></p>
+<p>运行output-&gt;static-&gt;index.html这个文件，过程中遇到各种各样的坑<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104184422486-1755633273.jpg" alt="">（省略几百字。。。）</p>
+<p>最后终于看到结果了！！！<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104184319783-1383452183.gif" alt=""></p>
+<p><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104183201955-1292925731.png" alt=""></p>
+<p>9.问题来了，每次都需要运行构建命令才能查看改变后的代码效果，这是很没有效率<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104183657471-1652453370.jpg" alt="">，于是还需要安装&nbsp;<a href="https://www.npmjs.com/package/webpack-dev-middleware" rel="external" target="_blank">webpack-dev-middleware</a>中间件和<a href="https://www.npmjs.com/package/webpack-hot-middleware" rel="external" target="_blank">webpack-hot-middleware</a>&nbsp;中间件</p>
+<div class="cnblogs_code">
+<pre>npm install webpack-dev-middleware webpack-hot-middleware --save-dev</pre>
+</div>
+<p>另外还需要安装express</p>
+<div class="cnblogs_code">
+<pre>npm install express --save-dev</pre>
+</div>
+<p>介绍下<a href="https://www.npmjs.com/package/webpack-dev-middleware" rel="external" target="_blank">webpack-dev-middleware</a>中间件，它是对webpack一个简单的包装，它可以通过连接服务器服务那些从webpack发射出来的文件，它有一下几点好处：</p>
+<p>1、不会向硬盘写文件，而是在内存中，注意我们构建项目实际就是向硬盘写文件。</p>
+<p>2、当文件改变的时候，这个中间件不会再服务旧的包，你可以直接刷新浏览器就能看到最新的效果，这样你就不必等待构建的时间，所见即所得。</p>
+<p>在build目录中创建一个dev-server.js文件，并写入内容：</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;b6c4e1ae-0813-4279-b321-1e696d4f8951&#39;)"><img id="code_img_closed_b6c4e1ae-0813-4279-b321-1e696d4f8951" class="code_img_closed" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_b6c4e1ae-0813-4279-b321-1e696d4f8951" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;b6c4e1ae-0813-4279-b321-1e696d4f8951&#39;,event)" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_b6c4e1ae-0813-4279-b321-1e696d4f8951" class="cnblogs_code_hide">
+<pre><span style="color: #008000;">//</span><span style="color: #008000;"> 引入必要的模块</span>
+<span style="color: #0000ff;">var</span> express = require('express'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> webpack = require('webpack'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> config = require('./webpack.config'<span style="color: #000000;">)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 创建一个express实例</span>
+<span style="color: #0000ff;">var</span> app =<span style="color: #000000;"> express()
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 调用webpack并把配置传递过去</span>
+<span style="color: #0000ff;">var</span> compiler =<span style="color: #000000;"> webpack(config)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 使用 webpack-dev-middleware 中间件</span>
+<span style="color: #0000ff;">var</span> devMiddleware = require('webpack-dev-middleware'<span style="color: #000000;">)(compiler, {
+    publicPath: config.output.publicPath,
+    stats: {
+        colors: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">,
+        chunks: </span><span style="color: #0000ff;">false</span><span style="color: #000000;">
+    }
+})
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 注册中间件</span>
+<span style="color: #000000;">app.use(devMiddleware)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 监听 8888端口，开启服务器</span>
+app.listen(8888, <span style="color: #0000ff;">function</span><span style="color: #000000;"> (err) {
+    </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> (err) {
+        console.log(err)
+        </span><span style="color: #0000ff;">return</span><span style="color: #000000;">
+    }
+    console.log(</span>'Listening at http://localhost:8888'<span style="color: #000000;">)
+})</span></pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>然后我们修改&nbsp;webpack.config.js 配置文件</p>
+<p>① 将 config.output.publicPath 修改为 ‘/‘：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008000;">//</span><span style="color: #008000;"> 输出配置</span>
+<span style="color: #000000;">    output: {
+        </span><span style="color: #008000;">//</span><span style="color: #008000;"> 输出路径是 myProject/output/static</span>
+        path: path.resolve(__dirname, '../output/static'<span style="color: #000000;">),
+        publicPath: </span>'/'<span style="color: #000000;">,
+        filename: </span>'[name].[hash].js'<span style="color: #000000;">,
+        chunkFilename: </span>'[id].[chunkhash].js'<span style="color: #000000;">
+    },</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>②&nbsp;将 plugins 中 HtmlWebpackPlugin 中的 filename 修改为 ‘app/index/index.html’</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #000000;"> plugins: [
+        </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> HtmlWebpackPlugin({
+            filename: </span>'app/index/index.html'<span style="color: #000000;">,
+            template: path.resolve(__dirname, </span>'../app/index/index.html'<span style="color: #000000;">),
+            inject: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">
+        })
+    ]</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>此时，我们在项目根目录运行下面的命令，开启服务：</p>
+<div class="cnblogs_code">
+<pre>node build/dev-server.js</pre>
+</div>
+<p>在浏览器中输入&nbsp;http://localhost:8888/app/index/index.html，如果成功了将和前面本地运行output-&gt;static-&gt;index.html这个文件的结果是一样一样的</p>
+<p><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104191241736-1872500379.png" alt="">不信？<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161104191421471-768644467.jpg" alt=""></p>
+<p>为了不去修改webpack.config.js，在build目录下新建一个webpack.dev.conf.js文件，意思是开发模式下要读取的配置文件，并写入一下内容：</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;dd79c496-4ba7-4adb-9851-87cbbea3e9dc&#39;)"><img id="code_img_closed_dd79c496-4ba7-4adb-9851-87cbbea3e9dc" class="code_img_closed" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_dd79c496-4ba7-4adb-9851-87cbbea3e9dc" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;dd79c496-4ba7-4adb-9851-87cbbea3e9dc&#39;,event)" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_dd79c496-4ba7-4adb-9851-87cbbea3e9dc" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">var</span> HtmlWebpackPlugin = require('html-webpack-plugin'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> path = require('path'<span style="color: #000000;">);
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 引入基本配置</span>
+<span style="color: #0000ff;">var</span> config = require('./webpack.config'<span style="color: #000000;">);
+
+config.output.publicPath </span>= '/'<span style="color: #000000;">;
+
+config.plugins </span>=<span style="color: #000000;"> [
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> HtmlWebpackPlugin({
+        filename: </span>'app/index/index.html'<span style="color: #000000;">,
+        template: path.resolve(__dirname, </span>'../app/index/index.html'<span style="color: #000000;">),
+        inject: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">
+    })
+];
+
+module.exports </span>= config;</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>这样在dev环境下的配置文件覆盖了基本配置文件，只需要在dev-server.js中将</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">var</span> config = require('./webpack.config')</pre>
+</div>
+<p>改为：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">var</span> config = require('./webpack.dev.conf')</pre>
+</div>
+<p>到这里，我们已经使用webpack-dev-middleware 搭建基本的开发环境了，但是每次修改代码后，还是需要我们手动刷新浏览器，接下来介绍热加载（所谓的热加载，意思就是说能够追踪我们代码的变化，并自动更新界面，甚至还能保留程序状态。），我们需要&nbsp;webpack-hot-middleware 中间件来完成热加载。</p>
+<p>配合 webpack-dev-middleware 使用，我们还需要做的是：</p>
+<p>第一步：安装（上面我们已经安装过）</p>
+<pre>npm install webpack-dev-middleware --save-dev</pre>
+<p>第二步：在 webpack.dev.conf.js 配置文件中添加三个插件，如下：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #0000ff;">var</span> HtmlWebpackPlugin = require('html-webpack-plugin'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> path = require('path'<span style="color: #000000;">);
+</span><span style="color: #0000ff;">var</span> webpack = require('webpack'<span style="color: #000000;">);
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 引入基本配置</span>
+<span style="color: #0000ff;">var</span> config = require('./webpack.config'<span style="color: #000000;">);
+
+config.output.publicPath </span>= '/'<span style="color: #000000;">;
+
+config.plugins </span>=<span style="color: #000000;"> [
+    </span><span style="color: #008000;">//</span><span style="color: #008000;"> 添加三个插件</span>
+    <span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.optimize.OccurenceOrderPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.HotModuleReplacementPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.NoErrorsPlugin(),
+
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> HtmlWebpackPlugin({
+        filename: </span>'app/index/index.html'<span style="color: #000000;">,
+        template: path.resolve(__dirname, </span>'../app/index/index.html'<span style="color: #000000;">),
+        inject: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">
+    })
+];
+
+module.exports </span>= config;</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>第三步：在 webpack.config.js 文件中入口配置中添加 ‘webpack-hot-middleware/client’，如下：</p>
+<div class="cnblogs_code">
+<pre>entry: ['webpack-hot-middleware/client', path.resolve(__dirname, '../app/index/index.js')],</pre>
+</div>
+<p>第四步：在 dev-server.js 文件中使用插件</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008000;">//</span><span style="color: #008000;"> 引入必要的模块</span>
+<span style="color: #0000ff;">var</span> express = require('express'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> webpack = require('webpack'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> config = require('./webpack.dev.conf'<span style="color: #000000;">)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 创建一个express实例</span>
+<span style="color: #0000ff;">var</span> app =<span style="color: #000000;"> express()
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 调用webpack并把配置传递过去</span>
+<span style="color: #0000ff;">var</span> compiler =<span style="color: #000000;"> webpack(config)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 使用 webpack-dev-middleware 中间件</span>
+<span style="color: #0000ff;">var</span> devMiddleware = require('webpack-dev-middleware'<span style="color: #000000;">)(compiler, {
+    publicPath: config.output.publicPath,
+    stats: {
+        colors: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">,
+        chunks: </span><span style="color: #0000ff;">false</span><span style="color: #000000;">
+    }
+})
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 使用 webpack-hot-middleware 中间件</span>
+<span style="color: #0000ff;">var</span> hotMiddleware = require('webpack-hot-middleware'<span style="color: #000000;">)(compiler)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 注册中间件</span>
+<span style="color: #000000;">app.use(devMiddleware)
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 注册中间件</span>
+<span style="color: #000000;">app.use(hotMiddleware)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 监听 8888端口，开启服务器</span>
+app.listen(8888, <span style="color: #0000ff;">function</span><span style="color: #000000;"> (err) {
+    </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> (err) {
+        console.log(err)
+        </span><span style="color: #0000ff;">return</span><span style="color: #000000;">
+    }
+    console.log(</span>'Listening at http://localhost:8888'<span style="color: #000000;">)
+})</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>现在重启的服务，然后修改 Favlist.vue 中的页面颜色为 ‘black’：</p>
+<div class="cnblogs_code">
+<pre>&lt;style&gt;<span style="color: #000000;">
+  body {
+      color: black;
+  }
+</span>&lt;/style&gt;</pre>
+</div>
+<p>一保存就可以看到修改后的效果，不需要手动刷新浏览器啦啦啦~\(≧▽≦)/~啦啦啦。</p>
+<p>刚刚修改了webpack.config.js这个基本配置文件中的入口配置，为了不修改这个基本配置文件，我们在webpack.dev.conf.js文件中需要改下配置：</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;e214ab03-6d89-4d27-b0db-444adce39d49&#39;)"><img id="code_img_closed_e214ab03-6d89-4d27-b0db-444adce39d49" class="code_img_closed" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_e214ab03-6d89-4d27-b0db-444adce39d49" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;e214ab03-6d89-4d27-b0db-444adce39d49&#39;,event)" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_e214ab03-6d89-4d27-b0db-444adce39d49" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">var</span> HtmlWebpackPlugin = require('html-webpack-plugin'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> path = require('path'<span style="color: #000000;">);
+</span><span style="color: #0000ff;">var</span> webpack = require('webpack'<span style="color: #000000;">);
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 引入基本配置</span>
+<span style="color: #0000ff;">var</span> config = require('./webpack.config'<span style="color: #000000;">);
+
+config.output.publicPath </span>= '/'<span style="color: #000000;">;
+
+config.plugins </span>=<span style="color: #000000;"> [
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.optimize.OccurenceOrderPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.HotModuleReplacementPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.NoErrorsPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> HtmlWebpackPlugin({
+        filename: </span>'app/index/index.html'<span style="color: #000000;">,
+        template: path.resolve(__dirname, </span>'../app/index/index.html'<span style="color: #000000;">),
+        inject: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">
+    })
+];
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 动态向入口配置中注入 webpack-hot-middleware/client</span>
+<span style="color: #0000ff;">var</span> devClient = 'webpack-hot-middleware/client'<span style="color: #000000;">;
+Object.keys(config.entry).forEach(</span><span style="color: #0000ff;">function</span><span style="color: #000000;"> (name, i) {
+    </span><span style="color: #0000ff;">var</span> extras =<span style="color: #000000;"> [devClient]
+    config.entry[name] </span>=<span style="color: #000000;"> extras.concat(config.entry[name])
+})
+
+module.exports </span>= config;</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>然后将&nbsp;webpack.config.js 文件中的入口配置修改为以下配置方式：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">entry: {
+        index: [</span><span style="color: #000000;">
+            path.resolve(__dirname, </span>'../app/index/index.js'<span style="color: #000000;">)
+        ]
+    },</span></pre>
+</div>
+<p>重启服务，修改 Favlist.vue 中的背景色，再次查看浏览器，发现可以热加载。到这里还没结束，这里只是监听到Favlist.vue文件的改动，为了能监听到index.html文件的改动，我们还需要做一些工作。</p>
+<p>第一步：在dev-server.js文件中监听html文件改变事件，修改后的dev-server.js文件如下：</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;6343b0ef-99a5-4d4d-a2d3-7c4597ed15ed&#39;)"><img id="code_img_closed_6343b0ef-99a5-4d4d-a2d3-7c4597ed15ed" class="code_img_closed" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_6343b0ef-99a5-4d4d-a2d3-7c4597ed15ed" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;6343b0ef-99a5-4d4d-a2d3-7c4597ed15ed&#39;,event)" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_6343b0ef-99a5-4d4d-a2d3-7c4597ed15ed" class="cnblogs_code_hide">
+<pre><span style="color: #008000;">//</span><span style="color: #008000;"> 引入必要的模块</span>
+<span style="color: #0000ff;">var</span> express = require('express'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> webpack = require('webpack'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> config = require('./webpack.dev.conf'<span style="color: #000000;">)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 创建一个express实例</span>
+<span style="color: #0000ff;">var</span> app =<span style="color: #000000;"> express()
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 调用webpack并把配置传递过去</span>
+<span style="color: #0000ff;">var</span> compiler =<span style="color: #000000;"> webpack(config)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 使用 webpack-dev-middleware 中间件</span>
+<span style="color: #0000ff;">var</span> devMiddleware = require('webpack-dev-middleware'<span style="color: #000000;">)(compiler, {
+    publicPath: config.output.publicPath,
+    stats: {
+        colors: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">,
+        chunks: </span><span style="color: #0000ff;">false</span><span style="color: #000000;">
+    }
+})
+
+</span><span style="color: #0000ff;">var</span> hotMiddleware = require('webpack-hot-middleware'<span style="color: #000000;">)(compiler)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> webpack插件，监听html文件改变事件</span>
+compiler.plugin('compilation', <span style="color: #0000ff;">function</span><span style="color: #000000;"> (compilation) {
+    compilation.plugin(</span>'html-webpack-plugin-after-emit', <span style="color: #0000ff;">function</span><span style="color: #000000;"> (data, cb) {
+        </span><span style="color: #008000;">//</span><span style="color: #008000;"> 发布事件</span>
+        hotMiddleware.publish({ action: 'reload'<span style="color: #000000;"> })
+        cb()
+    })
+})
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 注册中间件</span>
+<span style="color: #000000;">app.use(devMiddleware)
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 注册中间件</span>
+<span style="color: #000000;">app.use(hotMiddleware)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 监听 8888端口，开启服务器</span>
+app.listen(8888, <span style="color: #0000ff;">function</span><span style="color: #000000;"> (err) {
+    </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> (err) {
+        console.log(err)
+        </span><span style="color: #0000ff;">return</span><span style="color: #000000;">
+    }
+    console.log(</span>'Listening at http://localhost:8888'<span style="color: #000000;">)
+})</span></pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>第二步：修改webpack.dev.conf.js文件</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;e442e870-e7aa-4941-a3ad-94acc10c2923&#39;)"><img id="code_img_closed_e442e870-e7aa-4941-a3ad-94acc10c2923" class="code_img_closed" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_e442e870-e7aa-4941-a3ad-94acc10c2923" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;e442e870-e7aa-4941-a3ad-94acc10c2923&#39;,event)" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_e442e870-e7aa-4941-a3ad-94acc10c2923" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">var</span> HtmlWebpackPlugin = require('html-webpack-plugin'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> path = require('path'<span style="color: #000000;">);
+</span><span style="color: #0000ff;">var</span> webpack = require('webpack'<span style="color: #000000;">);
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 引入基本配置</span>
+<span style="color: #0000ff;">var</span> config = require('./webpack.config'<span style="color: #000000;">);
+
+config.output.publicPath </span>= '/'<span style="color: #000000;">;
+
+config.plugins </span>=<span style="color: #000000;"> [
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.optimize.OccurenceOrderPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.HotModuleReplacementPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.NoErrorsPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> HtmlWebpackPlugin({
+        filename: </span>'app/index/index.html'<span style="color: #000000;">,
+        template: path.resolve(__dirname, </span>'../app/index/index.html'<span style="color: #000000;">),
+        inject: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">
+    })
+];
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 动态向入口配置中注入 webpack-hot-middleware/client</span><span style="color: #008000;">
+//</span><span style="color: #008000;"> var devClient = 'webpack-hot-middleware/client';</span>
+<span style="color: #0000ff;">var</span> devClient = './build/dev-client'<span style="color: #000000;">;
+Object.keys(config.entry).forEach(</span><span style="color: #0000ff;">function</span><span style="color: #000000;"> (name, i) {
+    </span><span style="color: #0000ff;">var</span> extras =<span style="color: #000000;"> [devClient]
+    config.entry[name] </span>=<span style="color: #000000;"> extras.concat(config.entry[name])
+})
+
+module.exports </span>= config;</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>文件中修改了devClient变量，将 ‘webpack-hot-middleware/client’ 替换成 ‘./build/dev-client’，最终会导致，我们入口配置会变成下面这样：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #000000;">   entry: {
+        index: [
+            </span>'./build/dev-client'<span style="color: #000000;">,
+            path.resolve(__dirname, </span>'../app/index/index.js'<span style="color: #000000;">)
+        ]
+    },</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>第三步：新建build/dev-client.js文件，并编辑如下内容：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #0000ff;">var</span> hotClient = require('webpack-hot-middleware/client'<span style="color: #000000;">)
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 订阅事件，当 event.action === 'reload' 时执行页面刷新</span>
+hotClient.subscribe(<span style="color: #0000ff;">function</span><span style="color: #000000;"> (event) {
+    </span><span style="color: #0000ff;">if</span> (event.action === 'reload'<span style="color: #000000;">) {
+        window.location.reload()
+    }
+})</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>这里我们除了引入 ‘webpack-hot-middleware/client’ 之外订阅了一个事件，当 event.action === ‘reload’ 时触发，而在 dev-server.js 中有发布的事件：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008000;">//</span><span style="color: #008000;"> webpack插件，监听html文件改变事件</span>
+compiler.plugin('compilation', <span style="color: #0000ff;">function</span><span style="color: #000000;"> (compilation) {
+    compilation.plugin(</span>'html-webpack-plugin-after-emit', <span style="color: #0000ff;">function</span><span style="color: #000000;"> (data, cb) {
+        </span><span style="color: #008000;">//</span><span style="color: #008000;"> 发布事件</span>
+        hotMiddleware.publish({ action: 'reload'<span style="color: #000000;"> })
+        cb()
+    })
+})</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>这样，当我们的html文件改变后，就可以监听的到，最终会执行页面刷新，而不需要我们手动刷新。看下效果：</p>
+<p><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20161107174559374-453285566.gif" alt=""></p>
+<p>至此，开发环境终于搞定了。</p>
+<p>源代码放在我的github上了【<a href="https://github.com/wj704/vue-webpack-demo" target="_blank">vue+webpack</a>】，搭建过程中我遇到很多问题，虽然没记录下来，但是应该也是有印象的，大家可以留言问。最后推荐一下这篇【<a href="http://www.cnblogs.com/lhweb15/p/5660609.html" target="_blank">webpack+vuejs基本配置</a>】，通过这篇文章的学习，我才有这么多收获，感恩O(∩_∩)O</p>
+<p><span style="color: #ff0000; font-size: 18px;"><strong>---更新webpack2 配置过程中出现的问题 17.02.08 16：39---</strong></span></p>
+<p>今天有网友<a id="a_comment_author_3614126" href="http://www.cnblogs.com/YeaseonZhang/" target="_blank">Yeaseon</a>提出webpack2配置中出现的问题，我跟着实验了一下，发现确实有问题，更正了一些文件配置后，最后是成功了</p>
+<p><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20170208162539635-1442088586.png" alt=""></p>
+<p>一: 依赖文件package.json&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #000000;">{
+  </span>"name": "vue-webpack-demo"<span style="color: #000000;">,
+  </span>"version": "1.0.0"<span style="color: #000000;">,
+  </span>"description": "vue webpack demo"<span style="color: #000000;">,
+  </span>"main": "index.js"<span style="color: #000000;">,
+  </span>"scripts"<span style="color: #000000;">: {
+    </span>"build": "babel input.js -o compiled.js"<span style="color: #000000;">
+  },
+  </span>"repository"<span style="color: #000000;">: {
+    </span>"type": "git"<span style="color: #000000;">,
+    </span>"url": "git"<span style="color: #000000;">
+  },
+  </span>"keywords"<span style="color: #000000;">: [
+    </span>"vue"<span style="color: #000000;">,
+    </span>"webpack"<span style="color: #000000;">
+  ],
+  </span>"author": "wangjuan"<span style="color: #000000;">,
+  </span>"license": "ISC"<span style="color: #000000;">,
+  </span>"devDependencies"<span style="color: #000000;">: {
+    </span>"babel-core": "^6.22.1"<span style="color: #000000;">,
+    </span>"babel-loader": "^6.2.10"<span style="color: #000000;">,
+    </span>"babel-plugin-transform-runtime": "^6.22.0"<span style="color: #000000;">,
+    </span>"babel-preset-es2015": "^6.22.0"<span style="color: #000000;">,
+    </span>"babel-runtime": "^5.8.38"<span style="color: #000000;">,
+    </span>"css-loader": "^0.26.1"<span style="color: #000000;">,
+    </span>"html-webpack-plugin": "^2.28.0"<span style="color: #000000;">,
+    </span>"vue": "^2.1.10"<span style="color: #000000;">,
+    </span>"vue-hot-reload-api": "^2.0.8"<span style="color: #000000;">,
+    </span>"vue-html-loader": "^1.2.3"<span style="color: #000000;">,
+    </span>"vue-loader": "^10.3.0"<span style="color: #000000;">,
+    </span>"vue-style-loader": "^2.0.0"<span style="color: #000000;">,
+    </span>"vue-template-compiler": "^2.1.10"<span style="color: #000000;">,
+    </span>"webpack": "^2.2.1"<span style="color: #000000;">,
+    </span>"webpack-dev-server": "^2.3.0"<span style="color: #000000;">
+  },
+  </span>"dependencies"<span style="color: #000000;">: {
+    </span>"vue": "^2.0.3"<span style="color: #000000;">
+  }
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>二：webpack.config.js文件</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;0139b229-546b-4335-8688-548c3e81c229&#39;)"><img id="code_img_closed_0139b229-546b-4335-8688-548c3e81c229" class="code_img_closed" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_0139b229-546b-4335-8688-548c3e81c229" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;0139b229-546b-4335-8688-548c3e81c229&#39;,event)" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_0139b229-546b-4335-8688-548c3e81c229" class="cnblogs_code_hide">
+<pre><span style="color: #008000;">//</span><span style="color: #008000;"> nodejs 中的path模块</span>
+<span style="color: #0000ff;">var</span> path = require('path'<span style="color: #000000;">);
+</span><span style="color: #0000ff;">var</span> HtmlWebpackPlugin = require('html-webpack-plugin'<span style="color: #000000;">)
+
+module.exports </span>=<span style="color: #000000;"> {
+    </span><span style="color: #008000;">//</span><span style="color: #008000;"> 入口文件，path.resolve()方法，可以结合我们给定的两个参数最后生成绝对路径，最终指向的就是我们的index.js文件</span>
+<span style="color: #000000;">    entry: {
+        index: [
+            </span>'./build/dev-client.js'<span style="color: #000000;">,
+            path.resolve(__dirname, </span>'../app/index/index.js'<span style="color: #000000;">)
+        ]
+    },
+    </span><span style="color: #008000;">//</span><span style="color: #008000;"> 输出配置</span>
+<span style="color: #000000;">    output: {
+        </span><span style="color: #008000;">//</span><span style="color: #008000;"> 输出路径是 myProject/output/static</span>
+        path: path.resolve(__dirname, '../output/static'<span style="color: #000000;">),
+        publicPath: </span>'/'<span style="color: #000000;">,
+        filename: </span>'[name].[hash].js'<span style="color: #000000;">,
+        chunkFilename: </span>'[id].[chunkhash].js'<span style="color: #000000;">
+    },
+    resolve: {
+        extensions: [</span>' ', '.js', '.vue'<span style="color: #000000;">],
+        alias: {
+            </span>'Vue': 'vue/dist/vue.js'<span style="color: #000000;">
+        }
+    },
+    module: {
+
+        loaders: [
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 使用vue-loader 加载 .vue 结尾的文件</span>
+<span style="color: #000000;">            {
+                test: </span>/\.vue$/<span style="color: #000000;">,
+                loader: </span>'vue-loader'<span style="color: #000000;">
+            },
+            {
+                test: </span>/\.js$/<span style="color: #000000;">,
+                loader: </span>'babel-loader?presets=es2015'<span style="color: #000000;">,
+                exclude: </span>/node_modules/<span style="color: #000000;">
+            }
+        ]
+    },
+    plugins: [
+        </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> HtmlWebpackPlugin({
+            filename: </span>'app/index/index.html'<span style="color: #000000;">,
+            template: path.resolve(__dirname, </span>'../app/index/index.html'<span style="color: #000000;">),
+            inject: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">,
+        })
+    ]
+}</span></pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>注意：1.<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20170208163036494-1763241523.png" alt="">后面要加上loader。</p>
+<p>2.<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20170208163129463-518321885.png" alt="">.js后缀不能省略。</p>
+<p>3.<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20170208165452244-1114676407.png" alt="">&nbsp;注意这里的空格。</p>
+<p>三：webpack.dev.conf.js文件</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;b4630176-961b-46db-aca7-74d26ef5d280&#39;)"><img id="code_img_closed_b4630176-961b-46db-aca7-74d26ef5d280" class="code_img_closed" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_b4630176-961b-46db-aca7-74d26ef5d280" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;b4630176-961b-46db-aca7-74d26ef5d280&#39;,event)" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_b4630176-961b-46db-aca7-74d26ef5d280" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">var</span> HtmlWebpackPlugin = require('html-webpack-plugin'<span style="color: #000000;">)
+</span><span style="color: #0000ff;">var</span> path = require('path'<span style="color: #000000;">);
+</span><span style="color: #0000ff;">var</span> webpack = require('webpack'<span style="color: #000000;">);
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 引入基本配置</span>
+<span style="color: #0000ff;">var</span> config = require('./webpack.config.js'<span style="color: #000000;">);
+
+config.output.publicPath </span>= '/'<span style="color: #000000;">;
+
+config.plugins </span>=<span style="color: #000000;"> [
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.optimize.OccurrenceOrderPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.HotModuleReplacementPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> webpack.NoErrorsPlugin(),
+    </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> HtmlWebpackPlugin({
+        filename: </span>'app/index/index.html'<span style="color: #000000;">,
+        template: path.resolve(__dirname, </span>'../app/index/index.html'<span style="color: #000000;">),
+        inject: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">
+    })
+];
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 动态向入口配置中注入 webpack-hot-middleware/client</span><span style="color: #008000;">
+//</span><span style="color: #008000;"> var devClient = 'webpack-hot-middleware/client';</span>
+<span style="color: #0000ff;">var</span> devClient = './build/dev-client'<span style="color: #000000;">;
+Object.keys(config.entry).forEach(</span><span style="color: #0000ff;">function</span><span style="color: #000000;"> (name, i) {
+    </span><span style="color: #0000ff;">var</span> extras =<span style="color: #000000;"> [devClient]
+    config.entry[name] </span>=<span style="color: #000000;"> extras.concat(config.entry[name])
+})
+
+module.exports </span>= config;</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>通过<a href="http://stackoverflow.com/questions/37916005/typeerror-webpack2-default-optimize-occurenceorderplugin-is-not-a-function/37916006" target="_blank">参考</a> 知道<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20170208163259729-793684057.png" alt="">这个方法已经被重命名，改为现在的就ok</p></div><div id="MySignature" style="display: block;"><div class="note">作者：wj704 &nbsp;&nbsp;
+出处：http://www.cnblogs.com/wj204/  &nbsp;&nbsp;
+</div></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/wj204/category/894837.html" target="_blank">vue</a></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(6031435,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;4c295d9d-e58b-e211-90a7-f6db9189f8ef&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/wj204/" target="_blank"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/20170515115549.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/wj204/">wj704</a><br>
+            <a href="http://home.cnblogs.com/u/wj204/followees">关注 - 97</a><br>
+            <a href="http://home.cnblogs.com/u/wj204/followers">粉丝 - 191</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;4c295d9d-e58b-e211-90a7-f6db9189f8ef&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(6031435,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">16</span>
+    </div>
+    <div class="buryit" onclick="votePost(6031435,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/wj204/p/6001559.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/wj204/p/6001559.html" title="发布于2016-10-26 19:13">webpack入门之简单例子跑起来</a><br><a href="http://www.cnblogs.com/wj204/p/6078776.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/wj204/p/6078776.html" title="发布于2016-11-18 20:00">一个H5项目的实践与总结</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2016-11-08 01:04</span> <a href="http://www.cnblogs.com/wj204/">wj704</a> 阅读(<span id="post_view_count">26167</span>) 评论(<span id="post_comment_count">93</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6031435" rel="nofollow">编辑</a> <a href="https://www.cnblogs.com/wj204/p/6031435.html#" onclick="AddToWz(6031435);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=148747,cb_entryId=6031435,cb_blogApp=currentBlogApp,cb_blogUserGuid='4c295d9d-e58b-e211-90a7-f6db9189f8ef',cb_entryCreatedDate='2016/11/8 1:04:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"><div class="pager"><a href="https://www.cnblogs.com/wj204/p/6031435.html#!comments" onclick="commentManager.renderComments(1,50);return false;">&lt; Prev</a><a href="https://www.cnblogs.com/wj204/p/6031435.html#!comments" onclick="commentManager.renderComments(1,50);return false;">1</a><span class="current">2</span></div></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3614089,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3614089,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3614089" class="layer">#51楼</a><a name="3614089" id="comment_anchor_3614089"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-02-08 11:39</span> <a id="a_comment_author_3614089" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3614089" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614065" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3614065);">@</a>
+Yeaseon<br><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20170208113955135-1694987042.png" alt="" border="0" "=""></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3614089,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3614089,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3614089_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3614113,&#39;VKq5G4si+7UbhH1ggiHYcsKV/VZkNcEXp6nmfBGbw8jUSWbJ4xj8TA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3614113,&#39;VKq5G4si+7UbhH1ggiHYcsKV/VZkNcEXp6nmfBGbw8jUSWbJ4xj8TA==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3614113" class="layer">#52楼</a><a name="3614113" id="comment_anchor_3614113"></a>  <span class="comment_date">2017-02-08 12:01</span> <a id="a_comment_author_3614113" href="http://www.cnblogs.com/YeaseonZhang/" target="_blank">Yeaseon</a> <a href="http://msg.cnblogs.com/send/Yeaseon" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3614113" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614089" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3614089);">@</a>
+wj704<br><fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614089" title="查看引用原文">引用</a></legend>@<br>Yeaseon<br></fieldset><br>试过，报另外的错误，这个我看不懂。<br><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/878896-20170208120133494-469484805.png" alt="" border="0" "=""></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3614113,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3614113,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3614113_avatar" style="display:none;">http://pic.cnblogs.com/face/878896/20160302112917.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3614115,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3614115,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3614115" class="layer">#53楼</a><a name="3614115" id="comment_anchor_3614115"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-02-08 12:07</span> <a id="a_comment_author_3614115" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3614115" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614113" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3614113);">@</a>
+Yeaseon<br>检查下配置文件 ，看哪里出错了，应该是配置文件出了问题</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3614115,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3614115,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3614115_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3614126,&#39;VKq5G4si+7UbhH1ggiHYcsKV/VZkNcEXp6nmfBGbw8jUSWbJ4xj8TA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3614126,&#39;VKq5G4si+7UbhH1ggiHYcsKV/VZkNcEXp6nmfBGbw8jUSWbJ4xj8TA==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3614126" class="layer">#54楼</a><a name="3614126" id="comment_anchor_3614126"></a>  <span class="comment_date">2017-02-08 12:18</span> <a id="a_comment_author_3614126" href="http://www.cnblogs.com/YeaseonZhang/" target="_blank">Yeaseon</a> <a href="http://msg.cnblogs.com/send/Yeaseon" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3614126" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614115" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3614115);">@</a>
+wj704<br><fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614115" title="查看引用原文">引用</a></legend>@<br>Yeaseon<br>检查下配置文件 ，看哪里出错了，应该是配置文件出了问题</fieldset><br>其实除了错误之后，有把你提供的配置文件copy，但是还是报同样的错误，也试了重新全局安装webpack，还是不可以，不知道楼主有没有将该项目放置于github上，如有请告知，谢谢</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3614126,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3614126,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3614126_avatar" style="display:none;">http://pic.cnblogs.com/face/878896/20160302112917.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3614128,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3614128,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3614128" class="layer">#55楼</a><a name="3614128" id="comment_anchor_3614128"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-02-08 12:22</span> <a id="a_comment_author_3614128" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3614128" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614126" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3614126);">@</a>
+Yeaseon<br>有啊，链接 是：<a href="https://github.com/wj704/vue-webpack-demo" target="_blank">https://github.com/wj704/vue-webpack-demo</a>  文章结尾也提到了，如果还是有问题，加我qq看下 1532490300</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3614128,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3614128,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3614128_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3615728,&#39;3lRbfIQnjaR2p05yZfFaWCn/ULkgrSfmu+K16iOXc/UbGp0BN8S9nQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3615728,&#39;3lRbfIQnjaR2p05yZfFaWCn/ULkgrSfmu+K16iOXc/UbGp0BN8S9nQ==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3615728" class="layer">#56楼</a><a name="3615728" id="comment_anchor_3615728"></a>  <span class="comment_date">2017-02-10 09:43</span> <a id="a_comment_author_3615728" href="http://www.cnblogs.com/clll/" target="_blank">ck47</a> <a href="http://msg.cnblogs.com/send/ck47" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3615728" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614126" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3614126);">@</a>
+Yeaseon<br>@wj704<br>npm uninstall webpack --save-dev<br><br>npm install webpack@2.1.0-beta.22 --save-dev<br>再试试</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3615728,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3615728,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3619083,&#39;sWq7dqw+QDEbLsviWuxgSL/maMIG2psYqa5+OpRBSiO9aKKBifMIYQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3619083,&#39;sWq7dqw+QDEbLsviWuxgSL/maMIG2psYqa5+OpRBSiO9aKKBifMIYQ==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3619083" class="layer">#57楼</a><a name="3619083" id="comment_anchor_3619083"></a>  <span class="comment_date">2017-02-15 14:11</span> <a id="a_comment_author_3619083" href="http://www.cnblogs.com/lpy001/" target="_blank">Mr青春</a> <a href="http://msg.cnblogs.com/send/Mr%E9%9D%92%E6%98%A5" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3619083" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614113" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3614113);">@</a>
+Yeaseon<br><fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/wj204/p/6031435.html#3614113" title="查看引用原文">引用</a></legend>@<br>wj704<br><fieldset class="comment_quote"><legend>引用</legend>引用@<br>Yeaseon<br></fieldset><br>试过，报另外的错误，这个我看不懂。<br></fieldset><br>Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.<br> - configuration.resolve.extensions[0] should not be empty.<br>这位同学，不知你是怎么解决的呢<br><br>已解决，webpack版本不兼容<br>npm install webpack@1.13.3 --save-dev</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3619083,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3619083,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3619136,&#39;VKq5G4si+7UbhH1ggiHYcsKV/VZkNcEXp6nmfBGbw8jUSWbJ4xj8TA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3619136,&#39;VKq5G4si+7UbhH1ggiHYcsKV/VZkNcEXp6nmfBGbw8jUSWbJ4xj8TA==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3619136" class="layer">#58楼</a><a name="3619136" id="comment_anchor_3619136"></a>  <span class="comment_date">2017-02-15 14:42</span> <a id="a_comment_author_3619136" href="http://www.cnblogs.com/YeaseonZhang/" target="_blank">Yeaseon</a> <a href="http://msg.cnblogs.com/send/Yeaseon" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3619136" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3619083" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3619083);">@</a>
+Mr青春<br>提示错误不能为空，我在<b>' '</b>中间加了空格<br>extensions: [' ', '.js', '.vue']</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3619136,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3619136,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3619136_avatar" style="display:none;">http://pic.cnblogs.com/face/878896/20160302112917.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3638689,&#39;nsyhS39tmwRLYbmCTVePIpMstXO9O1caVMFj9Atavo7pSVzIZoy9WA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3638689,&#39;nsyhS39tmwRLYbmCTVePIpMstXO9O1caVMFj9Atavo7pSVzIZoy9WA==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3638689" class="layer">#59楼</a><a name="3638689" id="comment_anchor_3638689"></a>  <span class="comment_date">2017-03-12 21:10</span> <a id="a_comment_author_3638689" href="http://www.cnblogs.com/onyou/" target="_blank">生活在于总结</a> <a href="http://msg.cnblogs.com/send/%E7%94%9F%E6%B4%BB%E5%9C%A8%E4%BA%8E%E6%80%BB%E7%BB%93" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3638689" class="blog_comment_body">提一个疑问，vue是兼容所有支持es5的浏览器的，但是上面的babel只是对es6的语法及机构做了转义，那么对于es新增的api，如‘’.includes()这种，单纯bebel是无法处理，楼主是如何处理的呢</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3638689,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3638689,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3638689_avatar" style="display:none;">http://pic.cnblogs.com/face/1083886/20170124151338.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3643478,&#39;i6qJbo/ie57albF6QLLH5icO/xYfT9roj4M9rBfcz5mDjKFOtCDnIA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3643478,&#39;i6qJbo/ie57albF6QLLH5icO/xYfT9roj4M9rBfcz5mDjKFOtCDnIA==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3643478" class="layer">#60楼</a><a name="3643478" id="comment_anchor_3643478"></a>  <span class="comment_date">2017-03-17 15:15</span> <a id="a_comment_author_3643478" href="http://www.cnblogs.com/kiven666/" target="_blank">mika青年</a> <a href="http://msg.cnblogs.com/send/mika%E9%9D%92%E5%B9%B4" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3643478" class="blog_comment_body">就像楼主说了，躺了N个坑，花了一天半时间，终于通关了！ 感谢感谢！！！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3643478,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3643478,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3643479,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3643479,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3643479" class="layer">#61楼</a><a name="3643479" id="comment_anchor_3643479"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-03-17 15:16</span> <a id="a_comment_author_3643479" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3643479" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3643478" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3643478);">@</a>
+mika青年<br>棒棒哒，给你点赞</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3643479,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3643479,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3643479_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3643484,&#39;i6qJbo/ie57albF6QLLH5icO/xYfT9roj4M9rBfcz5mDjKFOtCDnIA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3643484,&#39;i6qJbo/ie57albF6QLLH5icO/xYfT9roj4M9rBfcz5mDjKFOtCDnIA==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3643484" class="layer">#62楼</a><a name="3643484" id="comment_anchor_3643484"></a>  <span class="comment_date">2017-03-17 15:19</span> <a id="a_comment_author_3643484" href="http://www.cnblogs.com/kiven666/" target="_blank">mika青年</a> <a href="http://msg.cnblogs.com/send/mika%E9%9D%92%E5%B9%B4" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3643484" class="blog_comment_body">@  楼主一妹子这么厉害，值得学习！你才是最棒的！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3643484,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3643484,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3643724,&#39;wekUY6QO0KdsXJRT2vEXqG8/kMJxe9m37YLclHhBrj2VEtxJxzUTfA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3643724,&#39;wekUY6QO0KdsXJRT2vEXqG8/kMJxe9m37YLclHhBrj2VEtxJxzUTfA==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3643724" class="layer">#63楼</a><a name="3643724" id="comment_anchor_3643724"></a>  <span class="comment_date">2017-03-17 18:27</span> <a id="a_comment_author_3643724" href="http://www.cnblogs.com/emxiaohe/" target="_blank">EM_xiaohe</a> <a href="http://msg.cnblogs.com/send/EM_xiaohe" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3643724" class="blog_comment_body">我按照你的步骤，服务可以启动但是出现了以下错误<br><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/732076-20170317182712791-227993046.png" alt="" border="0" "=""><br><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/732076-20170317182721995-1126276116.png" alt="" border="0" "=""><br>这是哪里的错误，找了好久找不出来，求帮忙 &gt;_&lt;</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3643724,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3643724,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3643739,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3643739,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3643739" class="layer">#64楼</a><a name="3643739" id="comment_anchor_3643739"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-03-17 18:43</span> <a id="a_comment_author_3643739" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3643739" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3643724" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3643724);">@</a>
+EM_xiaohe<br>这个错误截图不好分析错在哪里呀，看到第一个截图，打包出来的index.js文件报'spilt'错误。<br>分析的时候不要分析打包出来的文件，还有点击进去看具体的错误，这个是vue源码了，所以第二张截图，对找bug也没用。<br>不知你有没有开启错误提示：<br><div class="cnblogs_Highlighter sh-gutter"><div><div id="highlighter_119318" class="syntaxhighlighter  html"><div class="toolbar"><span><a href="https://www.cnblogs.com/wj204/p/6031435.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="html plain">Vue.config.debug = true;//开启错误提示</code></div></div></td></tr></tbody></table></div></div></div><br>然后想说从打包的原文件找问题，如与我的目录相似的话，看下app\index\index.js和app\index\index.html有没有什么问题。<br>还有如果是按照我的步骤的话，前面的步骤是不是没问题，试着一步一步往上找，直到没问题，就可以发现哪里出问题。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3643739,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3643739,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3643739_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3657412,&#39;dbFMc9jk2I8Bf3GxbHGAL24TCRaJGHtRvKYX2voIfptzHEAjI6wWQg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3657412,&#39;dbFMc9jk2I8Bf3GxbHGAL24TCRaJGHtRvKYX2voIfptzHEAjI6wWQg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3657412" class="layer">#65楼</a><a name="3657412" id="comment_anchor_3657412"></a>  <span class="comment_date">2017-04-01 16:51</span> <a id="a_comment_author_3657412" href="http://www.cnblogs.com/leee/" target="_blank">李可在江湖</a> <a href="http://msg.cnblogs.com/send/%E6%9D%8E%E5%8F%AF%E5%9C%A8%E6%B1%9F%E6%B9%96" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3657412" class="blog_comment_body">webpack1-&gt;2 vue 2</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3657412,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3657412,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3657412_avatar" style="display:none;">http://pic.cnblogs.com/face/607624/20160318134133.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3673662,&#39;eNupYeNx7/JDe83Ew9FeE9Slcf3Km2duGhP4NdRJ7wpbA/TxaUbPYQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3673662,&#39;eNupYeNx7/JDe83Ew9FeE9Slcf3Km2duGhP4NdRJ7wpbA/TxaUbPYQ==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3673662" class="layer">#66楼</a><a name="3673662" id="comment_anchor_3673662"></a>  <span class="comment_date">2017-04-21 16:02</span> <a id="a_comment_author_3673662" href="http://home.cnblogs.com/u/1151359/" target="_blank">vue110</a> <a href="http://msg.cnblogs.com/send/vue110" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3673662" class="blog_comment_body">输入webpack --display-modules --display-chunks --config build/webpack.config.js报错了，<br>   报错信息为：ERROR in Cannot find module 'vue-template-compiler'<br> @ ./app/index/index.js 7:15-50<br>但我在index.js里没看到有什么错的地方呀<br>请各位帮忙看看，不胜感激<br><br><br><br>import Vue from 'Vue'<br>import Favlist from './components/Favlist.vue'<br>Vue.config.debug = true;//开启错误提示<br>window.onload = function () {<br>  new Vue({<br>      el: '#app',<br>      components: {<br>        'my-component': Favlist<br>      }<br>  });<br>}</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3673662,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3673662,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3673765,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3673765,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3673765" class="layer">#67楼</a><a name="3673765" id="comment_anchor_3673765"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-04-21 17:19</span> <a id="a_comment_author_3673765" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3673765" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3673662" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3673662);">@</a>
+vue110<br>你这缺少vue-template-compiler模块<br>通过npm install vue-template-compiler --save-dev 进行安装就好了。<br><br>报错信息很明显哈，<fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/wj204/p/6031435.html#3673662" title="查看引用原文">引用</a></legend>报错信息为：ERROR in Cannot find module 'vue-template-compiler'</fieldset><br><br>后面再出现这样的报错，就安装相应的模块就好。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3673765,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3673765,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3673765_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3674200,&#39;eNupYeNx7/JDe83Ew9FeE9Slcf3Km2duGhP4NdRJ7wpbA/TxaUbPYQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3674200,&#39;eNupYeNx7/JDe83Ew9FeE9Slcf3Km2duGhP4NdRJ7wpbA/TxaUbPYQ==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3674200" class="layer">#68楼</a><a name="3674200" id="comment_anchor_3674200"></a>  <span class="comment_date">2017-04-22 13:03</span> <a id="a_comment_author_3674200" href="http://home.cnblogs.com/u/1151359/" target="_blank">vue110</a> <a href="http://msg.cnblogs.com/send/vue110" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3674200" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3673765" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3673765);">@</a>
+wj704<br>谢谢，昨天我也尝试安装了那个模块但是还是会报错，今天就可以了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3674200,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3674200,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3675485,&#39;eNupYeNx7/JDe83Ew9FeE9Slcf3Km2duGhP4NdRJ7wpbA/TxaUbPYQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3675485,&#39;eNupYeNx7/JDe83Ew9FeE9Slcf3Km2duGhP4NdRJ7wpbA/TxaUbPYQ==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3675485" class="layer">#69楼</a><a name="3675485" id="comment_anchor_3675485"></a>  <span class="comment_date">2017-04-24 10:48</span> <a id="a_comment_author_3675485" href="http://home.cnblogs.com/u/1151359/" target="_blank">vue110</a> <a href="http://msg.cnblogs.com/send/vue110" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3675485" class="blog_comment_body">重启服务时提示：<br>     ERROR in multi index<br>Module not found: Error: Cannot resolve 'file' or 'directory' ./build/dev-client in /Users/anxiaolong/Desktop/demo/vuedemo<br><br>这个错误是什么原因？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3675485,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3675485,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3676332,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3676332,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3676332" class="layer">#70楼</a><a name="3676332" id="comment_anchor_3676332"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-04-25 09:25</span> <a id="a_comment_author_3676332" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3676332" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3675485" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3675485);">@</a>
+vue110<br>./build/dev-client 没找到这个文件？自己学会看错误提示哈</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3676332,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3676332,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3676332_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3687936,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3687936,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3687936" class="layer">#71楼</a><a name="3687936" id="comment_anchor_3687936"></a>  <span class="comment_date">2017-05-09 16:49</span> <a id="a_comment_author_3687936" href="http://home.cnblogs.com/u/1162935/" target="_blank">笔帝突然</a> <a href="http://msg.cnblogs.com/send/%E7%AC%94%E5%B8%9D%E7%AA%81%E7%84%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3687936" class="blog_comment_body">ERROR in multi ./build/dev-client ./build/dev-client.js ../app/index/index.js<br>Module not found: Error: Can't resolve './build/dev-client' in 'D:\CodeIDE\Workspaces\Sublime Text 3<br>\vuetest\build'<br> @ multi ./build/dev-client ./build/dev-client.js ../app/index/index.js<br><br><br>和楼上一样，我也报这个dev-client的错误，没理由找不到文件的。请问哪里出了问题</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3687936,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3687936,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3687958,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3687958,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3687958" class="layer">#72楼</a><a name="3687958" id="comment_anchor_3687958"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-05-09 17:02</span> <a id="a_comment_author_3687958" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3687958" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3687936" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3687936);">@</a>
+笔帝突然<br>是和我项目目录结构差不多么？贴下项目结构截图看看，</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3687958,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3687958,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3687958_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3687990,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3687990,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3687990" class="layer">#73楼</a><a name="3687990" id="comment_anchor_3687990"></a>  <span class="comment_date">2017-05-09 17:25</span> <a id="a_comment_author_3687990" href="http://home.cnblogs.com/u/1162935/" target="_blank">笔帝突然</a> <a href="http://msg.cnblogs.com/send/%E7%AC%94%E5%B8%9D%E7%AA%81%E7%84%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3687990" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3687958" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3687958);">@</a>
+wj704<br>找到原因了。因为之前一直是在build目录下运行node dev-server.js命令，导致找不到build/dev-client.js的路径。<br>先cd ..，返回上层目录，再执行node ./build/dev-server.js即可。<br><br>@ vue110同学可以参考</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3687990,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3687990,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3687993,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3687993,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3687993" class="layer">#74楼</a><a name="3687993" id="comment_anchor_3687993"></a>  <span class="comment_date">2017-05-09 17:25</span> <a id="a_comment_author_3687993" href="http://home.cnblogs.com/u/1162935/" target="_blank">笔帝突然</a> <a href="http://msg.cnblogs.com/send/%E7%AC%94%E5%B8%9D%E7%AA%81%E7%84%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3687993" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3687958" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3687958);">@</a>
+vue110</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3687993,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3687993,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3690835,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3690835,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3690835" class="layer">#75楼</a><a name="3690835" id="comment_anchor_3690835"></a>  <span class="comment_date">2017-05-12 15:43</span> <a id="a_comment_author_3690835" href="http://www.cnblogs.com/junior2ran/" target="_blank">笔帝突然</a> <a href="http://msg.cnblogs.com/send/%E7%AC%94%E5%B8%9D%E7%AA%81%E7%84%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3690835" class="blog_comment_body">按照楼主的配置搭好了环境谢谢～！<br>请问如果想要引入jquery或者其他框架比如bootstrap还需要如何配置？有进一步的教程吗？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3690835,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3690835,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3690848,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3690848,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3690848" class="layer">#76楼</a><a name="3690848" id="comment_anchor_3690848"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-05-12 15:51</span> <a id="a_comment_author_3690848" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3690848" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690835" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3690835);">@</a>
+笔帝突然<br>需要jquery 直接引入jquery 就可以哦，我工作上有用到zepto.js<br><fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690835" title="查看引用原文">引用</a></legend>import {_Zepto} from '../js/zepto.js'</fieldset><br> 进一步教程的话，后面有一篇vuex的文章 <a href="http://www.cnblogs.com/wj204/p/6094796.html" target="_blank">http://www.cnblogs.com/wj204/p/6094796.html</a>，可以关注下github上的 <a href="https://github.com/wj704/vuex2.0-notes-demo" target="_blank">https://github.com/wj704/vuex2.0-notes-demo</a> 求star  ~\(≧▽≦)/~啦</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3690848,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3690848,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3690848_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3690907,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3690907,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3690907" class="layer">#77楼</a><a name="3690907" id="comment_anchor_3690907"></a>  <span class="comment_date">2017-05-12 16:42</span> <a id="a_comment_author_3690907" href="http://www.cnblogs.com/junior2ran/" target="_blank">笔帝突然</a> <a href="http://msg.cnblogs.com/send/%E7%AC%94%E5%B8%9D%E7%AA%81%E7%84%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3690907" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690848" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3690848);">@</a>
+wj704<br>已star～<br><br>刚学vue不太了解，有些问题<br>1.引入zepto时，这个{_Zepto}是什么意义，相当于jquery中的$还是什么？<br>2.需要在项目目录下npm install jquery 吗，还是直接把.js文件放在目录下引用<br>3.webpack.config.js中需不需要修改配置</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3690907,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3690907,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3690931,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3690931,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3690931" class="layer">#78楼</a><a name="3690931" id="comment_anchor_3690931"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-05-12 17:00</span> <a id="a_comment_author_3690931" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3690931" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690907" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3690907);">@</a>
+笔帝突然<br>1、相当于jquery里的$， 项目中可以直接用$操作（Zepto是一个轻量级的针对现代高级浏览器的JavaScript库， 它与jquery有着类似的api）。然后为什么要 ｛_Zepto｝ 这个我之前也没想，刚刚搜了下资料：<br><a href="https://segmentfault.com/q/1010000006229052" target="_blank">https://segmentfault.com/q/1010000006229052</a><br><a href="http://es6.ruanyifeng.com/#docs/module#export" target="_blank">http://es6.ruanyifeng.com/#docs/module#export</a><br><fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690907" title="查看引用原文">引用</a></legend>ES6 想要 import 一个模块中的变量等内容必须对其做模块解构，否则只会执行代码而没有任何导入的内容。</fieldset><br>2、直接把.js文件放在目录下引用<br>3、webpack.config.js中不需要修改配置<br><br>问题提得 很好，有些东西就知道这样用，也不问为什么(/ □ \)，要向你学习</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3690931,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3690931,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3690931_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3690958,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3690958,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3690958" class="layer">#79楼</a><a name="3690958" id="comment_anchor_3690958"></a>  <span class="comment_date">2017-05-12 17:31</span> <a id="a_comment_author_3690958" href="http://www.cnblogs.com/junior2ran/" target="_blank">笔帝突然</a> <a href="http://msg.cnblogs.com/send/%E7%AC%94%E5%B8%9D%E7%AA%81%E7%84%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3690958" class="blog_comment_body">还是不成功。。。<br>不管是import {$} from './js/jquery.js' 还是 import $ from './js/jquery.js'<br>都会报错Uncaught ReferenceError: $ is not defined<br>$ 没有成功引进去</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3690958,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3690958,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3690971,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3690971,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3690971" class="layer">#80楼</a><a name="3690971" id="comment_anchor_3690971"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-05-12 17:42</span> <a id="a_comment_author_3690971" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3690971" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690958" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3690958);">@</a>
+笔帝突然<br>路径写错了把，不是两个‘.’么，<br><fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690958" title="查看引用原文">引用</a></legend>import {_Zepto} from '../js/zepto.js'</fieldset><br>你看下对应的<br><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/504457-20170512174158801-563045587.png" alt="" border="0" "=""></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3690971,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3690971,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3690971_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3690997,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3690997,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3690997" class="layer">#81楼</a><a name="3690997" id="comment_anchor_3690997"></a>  <span class="comment_date">2017-05-12 18:19</span> <a id="a_comment_author_3690997" href="http://www.cnblogs.com/junior2ran/" target="_blank">笔帝突然</a> <a href="http://msg.cnblogs.com/send/%E7%AC%94%E5%B8%9D%E7%AA%81%E7%84%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3690997" class="blog_comment_body"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/1162935-20170512181900113-1602867957.png" alt="" border="0" "=""><br>同一目录下js文件夹里的，路径没问题</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3690997,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3690997,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3690999,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3690999,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3690999" class="layer">#82楼</a><a name="3690999" id="comment_anchor_3690999"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-05-12 18:24</span> <a id="a_comment_author_3690999" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3690999" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690997" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3690997);">@</a>
+笔帝突然<br>同一个目录下的话直接<br><fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/wj204/p/6031435.html#3690997" title="查看引用原文">引用</a></legend>import $ from 'js/jquery.js'</fieldset><br>不要前面的 ‘./’</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3690999,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3690999,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3690999_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3691000,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3691000,&#39;Snq7lG62780jLv26XczwCSrT/YTp+URf3y+Tss/gZuSbtSz7l6nlYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3691000" class="layer">#83楼</a><a name="3691000" id="comment_anchor_3691000"></a>  <span class="comment_date">2017-05-12 18:28</span> <a id="a_comment_author_3691000" href="http://www.cnblogs.com/junior2ran/" target="_blank">笔帝突然</a> <a href="http://msg.cnblogs.com/send/%E7%AC%94%E5%B8%9D%E7%AA%81%E7%84%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3691000" class="blog_comment_body">不行，这样引不到文件。<br><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/1162935-20170512182811222-1168550580.png" alt="" border="0" "=""><br><br>加了./之后，能引到文件，但是并不能导入$。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3691000,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3691000,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3755571,&#39;x+/wjlidUnADi1q2HaUiBaDT+PIsxjdP4E8HZQ/Rb43ozq0FE4BUVg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3755571,&#39;x+/wjlidUnADi1q2HaUiBaDT+PIsxjdP4E8HZQ/Rb43ozq0FE4BUVg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3755571" class="layer">#84楼</a><a name="3755571" id="comment_anchor_3755571"></a>  <span class="comment_date">2017-08-11 11:45</span> <a id="a_comment_author_3755571" href="http://www.cnblogs.com/haiwang/" target="_blank">hardy_Wang</a> <a href="http://msg.cnblogs.com/send/hardy_Wang" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3755571" class="blog_comment_body">按步骤弄，自己把一个一个坑都解决了，然后最后看到文章后面都有说这些坑。内心是崩溃的！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3755571,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3755571,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3756298,&#39;5jQKIHZu6OxQ+mg3MnqstkKUn1ICeC/OoPpPpvdZHrPWnrdZgajsYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3756298,&#39;5jQKIHZu6OxQ+mg3MnqstkKUn1ICeC/OoPpPpvdZHrPWnrdZgajsYg==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3756298" class="layer">#85楼</a><a name="3756298" id="comment_anchor_3756298"></a>  <span class="comment_date">2017-08-12 13:28</span> <a id="a_comment_author_3756298" href="http://home.cnblogs.com/u/1215370/" target="_blank">小朋友码农</a> <a href="http://msg.cnblogs.com/send/%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%A0%81%E5%86%9C" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3756298" class="blog_comment_body">来个评论支持楼主</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3756298,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3756298,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3756325,&#39;AUuzq08alk2VXl3/r9UlZ9vcxnT4zYIlYbH2abfZ5iNZH9+Ag+ZjUw==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3756325,&#39;AUuzq08alk2VXl3/r9UlZ9vcxnT4zYIlYbH2abfZ5iNZH9+Ag+ZjUw==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3756325" class="layer">#86楼</a><a name="3756325" id="comment_anchor_3756325"></a>  <span class="comment_date">2017-08-12 14:13</span> <a id="a_comment_author_3756325" href="http://home.cnblogs.com/u/1215375/" target="_blank">Web媴</a> <a href="http://msg.cnblogs.com/send/Web%E5%AA%B4" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3756325" class="blog_comment_body">赞一个<br>webpack中文文档：<a href="http://www.jqhtml.com/7626.html" target="_blank">http://www.jqhtml.com/7626.html</a></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3756325,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3756325,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3821545,&#39;joQrXHnEEcSaUTfOJrmL+kQAm7kNjfb/OzuBFga0p5cKvcySvtUyNw==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3821545,&#39;joQrXHnEEcSaUTfOJrmL+kQAm7kNjfb/OzuBFga0p5cKvcySvtUyNw==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3821545" class="layer">#87楼</a><a name="3821545" id="comment_anchor_3821545"></a>  <span class="comment_date">2017-10-25 20:41</span> <a id="a_comment_author_3821545" href="http://www.cnblogs.com/sunjie9606/" target="_blank">sunjie</a> <a href="http://msg.cnblogs.com/send/sunjie" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3821545" class="blog_comment_body">mark</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3821545,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3821545,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3829230,&#39;QAERzIWxfaJFzmtUmbFqF+E+eZGOxUmQyHlg7nK6sWg/7dhTxAZV8w==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3829230,&#39;QAERzIWxfaJFzmtUmbFqF+E+eZGOxUmQyHlg7nK6sWg/7dhTxAZV8w==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3829230" class="layer">#88楼</a><a name="3829230" id="comment_anchor_3829230"></a>  <span class="comment_date">2017-11-02 18:04</span> <a id="a_comment_author_3829230" href="http://www.cnblogs.com/MichaelXu2/" target="_blank">MichaelXu02</a> <a href="http://msg.cnblogs.com/send/MichaelXu02" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3829230" class="blog_comment_body"><img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/1270981-20171102180354138-2109453560.png" alt="" border="0" "=""><br>哪位大神给遇到过这个错误，帮忙看一下，谢谢！@wj704 </div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3829230,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3829230,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3829256,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3829256,&#39;0mrv6vJJyWg0wFwHlv3fZbnFyg+WFqem0q1YS/Zp43zIAOFvluXn4A==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3829256" class="layer">#89楼</a><a name="3829256" id="comment_anchor_3829256"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2017-11-02 18:21</span> <a id="a_comment_author_3829256" href="http://www.cnblogs.com/wj204/" target="_blank">wj704</a> <a href="http://msg.cnblogs.com/send/wj704" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3829256" class="blog_comment_body"><a href="https://www.cnblogs.com/wj204/p/6031435.html#3829230" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3829230);">@</a>
+MichaelXu02<br>不好意思，这个问题我没遇到过哈，你检查下配置文件，可能是配置文件哪里写错了，对照下我后面补充的，在网上查了类似问题 <a href="https://stackoverflow.com/questions/34614812/error-in-index-js-module-build-failed-syntaxerror-unexpected-token" target="_blank">https://stackoverflow.com/questions/34614812/error-in-index-js-module-build-failed-syntaxerror-unexpected-token</a></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3829256,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3829256,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3829256_avatar" style="display:none;">http://pic.cnblogs.com/face/504457/20170515115549.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3830360,&#39;QAERzIWxfaJFzmtUmbFqF+E+eZGOxUmQyHlg7nK6sWg/7dhTxAZV8w==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3830360,&#39;QAERzIWxfaJFzmtUmbFqF+E+eZGOxUmQyHlg7nK6sWg/7dhTxAZV8w==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3830360" class="layer">#90楼</a><a name="3830360" id="comment_anchor_3830360"></a>  <span class="comment_date">2017-11-03 17:21</span> <a id="a_comment_author_3830360" href="http://www.cnblogs.com/MichaelXu2/" target="_blank">MichaelXu02</a> <a href="http://msg.cnblogs.com/send/MichaelXu02" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3830360" class="blog_comment_body">终于完成了，遇到不少坑</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3830360,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3830360,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3840333,&#39;sShra+TfyPmafwFbVdznEjTbSsfjByY+hVCHaIe0KiIpGU7+azNrKQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3840333,&#39;sShra+TfyPmafwFbVdznEjTbSsfjByY+hVCHaIe0KiIpGU7+azNrKQ==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3840333" class="layer">#91楼</a><a name="3840333" id="comment_anchor_3840333"></a>  <span class="comment_date">2017-11-14 15:32</span> <a id="a_comment_author_3840333" href="http://home.cnblogs.com/u/1279222/" target="_blank">icey_monopolize</a> <a href="http://msg.cnblogs.com/send/icey_monopolize" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3840333" class="blog_comment_body">ERROR in Unexpected token {<br> @ ./app/index/index.js 7:15-50<br><br>这是什么情况捏？求助求助</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3840333,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3840333,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3845327,&#39;m5L53Hakw6duhvEyyBW5kNHNDY7REkA8nbrwMwhw+4fIUOo8LZvDOw==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3845327,&#39;m5L53Hakw6duhvEyyBW5kNHNDY7REkA8nbrwMwhw+4fIUOo8LZvDOw==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3845327" class="layer">#92楼</a><a name="3845327" id="comment_anchor_3845327"></a>  <span class="comment_date">2017-11-20 13:38</span> <a id="a_comment_author_3845327" href="http://home.cnblogs.com/u/842555/" target="_blank">说吧</a> <a href="http://msg.cnblogs.com/send/%E8%AF%B4%E5%90%A7" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3845327" class="blog_comment_body">一运行，好多错误，最明显的是html-webpack-plugin明明在文件中要引用，但是依赖包里面没有啊</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3845327,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3845327,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3862082,&#39;T2sEzbhO4UwR7KVu6eUwov5M4NjPQC81vPAYY1FnMO1+P11rZY/pEQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3862082,&#39;T2sEzbhO4UwR7KVu6eUwov5M4NjPQC81vPAYY1FnMO1+P11rZY/pEQ==&#39;)">引用</a></span>
+				</div>
+				<a href="https://www.cnblogs.com/wj204/p/6031435.html#3862082" class="layer">#93楼</a><a name="3862082" id="comment_anchor_3862082"></a><span id="comment-maxId" style="display:none;">3862082</span><span id="comment-maxDate" style="display:none;">2017/12/10 11:57:07</span>  <span class="comment_date">2017-12-10 11:57</span> <a id="a_comment_author_3862082" href="http://www.cnblogs.com/zazai/" target="_blank">程序仔仔</a> <a href="http://msg.cnblogs.com/send/%E7%A8%8B%E5%BA%8F%E4%BB%94%E4%BB%94" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3862082" class="blog_comment_body">Uncaught SyntaxError: Unexpected token import</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3862082,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3862082,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"><div class="pager"><a href="https://www.cnblogs.com/wj204/p/6031435.html#!comments" onclick="commentManager.renderComments(1,50);return false;">&lt; Prev</a><a href="https://www.cnblogs.com/wj204/p/6031435.html#!comments" onclick="commentManager.renderComments(1,50);return false;">1</a><span class="current">2</span></div></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="https://www.cnblogs.com/wj204/p/6031435.html#" onclick="return RefreshPage();">刷新页面</a><a href="https://www.cnblogs.com/wj204/p/6031435.html#top">返回顶部</a></div>
+<div id="comment_form_container"><script type="text/javascript" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/mention.js.下载"></script>
+<div id="commentform_title">发表评论</div>
+<span id="tip_comment" style="color:Red"></span>
+<p>
+昵称：<input type="text" id="tbCommentAuthor" class="author" disabled="disabled" size="50" value="SlowIsFast">
+</p>
+<div class="commentbox_main">
+<div class="commentbox_title">
+<div class="commentbox_title_left">评论内容：</div>
+<div class="commentbox_title_right">
+<img id="ubb_quote" class="comment_icon" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/quote.gif" alt="引用" title="添加引用" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;quote&#39;)">
+<img id="ubb_bold" class="comment_icon" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/b.png" alt="粗体" title="添加粗体" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;b&#39;)">
+<img id="ubb_url" class="comment_icon" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/lk.png" alt="链接" title="添加链接" onclick="insertUbbUrl(&#39;tbCommentBody&#39;)">
+<img id="ubb_indent" class="comment_icon" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/indent.png" alt="缩进" title="添加首行缩进" onclick="insertIndent(&#39;tbCommentBody&#39;)">
+<img id="ubb_code" class="comment_icon" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/InsertCode.gif" alt="代码" title="添加代码" onclick="insertUbbCode()">
+<img id="ubb_img" class="comment_icon" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/img.gif" alt="图片" title="上传图片" onclick="OpenImageUploadWindow();">
+</div>
+</div>
+<div class="clear"></div>
+<textarea id="tbCommentBody" class="comment_textarea"></textarea>
+</div>
+<p id="commentbox_opt">
+<input id="btn_comment_submit" type="button" class="comment_btn" value="提交评论">
+<span id="span_comment_canceledit" style="display:none"><a href="javascript:void(0);" onclick="return CancelCommentEdit()">不改了</a></span>
+<a href="javascript:void(0);" onclick="return logout();">退出</a>
+        <a id="commentbox_opt_sub" href="javascript:void(0);" title="订阅后有新评论时会邮件通知您" onclick="commentManager.Subscribe()">订阅评论</a>
+</p>
+<div id="tip_comment2" style="color:Red"></div>
+<p>
+[Ctrl+Enter快捷键提交]
+</p>
+<div style="display:none">
+<span id="comment_edit_id"></span><span id="span_parentcomment_id"></span>
+<span id="span_parent_id"></span>
+<span id="span_comment_replyto"></span>
+<span id="span_comment_posted"></span>
+</div>
+</div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】超50万VC++源码: 大型工控、组态\仿真、建模CAD源码2018！</a><br><a href="https://www.cnblogs.com/cmt/p/8505033.html" target="_blank">【活动】世界各地的青年团体，将在 2050 握手团聚</a><br><a href="https://dnspod.cloud.tencent.com/act/yearendsales?from=IT&amp;fromSource=gwzcw.781137.781137.781137" target="_blank">【抢购】新注册用户域名抢购1元起</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="https://dnspod.cloud.tencent.com/act/weapp?fromSource=gwzcw.781158.781158.781158" target="_blank"><img width="300" height="250" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/24442-20180228164005211-881957482.jpg" alt="tencent0228"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="https://news.cnblogs.com/n/591102/" target="_blank">全球打车应用市场成为了“软银大家庭”的内部竞争</a><br> ·  <a href="https://news.cnblogs.com/n/591101/" target="_blank">Snap CEO斯皮格尔出售2500万美元股票 主要用来缴税</a><br> ·  <a href="https://news.cnblogs.com/n/591089/" target="_blank">携程或将以CDR方式回归A股市场</a><br> ·  <a href="https://news.cnblogs.com/n/591072/" target="_blank">京东服务大升级：空调三包问题一年只换不修</a><br> ·  <a href="https://news.cnblogs.com/n/591090/" target="_blank">知乎安全系统全面升级 抵制和防范各类违法有害信息的传播</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"><a href="http://click.aliyun.com/m/34770/" target="_blank"><img width="468" height="60" src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/24442-20171208101900738-116140477.jpg" alt="阿里云C2-1208"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/575255/" target="_blank">写给自学者的入门指南</a><br> ·  <a href="http://kb.cnblogs.com/page/578690/" target="_blank">和程序员谈恋爱</a><br> ·  <a href="http://kb.cnblogs.com/page/585734/" target="_blank">学会学习</a><br> ·  <a href="http://kb.cnblogs.com/page/588938/" target="_blank">优秀技术人的管理陷阱</a><br> ·  <a href="http://kb.cnblogs.com/page/590141/" target="_blank">作为一个程序员，数学对你到底有多重要</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"><b>历史上的今天:</b><br>2013-11-08 <a href="http://www.cnblogs.com/wj204/p/3415095.html">照葫芦画瓢_1(原生JavaScript实现连连看)</a><br>2013-11-08 <a href="http://www.cnblogs.com/wj204/p/3415021.html">如此而已，始终如一。。。</a><br></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">
+github: <a href="https://github.com/wj704" target="_blank">戳我</a><br>
+SegmentFault: <a href="https://segmentfault.com/u/eraser" target="_blank">戳我</a><br>
+微信公众号：EE点滴 <br>
+扫我：<img src="./一步步构造自己的vue2.0+webpack环境 - wj704 - 博客园_files/qrcode.gif">
+</div>
+
+
+
+
+
+
+
+<title>打赏</title>
+
+
+    <script type="text/javascript">window['__document_write_ajax_callbacks__']['4']();</script><script>window['__document_write_ajax_callbacks__']['1']();</script>
+
+    <div style="display: none" id="__document_write_ajax_div-2"></div><script>window['__document_write_ajax_callbacks__']['2']();</script>
+
+<div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/wj204/">wj704</a><br>园龄：<a href="https://home.cnblogs.com/u/wj204/" title="入园时间：2013-03-13">4年11个月</a><br>粉丝：<a href="https://home.cnblogs.com/u/wj204/followers/">191</a><br>关注：<a href="https://home.cnblogs.com/u/wj204/followees/">97</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;4c295d9d-e58b-e211-90a7-f6db9189f8ef&#39;)">+加关注</a></div><script type="text/javascript">window['__document_write_ajax_callbacks__']['5']();</script><script>window['__document_write_ajax_callbacks__']['3']();</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/wj204/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/wj204/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/wj204/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/wj204/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/wj204/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_recentposts" class="sidebar-block">
+<div class="catListEssay">
+<h3 class="catListTitle">最新随笔</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/wj204/p/7398676.html">1. 我了解到的JavaScript异步编程</a></li><li><a href="http://www.cnblogs.com/wj204/p/7045068.html">2. 原生JS+Canvas实现五子棋游戏</a></li><li><a href="http://www.cnblogs.com/wj204/p/6932653.html">3. Web缓存相关知识整理</a></li><li><a href="http://www.cnblogs.com/wj204/p/6868375.html">4. 发布自己第一个npm 组件包（基于Vue的文字跑马灯组件）</a></li><li><a href="http://www.cnblogs.com/wj204/p/6777759.html">5. 百度前端技术学院2017学习总结</a></li><li><a href="http://www.cnblogs.com/wj204/p/6576681.html">6. 正则表达式学习总结</a></li><li><a href="http://www.cnblogs.com/wj204/p/6517385.html">7. 微信小程序入门之构建一个简单TODOS应用</a></li><li><a href="http://www.cnblogs.com/wj204/p/6423478.html">8. Vue2.0源码阅读笔记--双向绑定实现原理</a></li><li><a href="http://www.cnblogs.com/wj204/p/6406907.html">9. Vue2.0源码阅读笔记--生命周期</a></li><li><a href="http://www.cnblogs.com/wj204/p/6259655.html">10. 工作总结 vue 城会玩</a></li>
+</ul>
+</div>
+</div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/wj204/category/612077.html">CSS(8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/wj204/category/873995.html">HTML(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/wj204/category/611993.html">JavaScript(12)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/wj204/category/641026.html">Node.js(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/wj204/category/894837.html">vue(13)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/wj204/archive/2017/08.html">2017年8月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/wj204/archive/2017/06.html">2017年6月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/wj204/archive/2017/05.html">2017年5月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/wj204/archive/2017/03.html">2017年3月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/wj204/archive/2017/02.html">2017年2月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/wj204/archive/2017/01.html">2017年1月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/wj204/archive/2016/12.html">2016年12月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_7" href="http://www.cnblogs.com/wj204/archive/2016/11.html">2016年11月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_8" href="http://www.cnblogs.com/wj204/archive/2016/10.html">2016年10月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_9" href="http://www.cnblogs.com/wj204/archive/2016/09.html">2016年9月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_10" href="http://www.cnblogs.com/wj204/archive/2016/08.html">2016年8月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_11" href="http://www.cnblogs.com/wj204/archive/2016/06.html">2016年6月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_12" href="http://www.cnblogs.com/wj204/archive/2016/01.html">2016年1月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_13" href="http://www.cnblogs.com/wj204/archive/2015/05.html">2015年5月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_14" href="http://www.cnblogs.com/wj204/archive/2015/02.html">2015年2月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_15" href="http://www.cnblogs.com/wj204/archive/2014/12.html">2014年12月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_16" href="http://www.cnblogs.com/wj204/archive/2014/11.html">2014年11月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_17" href="http://www.cnblogs.com/wj204/archive/2014/10.html">2014年10月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_18" href="http://www.cnblogs.com/wj204/archive/2014/08.html">2014年8月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_19" href="http://www.cnblogs.com/wj204/archive/2014/07.html">2014年7月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_20" href="http://www.cnblogs.com/wj204/archive/2014/03.html">2014年3月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_21" href="http://www.cnblogs.com/wj204/archive/2014/02.html">2014年2月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_22" href="http://www.cnblogs.com/wj204/archive/2014/01.html">2014年1月 (7)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_23" href="http://www.cnblogs.com/wj204/archive/2013/12.html">2013年12月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_24" href="http://www.cnblogs.com/wj204/archive/2013/11.html">2013年11月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_25" href="http://www.cnblogs.com/wj204/archive/2013/10.html">2013年10月 (19)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_26" href="http://www.cnblogs.com/wj204/archive/2013/09.html">2013年9月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_27" href="http://www.cnblogs.com/wj204/archive/2013/06.html">2013年6月 (14)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_28" href="http://www.cnblogs.com/wj204/archive/2013/05.html">2013年5月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_29" href="http://www.cnblogs.com/wj204/archive/2013/04.html">2013年4月 (24)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_scorerank" class="sidebar-block">
+<div class="catListBlogRank">
+<h3 class="catListTitle">积分与排名</h3>
+<ul>
+	<li class="liScore">
+		积分 -	51554
+	</li>
+	<li class="liRank">
+		排名 -	6982
+	</li>
+</ul>
+</div>
+
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wj204/p/6423478.html#3915012">1. Re:Vue2.0源码阅读笔记--双向绑定实现原理</a></li>
+        <li class="recent_comment_body">@这个ID起的不算这篇讲了一些原理，可以结合看...</li>
+        <li class="recent_comment_author">--超然haha</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wj204/p/6031435.html#3862082">2. Re:一步步构造自己的vue2.0+webpack环境</a></li>
+        <li class="recent_comment_body">Uncaught SyntaxError: Unexpected token import</li>
+        <li class="recent_comment_author">--程序仔仔</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wj204/p/6031435.html#3845327">3. Re:一步步构造自己的vue2.0+webpack环境</a></li>
+        <li class="recent_comment_body">一运行，好多错误，最明显的是html-webpack-plugin明明在文件中要引用，但是依赖包里面没有啊</li>
+        <li class="recent_comment_author">--说吧</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wj204/p/6031435.html#3840333">4. Re:一步步构造自己的vue2.0+webpack环境</a></li>
+        <li class="recent_comment_body">ERROR in Unexpected token {<br> @ ./app/index/index.js 7:15-50<br><br>这是什么情况捏？求助求助</li>
+        <li class="recent_comment_author">--icey_monopolize</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wj204/p/6868375.html#3833630">5. Re:发布自己第一个npm 组件包（基于Vue的文字跑马灯组件）</a></li>
+        <li class="recent_comment_body">干货，支持一下<br><a href="https://www.cnblogs.com/wj204/p/6031435.html" target="_blank"></a></li>
+        <li class="recent_comment_author">--tijiang605</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/wj204/p/6031435.html">1. 一步步构造自己的vue2.0+webpack环境(26164)</a></li><li><a href="http://www.cnblogs.com/wj204/p/5813736.html">2. 前端开发面试题收集(css部分)(14543)</a></li><li><a href="http://www.cnblogs.com/wj204/p/5797651.html">3. json数据格式及json校验格式化工具简单实现(12192)</a></li><li><a href="http://www.cnblogs.com/wj204/p/css3_demo.html">4. 纯CSS3实现的一些酷炫效果(7633)</a></li><li><a href="http://www.cnblogs.com/wj204/p/5119974.html">5. 聊聊自己的2015(2776)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/wj204/p/6031435.html">1. 一步步构造自己的vue2.0+webpack环境(93)</a></li><li><a href="http://www.cnblogs.com/wj204/p/5119974.html">2. 聊聊自己的2015(81)</a></li><li><a href="http://www.cnblogs.com/wj204/p/css3_demo.html">3. 纯CSS3实现的一些酷炫效果(36)</a></li><li><a href="http://www.cnblogs.com/wj204/p/5816455.html">4. 前端开发面试题收集(js部分)(14)</a></li><li><a href="http://www.cnblogs.com/wj204/p/6094796.html">5. Vuex2.0+Vue2.0构建备忘录应用实践(12)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/wj204/p/css3_demo.html">1. 纯CSS3实现的一些酷炫效果(71)</a></li><li><a href="http://www.cnblogs.com/wj204/p/5119974.html">2. 聊聊自己的2015(20)</a></li><li><a href="http://www.cnblogs.com/wj204/p/6031435.html">3. 一步步构造自己的vue2.0+webpack环境(16)</a></li><li><a href="http://www.cnblogs.com/wj204/p/6094796.html">4. Vuex2.0+Vue2.0构建备忘录应用实践(5)</a></li><li><a href="http://www.cnblogs.com/wj204/p/6423478.html">5. Vue2.0源码阅读笔记--双向绑定实现原理(5)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2018 wj704
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+<!--PageEndHtml Block Begin-->
+<script language="javascript" type="text/javascript">
+
+// 生成目录索引列表
+// ref: http://www.cnblogs.com/wangqiguo/p/4355032.html
+// modified by: zzq
+function GenerateContentList()
+{
+    var mainContent = $('#cnblogs_post_body');
+    var h2_list = $('#cnblogs_post_body h2');//如果你的章节标题不是h2,只需要将这里的h2换掉即可
+
+    if(mainContent.length < 1)
+        return;
+ 
+    if(h2_list.length>0)
+    {
+        var content = '<a name="_labelTop"></a>';
+        content += '<div id="navCategory">';
+        content += '<p style="font-size:18px"><b>阅读目录</b></p>';
+        content += '<ul>';
+        for(var i=0; i<h2_list.length; i++)
+        {
+            // var go_to_top = '<div style="text-align: right"><a href="#_labelTop">回到顶部</a><a name="_label' + i + '"></a></div>';
+            // $(h2_list[i]).before(go_to_top);
+            
+            var h3_list = $(h2_list[i]).nextAll("h3");
+            var li3_content = '';
+            for(var j=0; j<h3_list.length; j++)
+            {
+                var tmp = $(h3_list[j]).prevAll('h2').first();
+                if(!tmp.is(h2_list[i]))
+                    break;
+                var li3_anchor = '<a name="_label' + i + '_' + j + '"></a>';
+                $(h3_list[j]).before(li3_anchor);
+                li3_content += '<li><a href="#_label' + i + '_' + j + '">' + $(h3_list[j]).text() + '</a></li>';
+            }
+            
+            var li2_content = '';
+            if(li3_content.length > 0)
+                li2_content = '<li><a href="#_label' + i + '">' + $(h2_list[i]).text() + '</a><ul>' + li3_content + '</ul></li>';
+            else
+                li2_content = '<li><a href="#_label' + i + '">' + $(h2_list[i]).text() + '</a></li>';
+            content += li2_content;
+        }
+        content += '</ul>';
+        // content += '</div><p>&nbsp;</p>';
+        // content += '<p style="font-size:18px"><b>正文</b></p>';
+        // content += '<div class="top-wrap" style="position: fixed;padding:10px; right: 10px; bottom: 10px;"><a href="#top">回到顶部</a></div>';
+       content += '<div class="top-wrap" style="position: fixed;padding:4px; right: 45px; bottom: 5px;z-index:100;"><a href="#top">回到顶部</a></div>';
+        if($('#cnblogs_post_body').length != 0 )
+        {
+            $($('#cnblogs_post_body')[0]).prepend(content);
+        }
+    }   
+}
+
+GenerateContentList();
+</script>
+<!--PageEndHtml Block End-->
+
+
+<script type="text/javascript">
+        window.tctipConfig = {
+            imagePrefix:  "",
+            cssPrefix:      "",
+            staticPrefix: "http://static.tctip.com",
+            buttonImageId: Math.ceil(Math.random()*8) + 1, //这里可以用一个固定的数字代替随机数
+            buttonTip:    "dashang", //或者 zanzhu
+            list:{
+   
+                alipay: { qrimg: "https://files.cnblogs.com/files/wj204/ali.gif"},    //qrimg需要修改为自己的图片链接
+
+                weixin:{qrimg: "https://files.cnblogs.com/files/wj204/we.gif"}, //qrimg需要修改为自己的图片链接
+            }
+        };
+    </script><script type="text/javascript">getFollowStatus('4c295d9d-e58b-e211-90a7-f6db9189f8ef')</script></body></html>
