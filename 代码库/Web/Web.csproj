@@ -36,6 +36,9 @@
       <HintPath>..\CoreLibrary\bin\Debug\CoreLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\CoreLibrary\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\httpclient\System.Net.Http.dll</HintPath>
@@ -154,6 +157,7 @@
     <Content Include="myBootstrap\js\html5shiv.js" />
     <Content Include="myBootstrap\js\jquery.min.js" />
     <Content Include="myBootstrap\js\respond.min.js" />
+    <Content Include="mysqltest.aspx" />
     <Content Include="pay.htm" />
     <Content Include="rotate.htm" />
     <Content Include="scan.htm" />
@@ -175,6 +179,14 @@
     <Content Include="wx.htm" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MysqlHelper.cs" />
+    <Compile Include="mysqltest.aspx.cs">
+      <DependentUpon>mysqltest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mysqltest.aspx.designer.cs">
+      <DependentUpon>mysqltest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>

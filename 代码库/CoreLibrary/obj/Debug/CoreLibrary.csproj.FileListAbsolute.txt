@@ -10,3 +10,16 @@ C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.OpenXmlFormats.dll
 C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.xml
 C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.OOXML.xml
 C:\ceshixiangmu\Solution1\CoreLibrary\bin\Debug\NPOI.OpenXml4Net.xml
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\obj\Debug\CoreLibrary.pdb
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\CoreLibrary.dll
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\CoreLibrary.pdb
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\MySql.Data.dll
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\NPOI.dll
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\NPOI.OOXML.dll
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\NPOI.OpenXml4Net.dll
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\NPOI.xml
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\NPOI.OOXML.xml
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\bin\Debug\NPOI.OpenXml4Net.xml
+F:\版本控制文件夹\xuzhoushengneng\代码库\CoreLibrary\obj\Debug\CoreLibrary.dll
