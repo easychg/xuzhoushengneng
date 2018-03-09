@@ -1,0 +1,7 @@
+C:\我的文件\车牌识别\CH-HCNetSDK(Windows32)V5.2.1.3_build20160513\Demo示例\3- C# 开发示例\1-实时预览示例代码一\PreviewDemo\bin\PreviewDemo.exe
+C:\我的文件\车牌识别\CH-HCNetSDK(Windows32)V5.2.1.3_build20160513\Demo示例\3- C# 开发示例\1-实时预览示例代码一\PreviewDemo\bin\PreviewDemo.pdb
+C:\我的文件\车牌识别\CH-HCNetSDK(Windows32)V5.2.1.3_build20160513\Demo示例\3- C# 开发示例\1-实时预览示例代码一\PreviewDemo\obj\Debug\PreviewDemo.Preview.resources
+C:\我的文件\车牌识别\CH-HCNetSDK(Windows32)V5.2.1.3_build20160513\Demo示例\3- C# 开发示例\1-实时预览示例代码一\PreviewDemo\obj\Debug\PreviewDemo.PTZControl.resources
+C:\我的文件\车牌识别\CH-HCNetSDK(Windows32)V5.2.1.3_build20160513\Demo示例\3- C# 开发示例\1-实时预览示例代码一\PreviewDemo\obj\Debug\PreviewDemo.csproj.GenerateResource.Cache
+C:\我的文件\车牌识别\CH-HCNetSDK(Windows32)V5.2.1.3_build20160513\Demo示例\3- C# 开发示例\1-实时预览示例代码一\PreviewDemo\obj\Debug\PreviewDemo.exe
+C:\我的文件\车牌识别\CH-HCNetSDK(Windows32)V5.2.1.3_build20160513\Demo示例\3- C# 开发示例\1-实时预览示例代码一\PreviewDemo\obj\Debug\PreviewDemo.pdb

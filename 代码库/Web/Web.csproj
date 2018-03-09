@@ -159,6 +159,7 @@
     <Content Include="myBootstrap\js\respond.min.js" />
     <Content Include="mysqltest.aspx" />
     <Content Include="pay.htm" />
+    <Content Include="ReflactTest.aspx" />
     <Content Include="rotate.htm" />
     <Content Include="scan.htm" />
     <Content Include="server.js" />
@@ -188,6 +189,13 @@
       <DependentUpon>mysqltest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflactTest.aspx.cs">
+      <DependentUpon>ReflactTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReflactTest.aspx.designer.cs">
+      <DependentUpon>ReflactTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

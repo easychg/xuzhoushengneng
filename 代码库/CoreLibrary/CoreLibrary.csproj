@@ -70,6 +70,7 @@
     <Compile Include="LEDHelper.cs" />
     <Compile Include="MysqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflactHelper.cs" />
     <Compile Include="RMBHelper.cs" />
     <Compile Include="VoiceHelper.cs" />
     <Compile Include="XMLHelper.cs" />
