@@ -168,6 +168,7 @@
     <Content Include="static\images\headimg-bg.55bfe251347ce829af67d68847a6806c.jpg" />
     <Content Include="static\js\main.80167f63421a9b54a940.js" />
     <Content Include="test.aspx" />
+    <Content Include="turing2.htm" />
     <Content Include="vue.js" />
     <Content Include="vuetest.htm" />
     <Content Include="Web.config" />
