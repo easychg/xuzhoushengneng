@@ -1,6 +1,6 @@
 ﻿namespace CSD
 {
-    partial class Form1
+    partial class FastReportDemo
     {
         /// <summary>
         /// 必需的设计器变量。
