@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ReportInfo.Created="03/21/2018 09:22:40" ReportInfo.Modified="03/21/2018 09:25:01" ReportInfo.CreatorVersion="1.2.76.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlq+rW0RkboK+/8CKGGYUID3ctBV8q9SvKYxl3iiE7vBnh7Tgou0+4WFf3NfmPSvHVFZ9rC928DEHrUoUSqWeqgQKywEt6fq1SeIa9FSu3d4o+TM7KLYcFe3IuTVG7V0oDlctv1gynpv5iOULvxThuU2A2xh30+YcBI5JRuyxCD1jtDLu5tdqrW/+Wp5i03pVkA">
+      <TableDataSource Name="S_User" DataType="System.Int32" Enabled="true" TableName="S_User">
+        <Column Name="ID" DataType="System.Int32"/>
+        <Column Name="Code" DataType="System.String"/>
+        <Column Name="Name" DataType="System.String"/>
+        <Column Name="Parent" DataType="System.Int32"/>
+        <Column Name="Level" DataType="System.Int32"/>
+        <Column Name="Detail" DataType="System.Int32"/>
+        <Column Name="Uid" DataType="System.String"/>
+        <Column Name="Role" DataType="System.Int32"/>
+        <Column Name="Pwd" DataType="System.String"/>
+        <Column Name="Used" DataType="System.Int32"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="37.8"/>
+    <DataBand Name="Data1" Top="83.6" Width="718.2" Height="75.6">
+      <TextObject Name="Text1" Left="141.75" Top="18.9" Width="217.35" Height="18.9" Text="[S_User.Name]"/>
+      <TextObject Name="Text2" Left="396.9" Top="18.9" Width="236.25" Height="18.9" Text="[S_User.Pwd]"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="163.2" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

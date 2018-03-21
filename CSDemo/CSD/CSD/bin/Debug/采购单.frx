@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ReportInfo.Created="07/16/2015 14:58:49" ReportInfo.Modified="03/21/2018 09:20:45" ReportInfo.CreatorVersion="1.2.76.0">
+  <Dictionary>
+    <TableDataSource Name="Bill" ReferenceName="Data.Bill" DataType="System.Int32" Enabled="true">
+      <Column Name="皮操作员" DataType="System.String"/>
+      <Column Name="打印标题" DataType="System.String"/>
+      <Column Name="净重大写" DataType="System.String"/>
+      <Column Name="结算净重大写" DataType="System.String"/>
+      <Column Name="金额大写" DataType="System.String"/>
+      <Column Name="毛台号" DataType="System.String"/>
+      <Column Name="皮台号" DataType="System.String"/>
+      <Column Name="编号" DataType="System.String"/>
+      <Column Name="车号" DataType="System.String"/>
+      <Column Name="业务类型" DataType="System.String"/>
+      <Column Name="It111" DataType="System.String"/>
+      <Column Name="It2" DataType="System.String"/>
+      <Column Name="It3" DataType="System.String"/>
+      <Column Name="It4" DataType="System.String"/>
+      <Column Name="It5" DataType="System.String"/>
+      <Column Name="It6" DataType="System.String"/>
+      <Column Name="It7" DataType="System.String"/>
+      <Column Name="It8" DataType="System.String"/>
+      <Column Name="Sp1" DataType="System.String"/>
+      <Column Name="Sp2" DataType="System.String"/>
+      <Column Name="Sp3" DataType="System.String"/>
+      <Column Name="Sp4" DataType="System.String"/>
+      <Column Name="Sp5" DataType="System.String"/>
+      <Column Name="Sp6" DataType="System.String"/>
+      <Column Name="Sp7" DataType="System.String"/>
+      <Column Name="Sp8" DataType="System.String"/>
+      <Column Name="Sp9" DataType="System.String"/>
+      <Column Name="Sp10" DataType="System.String"/>
+      <Column Name="Sp11" DataType="System.String"/>
+      <Column Name="Sp12" DataType="System.String"/>
+      <Column Name="毛重" DataType="System.Decimal"/>
+      <Column Name="皮重" DataType="System.Decimal"/>
+      <Column Name="净重" DataType="System.Decimal"/>
+      <Column Name="结算重" DataType="System.Decimal"/>
+      <Column Name="扣率(%)" DataType="System.Decimal"/>
+      <Column Name="扣重1" DataType="System.Decimal"/>
+      <Column Name="扣率2" DataType="System.Decimal"/>
+      <Column Name="扣重2" DataType="System.Decimal"/>
+      <Column Name="折方比" DataType="System.Decimal"/>
+      <Column Name="方数" DataType="System.Decimal"/>
+      <Column Name="单价" DataType="System.Decimal"/>
+      <Column Name="金额" DataType="System.Decimal"/>
+      <Column Name="卡号" DataType="System.String"/>
+      <Column Name="毛时间" DataType="System.DateTime"/>
+      <Column Name="皮时间" DataType="System.DateTime"/>
+      <Column Name="净时间" DataType="System.DateTime"/>
+      <Column Name="毛操作员" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="240" PaperHeight="93" LeftMargin="5" TopMargin="5" RightMargin="5" BottomMargin="5" FirstPageSource="1" OtherPagesSource="1">
+    <DataBand Name="Data1" Width="869.4" Height="309.96" DataSource="Bill">
+      <TextObject Name="Text1" Left="3.78" Top="3.78" Width="861.84" Height="45.36" Text="[Bill.打印标题]" HorzAlign="Center" VertAlign="Center" Font="Arial, 20pt, style=Bold"/>
+      <TextObject Name="Text2" Left="102.06" Top="75.6" Width="98.28" Height="37.8" Border.Lines="All" Text="车号" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text3" Left="200.34" Top="75.6" Width="219.24" Height="37.8" Border.Lines="All" Text="[Bill.车号]" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text4" Left="419.58" Top="75.6" Width="98.28" Height="37.8" Border.Lines="All" Text="发货单位" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text5" Left="517.86" Top="75.6" Width="219.24" Height="37.8" Border.Lines="All" Text="[Bill.发货单位]" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text6" Left="102.06" Top="113.4" Width="98.28" Height="37.8" Border.Lines="All" Text="货名" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text7" Left="200.34" Top="113.4" Width="219.24" Height="37.8" Border.Lines="All" Text="[Bill.货名]" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text8" Left="419.58" Top="113.4" Width="98.28" Height="37.8" Border.Lines="All" Text="毛重" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text9" Left="419.58" Top="151.2" Width="98.28" Height="37.8" Border.Lines="All" Text="皮重" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text10" Left="419.58" Top="189" Width="98.28" Height="37.8" Border.Lines="All" Text="净重" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text11" Left="517.86" Top="113.4" Width="219.24" Height="37.8" Border.Lines="All" Text="[Bill.毛重]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="" Format.NegativePattern="1" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text12" Left="517.86" Top="151.2" Width="219.24" Height="37.8" Border.Lines="All" Text="[Bill.皮重]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="" Format.NegativePattern="1" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text13" Left="517.86" Top="189" Width="219.24" Height="37.8" Border.Lines="All" Text="[Bill.净重]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="" Format.NegativePattern="1" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text14" Left="102.06" Top="151.2" Width="98.28" Height="37.8" Border.Lines="All" Text="仓库" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text15" Left="200.34" Top="151.2" Width="219.24" Height="37.8" Border.Lines="All" Text="[Bill.仓库]" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text16" Left="102.06" Top="189" Width="98.28" Height="37.8" Border.Lines="All" Text="司机" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text17" Left="200.34" Top="189" Width="219.24" Height="37.8" Border.Lines="All" Text="[Bill.司机]" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text18" Left="102.06" Top="226.8" Width="98.28" Height="37.8" Border.Lines="All" Text="备注" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text19" Left="200.34" Top="226.8" Width="536.76" Height="37.8" Border.Lines="All" Text="[Bill.备注]" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text20" Left="166.32" Top="52.92" Width="170.1" Height="18.9" Text="[Bill.净时间]" Format="Date" Format.Format="F" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text21" Left="102.06" Top="52.92" Width="64.26" Height="18.9" Text="时间：" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text22" Left="525.42" Top="52.92" Width="64.26" Height="18.9" Text="单号：" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text23" Left="593.46" Top="52.92" Width="136.08" Height="18.9" Text="[Bill.编号]" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text24" Left="502.74" Top="272.16" Width="94.5" Height="22.68" Text="司磅员：" VertAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text25" Left="597.24" Top="272.16" Width="94.5" Height="22.68" Text="[Bill.皮操作员]" VertAlign="Center" Font="Arial, 12pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>

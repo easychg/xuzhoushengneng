@@ -1,0 +1,12 @@
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\bin\Debug\CSD.exe
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\bin\Debug\CSD.pdb
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\bin\Debug\FastReport.Bars.dll
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\bin\Debug\FastReport.dll
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\bin\Debug\FastReport.Editor.dll
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\bin\Debug\FastReport.xml
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\obj\x86\Debug\CSD.csprojResolveAssemblyReference.cache
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\obj\x86\Debug\CSD.Form1.resources
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\obj\x86\Debug\CSD.Properties.Resources.resources
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\obj\x86\Debug\CSD.csproj.GenerateResource.Cache
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\obj\x86\Debug\CSD.exe
+F:\版本控制文件夹\xuzhoushengneng\CSDemo\CSD\CSD\obj\x86\Debug\CSD.pdb
